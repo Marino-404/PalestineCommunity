@@ -1,11 +1,11 @@
 import React from 'react';
 import { useAppContext } from '../AppContext';
-import img1 from "/src/images/carrusel/chanel/2.jpg";
-import img2 from "/src/images/carrusel/spotify/1.jpg";
-import img3 from "/src/images/carrusel/pelicula/2.jpg";
-import img4 from "/src/images/carrusel/poesia/1.jpg";
-import img5 from "/src/images/carrusel/ong/1.jpg";
-import img6 from "/src/images/carrusel/comida/3.jpg";
+import img1 from "/src/images/carrusel/chanel/3.jpg";
+import img2 from "/src/images/carrusel/spotify/2.jpg";
+import img3 from "/src/images/carrusel/pelicula/1.jpg";
+import img4 from "/src/images/carrusel/chanel/4.jpg";
+import img5 from "/src/images/carrusel/ong/2.jpg";
+import img6 from "/src/images/carrusel/comida/2.jpg";
 
 const images = [
   { src: img1, width: '270px' },

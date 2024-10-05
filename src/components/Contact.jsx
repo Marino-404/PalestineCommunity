@@ -1,5 +1,6 @@
 import React from 'react'
 import { useAppContext } from '../AppContext'
+import Button from '../assets/Button'
 
 const Contact = () => {
    
@@ -28,10 +29,7 @@ const Contact = () => {
               className='bg-gray-100 dark:bg-[#131313] w-[90%] h-[20vw] xl:h-[6vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal resize-none placeholder:text-sm' >   
         </textarea>
       </form>
-      <a href="#"
-         className='text-sm font-poppins font-normal py-2 px-6 bg-gradient-to-b from-[#247043] to-[#778f43] text-white dark:text-black rounded-lg mt-2' >
-        Enviar
-      </a>
+      <Button />
     </div>
   )
 }

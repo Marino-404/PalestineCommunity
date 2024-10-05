@@ -20,8 +20,6 @@ function App() {
       <DivLine />
       <Main />
       <DivLine />
-      <TheNew />
-      <DivLine />
       <Cards />
       <DivLine />
       <About />
