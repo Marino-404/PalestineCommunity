@@ -173,13 +173,13 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Desplaza hasta la mitad de la longitud total */
+    transform: translateX(-50%);
   }
 }
 
 .animate-scroll {
-  animation: scroll 600s linear infinite; /* Ajusta la duración según tus necesidades */
-  display: flex; /* Mantiene el flexbox para las imágenes */
+  animation: scroll 420s linear infinite;
+  display: flex; 
 }
 
 
@@ -188,13 +188,13 @@
     transform: translateX(-0);
   }
   100% {
-    transform: translateX(50%); /* Desplaza hasta la mitad de la longitud total */
+    transform: translateX(50%);
   }
 }
 
 .animate-scroll-1 {
-  animation: scroll-1 600s linear infinite; /* Ajusta la duración según tus necesidades */
-  display: flex; /* Mantiene el flexbox para las imágenes */
+  animation: scroll-1 420s linear infinite;
+  display: flex; 
 }
 
 

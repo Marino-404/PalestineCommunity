@@ -1,14 +1,24 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
-// Crea el contexto
+
 const AppContext = createContext(undefined);
 
 export const AppProvider = ({ children }) => {
-  const [mode, setMode] = useState(false); // false para claro (light)
+  const [mode, setMode] = useState(() => {
+    return localStorage.getItem('mode') === 'true';
+  });
 
   const toggleMode = () => {
-    setMode(prev => !prev);
+    setMode(prev => {
+      const newMode = !prev;
+      localStorage.setItem('mode', newMode);
+      return newMode;
+    });
   };
+
+  useEffect(() => {
+    document.body.className = mode ? 'dark' : 'light'; 
+  }, [mode]);
 
   return (
     <AppContext.Provider value={{ mode, toggleMode }}>

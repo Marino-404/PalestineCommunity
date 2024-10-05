@@ -68,6 +68,12 @@ const images = [
   { src: img4, width: '228px' },
   { src: img5, width: '315px' },
   { src: img6, width: '160px' },
+  { src: img1, width: '270px' },
+  { src: img2, width: '150px' },
+  { src: img3, width: '270px' },
+  { src: img4, width: '228px' },
+  { src: img5, width: '315px' },
+  { src: img6, width: '160px' },
 ];
 
 const CarouselTwo = () => {
