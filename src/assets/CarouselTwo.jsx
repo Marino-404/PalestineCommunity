@@ -86,7 +86,7 @@ const CarouselTwo = () => {
               <div
                 key={index}
                 href="#"
-                className='inline-block w-[15vw]'
+                className='inline-block'
                 style={{
                   width: img.width, 
                   opacity: 0.8,
@@ -96,7 +96,7 @@ const CarouselTwo = () => {
                 <img
                   src={img.src}
                   alt={`Imagen ${index + 1}`}
-                  className='w-full h-full object-cover object-center rounded-md'
+                  className='w-full h-full object-cover object-center rounded-md hover:scale-105 transition-all hover:opacity-100'
                   style={{ height: '100%', maxHeight: '100%' }}
                 />
               </div>
