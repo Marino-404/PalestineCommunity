@@ -6,7 +6,6 @@ import About from "./components/About.jsx"
 import Footer from "./components/Footer.jsx"
 import Contact from "./components/Contact.jsx"
 import Main from "./components/Main.jsx"
-import TheNew from "./components/TheNew.jsx"
 
 
 function App() {
