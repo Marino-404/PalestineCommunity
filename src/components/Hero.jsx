@@ -11,7 +11,7 @@ const Hero = () => {
             <Logo />
         </div>
         <div className='xl:w-1/2 w-[100%] flex flex-col items-center justify-center animate-fade animate-once animate-duration-[3000ms] animate-delay-[1000ms] animate-ease-in-out'  >
-            <h1 className='text-6xl xl:text-6xl text-gradient font-bebas font-light flex text-center justify-center xl:justify-start xl:text-start' >Connect Palestine</h1>  
+            <h1 className='text-5xl xl:text-6xl text-gradient font-bebas font-light flex text-center justify-center xl:justify-start xl:text-start' >Connect Palestine</h1>  
             <h2 className='text-3xl dark:text-white font-poppins font-light xl:pb-2 pb-4 text-shadow'>Community</h2> 
             <a className='text-2xl text-current flex justify-center items-center dark:text-white'  href="#Connect"><AiOutlineDown className='animate-bounce animate-infinite animate-ease-in-out' /></a>
         </div>

@@ -4,7 +4,6 @@ import Hero from "./components/Hero.jsx"
 import DivLine from "./assets/DivLine.jsx"
 import About from "./components/About.jsx"
 import Footer from "./components/Footer.jsx"
-import Contact from "./components/Contact.jsx"
 import Main from "./components/Main.jsx"
 
 
@@ -20,8 +19,6 @@ function App() {
       <Cards />
       <DivLine />
       <About />
-      <DivLine />
-      <Contact />
       <DivLine />
       <Footer />
     </div>

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useAppContext } from '../AppContext';
-import Button from '../assets/Button';
+import Button from './Button';
 import emailjs from '@emailjs/browser';
 
 emailjs.init("q-vQQZk1DRHBdFody");
@@ -58,9 +58,9 @@ const Contact = () => {
     };
 
     return (
-        <div className="w-full h-[50vh] flex flex-col items-center justify-center dark:text-white">
-            <h2 id='Contact' className='text-3xl text-gradient font-bebas font-light flex justify-center mb-4'>¡Ponete en contacto!</h2>
-            <form ref={formRef} onSubmit={handleSubmit} className='w-[73%] xl:w-[30%] flex flex-col items-center'>
+        <div className=" w-full h-[40vh] xl:h-[55vh] flex flex-col items-center justify-center dark:text-white">
+            <h2 id='Contact' className='text-xl text-gradient font-poppins font-bold flex justify-center mb-4'>¡Ponete en contacto!</h2>
+            <form ref={formRef} onSubmit={handleSubmit} className='w-[100%] xl:w-[75%] flex flex-col items-center'>
                 <input 
                     type="text"
                     placeholder='Nombre'
