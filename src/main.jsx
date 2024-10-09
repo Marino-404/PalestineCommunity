@@ -5,6 +5,7 @@ import { AppProvider } from './AppContext.jsx';
 import App from './App.jsx';
 import BackGroundPage from './assets/BackGroundPage.jsx';
 import './index.css'; 
+import AnimatedLines from './assets/AnimatedLines.jsx';
 
 
 const rootElement = document.getElementById('root');
@@ -14,6 +15,7 @@ root.render(
   <StrictMode>
     <AppProvider>
       <BackGroundPage />
+      <AnimatedLines />
       <App />
     </AppProvider>
   </StrictMode>
