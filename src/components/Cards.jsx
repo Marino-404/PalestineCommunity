@@ -36,7 +36,7 @@ const Cards = () => {
       id="Connect"
       className={'w-full h-auto flex flex-col items-center justify-center text-[#ffffffd9]  px-2 py-12 z-10 '}
     >
-      <div className="xl:w-[68%] w-full flex flex-wrap justify-center xl:gap-8 gap-4 z-10">
+      <div className="xl:w-[68%] w-full flex flex-wrap justify-center xl:gap-8 gap-6 z-10">
         {[
           { title: 'Peliculas', className: 'card-1' },
           { title: 'Series', className: 'card-2' },
@@ -54,7 +54,7 @@ const Cards = () => {
           <a
             key={index}
             href="#"
-            className={`w-[45%] md:w-1/4 xl:w-1/4 xl:h-[6vw] h-[16vw] flex justify-center items-center relative ${card.className} rounded-lg` }
+            className={`w-[47%] md:w-1/4 xl:w-1/4 xl:h-[6vw] h-[21vw] flex justify-center items-center relative ${card.className} rounded-lg` }
           >
             <h1 className="absolute text-lg font-normal">{card.title}</h1>
             <span className='xl:hover:scale-125 transition-transform duration-300 xl:py-2 xl:px-24' >

@@ -80,7 +80,7 @@ const CarouselOne = () => {
   const { mode } = useAppContext();
 
   return (
-    <div className="w-full xl:w-[68%] h-[13vh] xl:h-[20vh] flex items-center justify-center overflow-hidden mx-auto">
+    <div className="w-full xl:w-[68%] h-[32vw] xl:h-[20vh] flex items-center justify-center overflow-hidden mx-auto">
       <div className={`flex whitespace-nowrap h-full animate-scroll gap-2 xl:gap-5`}>
         {[...images].map((img, index) => (
           <div
