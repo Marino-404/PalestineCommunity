@@ -37,7 +37,7 @@ const Header = () => {
         <a className="navbar dark:text-white hover:text-gradient dark:hover:text-gradient transition-none" href="#Home" onClick={handleMenuItemClick}>Inicio</a>
         <a className='navbar dark:text-white hover:text-gradient dark:hover:text-gradient transition-none' href="#Connect" onClick={handleMenuItemClick}>Connect</a>
         <a className='navbar dark:text-white hover:text-gradient dark:hover:text-gradient transition-none' href="#About" onClick={handleMenuItemClick}>Nosotros</a>
-        <a className='navbar dark:text-white hover:text-gradient dark:hover:text-gradient transition-none' href="#Contact" onClick={handleMenuItemClick}>Contacto</a>
+        <a className='navbar dark:text-white hover:text-gradient dark:hover:text-gradient transition-none' href="#About" onClick={handleMenuItemClick}>Contacto</a>
         <button 
             onClick={toggleMode}
             className='text-2xl justify-center items-center pt-10 xl:p-0 text-black dark:text-white hover:animate-rotate-y hover:animate-once hover:animate-ease-in-out'>
