@@ -80,13 +80,13 @@ const CarouselOne = () => {
   const { mode } = useAppContext();
 
   return (
-    <div className="w-full xl:w-[68%] h-[32vw] xl:h-[20vh] flex items-center justify-center overflow-hidden mx-auto">
+    <div className="w-full xl:w-[68%] h-[32vw] xl:h-[11vw] flex items-center justify-center overflow-hidden mx-auto">
       <div className={`flex whitespace-nowrap h-full animate-scroll gap-2 xl:gap-5`}>
         {[...images].map((img, index) => (
           <div
             key={index}
             href="#"
-            className='inline-block hover:scale-105 transition-all duration-300 overflow-hidden'
+            className='inline-block hover:scale-105 transition-all duration-300'
             style={{
               width: img.width, 
               opacity: 0.8,
@@ -96,7 +96,7 @@ const CarouselOne = () => {
             <img
               src={img.src}
               alt={`Imagen ${index + 1}`}
-              className='w-full h-full object-cover object-center rounded-md hover:scale-105 transition-all hover:opacity-100'
+              className='w-full h-full object-cover object-center transition-all'
               style={{ height: '100%', maxHeight: '100%' }}
             />
           </div>
