@@ -85,9 +85,9 @@ const Contact = () => {
                     className='bg-gray-100 dark:bg-[#131313] w-[90%] h-[20vw] xl:h-[6vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal resize-none placeholder:text-sm' 
                 ></textarea>
                 <Button />
-                {warning && <div className="text-sm text-gradient font-poppins font-semibold">{warning}</div>}
-                {sent && <div className="text-sm text-gradient font-poppins font-semibold">¡Enviado correctamente!</div>}
-                {sending && <div className="text-sm text-gradient font-poppins font-semibold">Enviando...</div>}
+                {warning && <div className="flex text-sm text-gradient font-poppins font-semibold">{warning}</div>}
+                {sent && <div className="flex text-sm text-gradient font-poppins font-semibold">¡Enviado correctamente!</div>}
+                {sending && <div className="flex text-sm text-gradient font-poppins font-semibold">Enviando...</div>}
             </form>
         </div>
     );
