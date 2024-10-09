@@ -11,8 +11,8 @@ const About = () => {
   };
 
   return (
-    <div id='About' className={` w-full h-auto xl:h-[115vh] flex flex-col items-center text-center xl:justify-start ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} z-10`}>
-      <div className={`w-full xl:w-[55%] h-auto flex flex-row items-center justify-center xl:gap-20 py-8 ${mode ? 'bg-[#000000c1]' : 'bg-[#ffffffc1]'} z-10`}>
+    <div id='About' className={`w-full h-auto xl:h-[115vh] flex flex-col items-center text-center xl:justify-start ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} z-10`}>
+      <div className={`w-[96%] xl:w-[55%] h-auto flex flex-row items-center justify-center xl:gap-20 py-8 ${mode ? 'bg-[#000000c1]' : 'bg-[#ffffffc1]'} z-10`}>
         <button 
           className={`text-xl ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} hover:text-gradient font-bebas font-light flex justify-center`}
           onClick={() => handleSectionChange('about')}>
@@ -30,7 +30,7 @@ const About = () => {
         </button>
       </div>
 
-      <div className={`xl:w-[55%] w-full h-auto font-poppins flex flex-col items-center pt-4 xl:pt-10 p-6 ${mode ? 'bg-[#000000c1]' : 'bg-[#ffffffc1]'} z-10`} style={{ display: activeSection === 'about' ? 'flex' : 'none' }}>
+      <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-4 xl:pt-10 p-6 ${mode ? 'bg-[#000000c1]' : 'bg-[#ffffffc1]'} z-10`} style={{ display: activeSection === 'about' ? 'flex' : 'none' }}>
         <h3 className='text-xl font-bold text-gradient mb-4'>Cultura, Historia y Resistencia</h3>
         <h4 className='text-md font-semibold m-2'>Quiénes Somos</h4>
         <span>
@@ -47,7 +47,7 @@ const About = () => {
         </span>
       </div>
 
-      <div className={`xl:w-[55%] w-full h-auto font-poppins flex flex-col items-center pt-4 xl:pt-10 p-6 ${mode ? 'bg-[#000000c1]' : 'bg-[#ffffffc1]'} z-10`} style={{ display: activeSection === 'projects' ? 'flex' : 'none' }}>
+      <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-4 xl:pt-10 p-6 ${mode ? 'bg-[#000000c1]' : 'bg-[#ffffffc1]'} z-10`} style={{ display: activeSection === 'projects' ? 'flex' : 'none' }}>
         <h3 className='text-xl font-bold text-gradient mb-4'>Proyecto Conectar</h3>
         <span>
           <ul>
@@ -92,7 +92,7 @@ const About = () => {
         </span>
       </div>
 
-      <div className={`xl:w-[55%] w-full h-auto font-poppins flex flex-col items-center pt-4 xl:pt-10 p-6 ${mode ? 'bg-[#000000c1]' : 'bg-[#ffffffc1]'} z-10`} style={{ display: activeSection === 'community' ? 'flex' : 'none' }}>
+      <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-4 xl:pt-10 p-6 ${mode ? 'bg-[#000000c1]' : 'bg-[#ffffffc1]'} z-10`} style={{ display: activeSection === 'community' ? 'flex' : 'none' }}>
         <h3 className='text-xl text-gradient font-bold mb-6'>Sumate a la Comunidad</h3>
         <span className='mb-6' >
           Te invitamos a ser parte de esta comunidad en constante expansión, donde cada conexión amplifica las voces palestinas y refuerza una red de resistencia. Conéctate, colabora y comparte.
