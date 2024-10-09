@@ -1,7 +1,6 @@
 import React from 'react'
 import Logo from '../assets/Logo.jsx';
 import { AiOutlineDown } from "react-icons/ai";
-import AnimatedLines from '../assets/animatedLines.jsx';
 import DivLine from '../assets/DivLine.jsx'
 
 const Hero = () => {
