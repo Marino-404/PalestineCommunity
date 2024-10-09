@@ -36,7 +36,7 @@ const Cards = () => {
       id="Connect"
       className={'w-full h-auto flex flex-col items-center justify-center text-[#ffffffd9]  px-2 py-12 z-10 '}
     >
-      <div className="xl:w-[68%] w-full flex flex-wrap justify-center xl:gap-8 gap-6 z-10">
+      <div className="xl:w-[68%] w-full flex flex-wrap justify-center xl:gap-8 gap-3 z-10">
         {[
           { title: 'Peliculas', className: 'card-1' },
           { title: 'Series', className: 'card-2' },
