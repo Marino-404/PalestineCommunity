@@ -31,7 +31,7 @@ const About = () => {
       </div>
 
       <div className={`xl:w-[55%] w-full h-auto font-poppins flex flex-col items-center pt-4 xl:pt-10 p-6 ${mode ? 'bg-[#000000c1]' : 'bg-[#ffffffc1]'} z-10`} style={{ display: activeSection === 'about' ? 'flex' : 'none' }}>
-        <h3 className='text-xl font-bold text-gradient mb-4'>Tu Enlace con la Cultura, Historia y Resistencia</h3>
+        <h3 className='text-xl font-bold text-gradient mb-4'>Cultura, Historia y Resistencia</h3>
         <h4 className='text-md font-semibold m-2'>Quiénes Somos</h4>
         <span>
           Connect Palestine es una plataforma digital innovadora diseñada para centralizar y compartir lo mejor de la cultura,
