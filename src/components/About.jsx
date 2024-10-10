@@ -49,7 +49,7 @@ const About = () => {
       <DivLineAbout />
 
       <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-4 p-6 z-10`} style={{ display: activeSection === 'about' ? 'flex' : 'none' }}>
-        <h3 className='text-xl font-bold text-gradient mb-4'>Cultura, Historia y Resistencia</h3>
+        <h3 className='text-4xl font-bold text-gradient mb-4'>Cultura, Historia y Resistencia</h3>
         <h4 className='text-md font-bold m-2'>Quiénes Somos</h4>
         <span>
           Connect Palestine es una plataforma digital innovadora diseñada para centralizar y compartir lo mejor de la cultura,
@@ -66,7 +66,7 @@ const About = () => {
       </div>
 
       <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-4 p-6 z-10`} style={{ display: activeSection === 'projects' ? 'flex' : 'none' }}>
-        <h3 className='text-xl font-bold text-gradient mb-4'>Proyecto Conectar</h3>
+        <h3 className='text-4xl font-bold text-gradient mb-4'>Proyecto Conectar</h3>
         <span>
           <ul>
           <li className='flex flex-col pb-4'> 
@@ -110,7 +110,7 @@ const About = () => {
       </div>
 
       <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-4 p-6 z-10`} style={{ display: activeSection === 'community' ? 'flex' : 'none' }}>
-        <h3 className='text-xl text-gradient font-bold mb-6'>Sumate a la Comunidad</h3>
+        <h3 className='text-4xl text-gradient font-bold mb-6'>Sumate a la Comunidad</h3>
         <span className='mb-6' >
           Te invitamos a ser parte de esta comunidad en constante expansión, donde cada conexión amplifica las voces palestinas y refuerza una red de resistencia. Conéctate, colabora y comparte.
           ¡Hagamos que el mundo escuche a Palestina!
