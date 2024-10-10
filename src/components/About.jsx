@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useAppContext } from '../AppContext';
 import Contact from '../assets/Contact.jsx';
+import DivLineAbout from '../assets/DivLineAbout.jsx';
 
 const About = () => {
   const { mode } = useAppContext();
@@ -12,34 +13,51 @@ const About = () => {
 
   return (
     <div id='About' className={`w-full h-auto xl:h-[115vh] flex flex-col items-center text-center xl:justify-start ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} z-10`}>
-      <div className={`w-[96%] xl:w-[55%] h-auto flex flex-row items-center justify-center xl:gap-20 py-8 ${mode ? 'bg-[#000000c1]' : 'bg-[#ffffffc1]'} z-10`}>
+      <div className={`w-[96%] xl:w-[55%] h-auto flex flex-row items-center justify-center xl:gap-20 pt-2 z-10`}>
         <button 
           className={`text-xl ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} hover:text-gradient font-bebas font-light flex justify-center`}
+          style={{ 
+                  background: activeSection === 'about' ? 'linear-gradient(to bottom, #247043, #778F43)' : '', 
+                  WebkitBackgroundClip: activeSection === 'about' ? 'text' : '',
+                  color: activeSection === 'about' ? 'transparent' : ''
+          }}
           onClick={() => handleSectionChange('about')}>
           Sobre Connect Palestine
         </button>
         <button 
           className={`text-xl ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} hover:text-gradient font-bebas font-light flex justify-center`}
+          style={{ 
+                  background: activeSection === 'projects' ? 'linear-gradient(to bottom, #247043, #778F43)' : '', 
+                  WebkitBackgroundClip: activeSection === 'projects' ? 'text' : '',
+                  color: activeSection === 'projects' ? 'transparent' : ''
+          }}
           onClick={() => handleSectionChange('projects')}>
           Nuestros proyectos
         </button>
         <button
           className={`text-xl ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} hover:text-gradient font-bebas font-light flex justify-center`}
+          style={{ 
+                  background: activeSection === 'community' ? 'linear-gradient(to bottom, #247043, #778F43)' : '', 
+                  WebkitBackgroundClip: activeSection === 'community' ? 'text' : '',
+                  color: activeSection === 'community' ? 'transparent' : ''
+          }}
           onClick={() => handleSectionChange('community')}>
           Sumate a la Comunidad
         </button>
       </div>
 
-      <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-4 xl:pt-10 p-6 ${mode ? 'bg-[#000000c1]' : 'bg-[#ffffffc1]'} z-10`} style={{ display: activeSection === 'about' ? 'flex' : 'none' }}>
+      <DivLineAbout />
+
+      <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-4 p-6 z-10`} style={{ display: activeSection === 'about' ? 'flex' : 'none' }}>
         <h3 className='text-xl font-bold text-gradient mb-4'>Cultura, Historia y Resistencia</h3>
-        <h4 className='text-md font-semibold m-2'>Quiénes Somos</h4>
+        <h4 className='text-md font-bold m-2'>Quiénes Somos</h4>
         <span>
           Connect Palestine es una plataforma digital innovadora diseñada para centralizar y compartir lo mejor de la cultura,
           historia, gastronomía, arte y actualidad de Palestina. Un portal dinámico que conecta a personas de todo el mundo
           interesadas en la riqueza de Palestina, y se convierta en una poderosa herramienta para fortalecer la narrativa de
           resistencia palestina en el mundo digital.
         </span>
-        <h4 className='text-md font-semibold mt-8 mb-2'>Nuestra Misión</h4>
+        <h4 className='text-md font-bold mt-8 mb-2'>Nuestra Misión</h4>
         <span>
           Nuestra misión es crear una comunidad digital global que, a través de la tecnología y el acceso a contenido, impulse
           la visibilidad de Palestina. Queremos que los usuarios se conecten, interactúen y aprendan, mientras apoyan una red
@@ -47,52 +65,51 @@ const About = () => {
         </span>
       </div>
 
-      <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-4 xl:pt-10 p-6 ${mode ? 'bg-[#000000c1]' : 'bg-[#ffffffc1]'} z-10`} style={{ display: activeSection === 'projects' ? 'flex' : 'none' }}>
+      <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-4 p-6 z-10`} style={{ display: activeSection === 'projects' ? 'flex' : 'none' }}>
         <h3 className='text-xl font-bold text-gradient mb-4'>Proyecto Conectar</h3>
         <span>
           <ul>
           <li className='flex flex-col pb-4'> 
-  <span className='font-bold p-2'>Biblioteca Digital Multimedia:</span>
-  <span>
-    Un centro de contenidos con acceso a películas, documentales, series y más, todo centrado en la narrativa palestina.
-  </span>
-  </li>
-  <li className='flex flex-col pb-4'>
-  <span className='font-bold p-2'>Explora la Cocina Palestina:</span>
-    <span>
-      Un espacio donde chefs y foodies pueden descubrir y compartir recetas tradicionales, interactuando con la comunidad y conectándose a través de la gastronomía.
-    </span>
-  </li>
-  <li className='flex flex-col pb-4'>
-    <span className='font-bold p-2'>Celebrities for Palestine:</span>
-    <span>
-      Un espacio donde destacamos a personalidades públicas que muestran su apoyo y solidaridad con Palestina, amplificando su impacto en redes y medios.
-    </span>
-  </li>
-  <li className='flex flex-col pb-4'>
-    <span className='font-bold p-2'>Arte y Poesía Digital:</span>
-    <span>
-      Una galería virtual que celebra el talento de artistas palestinos, conectando a los usuarios con la vibrante escena artística y poética de Palestina.
-    </span>
-  </li>
-  <li className='flex flex-col pb-4'>
-    <span className='font-bold p-2'>Podcasts y Opiniones:</span>
-    <span>
-      Una sección dedicada a reseñas de podcasts, con análisis actuales sobre la cultura, política y resistencia palestina.
-  </span>
-  </li>
-  <li className='flex flex-col pb-4'>
+          <span className='font-bold p-2'>Biblioteca Digital Multimedia:</span>
+          <span>
+            Un centro de contenidos con acceso a películas, documentales, series y más, todo centrado en la narrativa palestina.
+          </span>
+          </li>
+          <li className='flex flex-col pb-4'>
+          <span className='font-bold p-2'>Explora la Cocina Palestina:</span>
+          <span>
+            Un espacio donde chefs y foodies pueden descubrir y compartir recetas tradicionales, interactuando con la comunidad y conectándose a través de la gastronomía.
+          </span>
+        </li>
+        <li className='flex flex-col pb-4'>
+          <span className='font-bold p-2'>Celebrities for Palestine:</span>
+          <span>
+            Un espacio donde destacamos a personalidades públicas que muestran su apoyo y solidaridad con Palestina, amplificando su impacto en redes y medios.
+          </span>
+        </li>
+        <li className='flex flex-col pb-4'>
+        <span className='font-bold p-2'>Arte y Poesía Digital:</span>
+        <span>
+          Una galería virtual que celebra el talento de artistas palestinos, conectando a los usuarios con la vibrante escena artística y poética de Palestina.
+        </span>
+      </li>
+      <li className='flex flex-col pb-4'>
+        <span className='font-bold p-2'>Podcasts y Opiniones:</span>
+        <span>
+          Una sección dedicada a reseñas de podcasts, con análisis actuales sobre la cultura, política y resistencia palestina.
+      </span>
+      </li>
+      <li className='flex flex-col pb-4'>
     <span className='font-bold p-2'>Redes y Medios Sociales:</span>
     <span>
       Un radar que monitorea las principales cuentas y medios que están en la vanguardia de la narrativa digital sobre Palestina.
     </span>
-  </li>
-
+    </li>
           </ul>
         </span>
       </div>
 
-      <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-4 xl:pt-10 p-6 ${mode ? 'bg-[#000000c1]' : 'bg-[#ffffffc1]'} z-10`} style={{ display: activeSection === 'community' ? 'flex' : 'none' }}>
+      <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-4 p-6 z-10`} style={{ display: activeSection === 'community' ? 'flex' : 'none' }}>
         <h3 className='text-xl text-gradient font-bold mb-6'>Sumate a la Comunidad</h3>
         <span className='mb-6' >
           Te invitamos a ser parte de esta comunidad en constante expansión, donde cada conexión amplifica las voces palestinas y refuerza una red de resistencia. Conéctate, colabora y comparte.
