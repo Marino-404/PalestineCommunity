@@ -8,8 +8,8 @@ function DivLine () {
 
     return (
         <div 
-        className={`mx-auto my-8 w-[90%] xl:w-[40%] h-[1px] 
-         ${mode ? 'divisorDark' : 'divisorLight'}`} >
+        className={`absolute mx-auto my-14 w-[90%] xl:w-[40%] h-[1px] 
+         ${mode ? 'divisorDark' : 'divisorLight'} z-50`} >
         </div>
     );
 }
