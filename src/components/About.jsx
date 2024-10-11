@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useAppContext } from '../AppContext';
 import Contact from '../assets/Contact.jsx';
 import DivLineAbout from '../assets/DivLineAbout.jsx';
+import { FaCircle } from "react-icons/fa";
+
 
 const About = () => {
   const { mode } = useAppContext();
@@ -49,25 +51,36 @@ const About = () => {
       <DivLineAbout />
 
       <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-12 p-6 z-10`} style={{ display: activeSection === 'about' ? 'flex' : 'none' }}>
-        <h3 className='text-4xl font-bold text-gradient mb-4'>Cultura, Historia y Resistencia</h3>
+
+        <h4 className='text-md font-bold mt-8 mb-2'>Nuestra Misión</h4>
+        <span className='flex flex-row' >
+          <FaCircle />
+          Nuestra misión es crear una comunidad digital global que, a través de la tecnología y el acceso a contenido, impulse
+          la visibilidad de Palestina.
+        </span>
+        <span className='flex flex-row' >
+          <FaCircle />
+          Queremos que los usuarios se conecten, interactúen y aprendan, mientras apoyan una red
+          donde converjan la información, las voces y los talentos que defienden la identidad palestina.
+        </span>
+
         <h4 className='text-md font-bold m-2'>Quiénes Somos</h4>
-        <span>
+        <span className='felx flex-row' >
+          <FaCircle />
           Connect Palestine es una plataforma digital innovadora diseñada para centralizar y compartir lo mejor de la cultura,
-          historia, gastronomía, arte y actualidad de Palestina. Un portal dinámico que conecta a personas de todo el mundo
+          historia, gastronomía, arte y actualidad de Palestina.
+        </span>
+        <span className='flex flex-row' >
+          <FaCircle />
+          Un portal dinámico que conecta a personas de todo el mundo
           interesadas en la riqueza de Palestina, y se convierta en una poderosa herramienta para fortalecer la narrativa de
           resistencia palestina en el mundo digital.
-        </span>
-        <h4 className='text-md font-bold mt-8 mb-2'>Nuestra Misión</h4>
-        <span>
-          Nuestra misión es crear una comunidad digital global que, a través de la tecnología y el acceso a contenido, impulse
-          la visibilidad de Palestina. Queremos que los usuarios se conecten, interactúen y aprendan, mientras apoyan una red
-          donde converjan la información, las voces y los talentos que defienden la identidad palestina.
         </span>
       </div>
 
  
       <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-12 p-6 z-10`} style={{ display: activeSection === 'projects' ? 'flex' : 'none' }}>
-        <h3 className='text-4xl font-bold text-gradient mb-4'>Proyecto Conectar</h3>
+        
         <span>
           <ul>
           <li className='flex flex-col pb-4'> 
