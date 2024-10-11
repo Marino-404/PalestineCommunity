@@ -12,7 +12,7 @@ const About = () => {
   };
 
   return (
-    <div id='About' className={`w-full h-auto xl:h-[115vh] flex flex-col items-center text-center xl:justify-start ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} z-10`}>
+    <div id='About' className={`w-full h-auto flex flex-col items-center text-center xl:justify-start ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} z-10`}>
       <div className={`w-[96%] xl:w-[55%] h-auto flex flex-row items-center justify-center xl:gap-20 pt-2 z-10`}>
         <button 
           className={`text-xl ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} hover:text-gradient font-bebas font-light flex justify-center`}

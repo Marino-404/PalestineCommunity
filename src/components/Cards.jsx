@@ -12,6 +12,7 @@ import { RiOrganizationChart } from "react-icons/ri";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { BiSolidInstitution } from "react-icons/bi";
 import { text } from 'framer-motion/client';
+import DivLineCards from '../assets/DivLineCards';
 
 const Cards = () => {
   const { mode } = useAppContext();
@@ -34,9 +35,17 @@ const Cards = () => {
   return (
     <section
       id="Connect"
-      className={'w-full h-auto flex flex-col items-center justify-center text-[#ffffffd9]  px-2 py-12 z-10 '}
+      className={'w-full h-auto flex flex-col items-center justify-center text-[#ffffffd9]  px-2  z-10 '}
     >
-      <div className="xl:w-[68%] w-full flex flex-wrap justify-center xl:gap-8 gap-3 z-10">
+      <div className='flex items-center justify-center ' >
+        <span className='flex items-center justify-center text-center text-4xl text-gradient font-bebas' >
+            Tu enlace con la Cultura, Historia y Resistencia. 
+        </span>
+      </div>
+
+      <DivLineCards />
+
+      <div className="xl:w-[68%] w-full flex flex-wrap justify-center py-8 xl:gap-8 gap-3 z-10">
         {[
           { title: 'Peliculas', className: 'card-1' },
           { title: 'Series', className: 'card-2' },
