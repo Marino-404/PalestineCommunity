@@ -50,32 +50,48 @@ const About = () => {
 
       <DivLineAbout />
 
-      <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-12 p-6 z-10`} style={{ display: activeSection === 'about' ? 'flex' : 'none' }}>
+      <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-12`} style={{ display: activeSection === 'about' ? 'flex' : 'none' }}>
 
-        <h4 className='text-md font-bold mt-8 mb-2'>Nuestra Misión</h4>
-        <span className='flex flex-row' >
-          <FaCircle />
-          Nuestra misión es crear una comunidad digital global que, a través de la tecnología y el acceso a contenido, impulse
-          la visibilidad de Palestina.
-        </span>
-        <span className='flex flex-row' >
-          <FaCircle />
-          Queremos que los usuarios se conecten, interactúen y aprendan, mientras apoyan una red
-          donde converjan la información, las voces y los talentos que defienden la identidad palestina.
-        </span>
+        <h4 className='text-md font-bold m-4'>Nuestra Misión</h4>
 
-        <h4 className='text-md font-bold m-2'>Quiénes Somos</h4>
-        <span className='felx flex-row' >
-          <FaCircle />
-          Connect Palestine es una plataforma digital innovadora diseñada para centralizar y compartir lo mejor de la cultura,
-          historia, gastronomía, arte y actualidad de Palestina.
-        </span>
-        <span className='flex flex-row' >
-          <FaCircle />
-          Un portal dinámico que conecta a personas de todo el mundo
-          interesadas en la riqueza de Palestina, y se convierta en una poderosa herramienta para fortalecer la narrativa de
-          resistencia palestina en el mundo digital.
-        </span>
+        <div className='flex flex-row gap-1 items-start ' >
+          <FaCircle className='text-xl' />
+          <span>
+              Nuestra misión es crear una comunidad digital global que, a través de la tecnología y el acceso a contenido, impulse
+              la visibilidad de Palestina.
+          </span>
+        </div>
+
+
+        <div className='flex flex-row gap-1 items-start ' >
+          <FaCircle className='text-xl' />
+          <span>
+              Queremos que los usuarios se conecten, interactúen y aprendan, mientras apoyan una red
+              donde converjan la información, las voces y los talentos que defienden la identidad palestina.
+          </span>
+        </div>
+
+
+        <h4 className='text-md font-bold m-4'>Quiénes Somos</h4>
+
+        <div className='flex flex-row gap-1 items-start ' >
+          <FaCircle className='text-xl' />
+          <span>
+              Connect Palestine es una plataforma digital innovadora diseñada para centralizar y compartir lo mejor de la cultura,
+              historia, gastronomía, arte y actualidad de Palestina.
+          </span>
+        </div>
+
+
+        <div className='flex flex-row gap-1 items-start ' >
+          <FaCircle className='text-xl' />
+          <span>
+              Un portal dinámico que conecta a personas de todo el mundo
+              interesadas en la riqueza de Palestina, y se convierta en una poderosa herramienta para fortalecer la narrativa de
+              resistencia palestina en el mundo digital.
+          </span>
+        </div>
+
       </div>
 
  
@@ -84,37 +100,37 @@ const About = () => {
         <span>
           <ul>
           <li className='flex flex-col pb-4'> 
-          <span className='font-bold p-2'>Biblioteca Digital Multimedia:</span>
+          <span className='font-bold p-2'>Biblioteca Digital Multimedia</span>
           <span>
             Un centro de contenidos con acceso a películas, documentales, series y más, todo centrado en la narrativa palestina.
           </span>
           </li>
           <li className='flex flex-col pb-4'>
-          <span className='font-bold p-2'>Explora la Cocina Palestina:</span>
+          <span className='font-bold p-2'>Explora la Cocina Palestina</span>
           <span>
             Un espacio donde chefs y foodies pueden descubrir y compartir recetas tradicionales, interactuando con la comunidad y conectándose a través de la gastronomía.
           </span>
         </li>
         <li className='flex flex-col pb-4'>
-          <span className='font-bold p-2'>Celebrities for Palestine:</span>
+          <span className='font-bold p-2'>Celebrities for Palestine</span>
           <span>
             Un espacio donde destacamos a personalidades públicas que muestran su apoyo y solidaridad con Palestina, amplificando su impacto en redes y medios.
           </span>
         </li>
         <li className='flex flex-col pb-4'>
-        <span className='font-bold p-2'>Arte y Poesía Digital:</span>
+        <span className='font-bold p-2'>Arte y Poesía Digital</span>
         <span>
           Una galería virtual que celebra el talento de artistas palestinos, conectando a los usuarios con la vibrante escena artística y poética de Palestina.
         </span>
       </li>
       <li className='flex flex-col pb-4'>
-        <span className='font-bold p-2'>Podcasts y Opiniones:</span>
+        <span className='font-bold p-2'>Podcasts y Opiniones</span>
         <span>
           Una sección dedicada a reseñas de podcasts, con análisis actuales sobre la cultura, política y resistencia palestina.
       </span>
       </li>
       <li className='flex flex-col pb-4'>
-    <span className='font-bold p-2'>Redes y Medios Sociales:</span>
+    <span className='font-bold p-2'>Redes y Medios Sociales</span>
     <span>
       Un radar que monitorea las principales cuentas y medios que están en la vanguardia de la narrativa digital sobre Palestina.
     </span>
