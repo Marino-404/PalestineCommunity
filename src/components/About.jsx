@@ -138,7 +138,10 @@ const About = () => {
       <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-12 p-6 z-10`} style={{ display: activeSection === 'community' ? 'flex' : 'none' }}>
         <h3 className='text-4xl text-gradient font-bold mb-6'>Sumate a la Comunidad</h3>
         <span className='mb-6' >
-          Te invitamos a ser parte de esta comunidad en constante expansión, donde cada conexión amplifica las voces palestinas y refuerza una red de resistencia. Conéctate, colabora y comparte.
+          Te invitamos a ser parte de esta comunidad en constante expansión, donde cada conexión amplifica las voces palestinas y refuerza una red de resistencia.
+        </span>
+        <span>
+          Conéctate, colabora y comparte.
           ¡Hagamos que el mundo escuche a Palestina!
         </span>
         <Contact />
