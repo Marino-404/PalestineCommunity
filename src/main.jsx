@@ -6,6 +6,7 @@ import App from './App.jsx';
 import BackGroundPage from './assets/BackGroundPage.jsx';
 import './index.css'; 
 import AnimatedLines from './assets/AnimatedLines.jsx';
+import { BrowserRouter } from 'react-router-dom';
 
 
 const rootElement = document.getElementById('root');
@@ -14,9 +15,11 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <AppProvider>
-      <BackGroundPage />
-      <AnimatedLines />
-      <App />
+      <BrowserRouter>
+        <BackGroundPage />
+        <AnimatedLines />
+        <App />
+      </BrowserRouter>
     </AppProvider>
   </StrictMode>
 );

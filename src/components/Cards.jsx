@@ -13,6 +13,7 @@ import { MdOutlineTravelExplore } from "react-icons/md";
 import { BiSolidInstitution } from "react-icons/bi";
 import { text } from 'framer-motion/client';
 import DivLineCards from '../assets/DivLineCards';
+import { Link } from 'react-router-dom';
 
 const Cards = () => {
   const { mode } = useAppContext();
@@ -47,29 +48,29 @@ const Cards = () => {
 
       <div className="xl:w-[68%] w-full flex flex-wrap justify-center py-8 xl:gap-8 gap-3 z-10">
         {[
-          { title: 'Peliculas', className: 'card-1' },
-          { title: 'Series', className: 'card-2' },
-          { title: 'Cocina', className: 'card-3' },
-          { title: 'Spotify', className: 'card-4' },
-          { title: 'Instagram', className: 'card-5' },
-          { title: 'Arte', className: 'card-6' },
-          { title: 'Celebridades', className: 'card-7' },
-          { title: 'Podcast', className: 'card-8' },
-          { title: 'Media', className: 'card-9' },
-          { title: 'Ong', className: 'card-10' },
-          { title: 'Turismo', className: 'card-11' },
-          { title: 'Instituciones', className: 'card-12' },
+          { title: 'Peliculas', className: 'card-1', path: '/cards/detail1' },
+          { title: 'Series', className: 'card-2', path: '/cards/detail2' },
+          { title: 'Cocina', className: 'card-3', path: '/cards/detail3' },
+          { title: 'Spotify', className: 'card-4', path: '/cards/detail4' },
+          { title: 'Instagram', className: 'card-5', path: '/cards/detail5' },
+          { title: 'Arte', className: 'card-6', path: '/cards/detail6' },
+          { title: 'Celebridades', className: 'card-7', path: '/cards/detail7' },
+          { title: 'Podcast', className: 'card-8', path: '/cards/detail8' },
+          { title: 'Media', className: 'card-9', path: '/cards/detail9' },
+          { title: 'Ong', className: 'card-10', path: '/cards/detail10' },
+          { title: 'Turismo', className: 'card-11', path: '/cards/detail11' },
+          { title: 'Instituciones', className: 'card-12', path: '/cards/detail12' },
         ].map((card, index) => (
-          <a
+          <Link
             key={index}
-            href="#"
-            className={`w-[47%] md:w-1/4 xl:w-1/4 xl:h-[6vw] h-[21vw] flex justify-center items-center relative ${card.className} rounded-lg` }
+            to={card.path}
+            className={`w-[47%] md:w-1/4 xl:w-1/4 xl:h-[6vw] h-[21vw] flex justify-center items-center relative ${card.className} rounded-lg`}
           >
             <h1 className="absolute text-lg font-normal">{card.title}</h1>
-            <span className='xl:hover:scale-125 transition-transform duration-300 xl:py-2 xl:px-24' >
-                {cardIcons[card.title]}
+            <span className='xl:hover:scale-125 transition-transform duration-300 xl:py-2 xl:px-24'>
+              {cardIcons[card.title]}
             </span>
-          </a>
+          </Link>
         ))}
       </div>
     </section>
