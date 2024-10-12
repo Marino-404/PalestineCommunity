@@ -1,12 +1,13 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
-
 const AppContext = createContext(undefined);
 
 export const AppProvider = ({ children }) => {
   const [mode, setMode] = useState(() => {
     return localStorage.getItem('mode') === 'true';
   });
+  
+  const [activeSection, setActiveSection] = useState('about'); // Nuevo estado
 
   const toggleMode = () => {
     setMode(prev => {
@@ -16,12 +17,16 @@ export const AppProvider = ({ children }) => {
     });
   };
 
+  const changeSection = (section) => {
+    setActiveSection(section); // Nueva función para cambiar la sección
+  };
+
   useEffect(() => {
     document.body.className = mode ? 'dark' : 'light'; 
   }, [mode]);
 
   return (
-    <AppContext.Provider value={{ mode, toggleMode }}>
+    <AppContext.Provider value={{ mode, toggleMode, activeSection, changeSection }}>
       {children}
     </AppContext.Provider>
   );
@@ -34,5 +39,4 @@ export const useAppContext = () => {
   }
   return context;
 };
-
 
