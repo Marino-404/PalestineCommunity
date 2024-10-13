@@ -16,22 +16,22 @@ const About = () => {
   });
 
   return (
-    <div id='About' className={`w-full h-auto flex flex-col items-center text-center xl:justify-start ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'}`}>
+    <div className={`w-full h-auto flex flex-col items-center text-center xl:justify-start ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'}`}>
       <div className={`w-[96%] xl:w-[55%] h-auto flex flex-row items-center justify-center xl:gap-20 z-10`}>
-        <button className={buttonClasses} style={activeStyle('about')} onClick={() => changeSection('about')}>
+        <button id='About' className={buttonClasses} style={activeStyle('about')} onClick={() => changeSection('about')}>
           Sobre Connect Palestine
         </button>
-        <button className={buttonClasses} style={activeStyle('projects')} onClick={() => changeSection('projects')}>
+        <button id='Projects' className={buttonClasses} style={activeStyle('projects')} onClick={() => changeSection('projects')}>
           Nuestros proyectos
         </button>
-        <button className={buttonClasses} style={activeStyle('community')} onClick={() => changeSection('community')}>
+        <button id='Community' className={buttonClasses} style={activeStyle('community')} onClick={() => changeSection('community')}>
           Sumate a la Comunidad
         </button>
       </div>
 
       <DivLineAbout />
 
-      {/* Sección Sobre */}
+    
       {activeSection === 'about' && (
         <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-12`}>
           <h4 className='text-xl font-bold mt-2 mb-2'>Nuestra Misión</h4>
@@ -44,7 +44,7 @@ const About = () => {
         </div>
       )}
 
-      {/* Sección Proyectos */}
+
       {activeSection === 'projects' && (
         <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-12 p-6 z-10`}>
           <ul>
@@ -83,7 +83,7 @@ const About = () => {
         </div>
       )}
 
-      {/* Sección Comunidad */}
+    
       {activeSection === 'community' && (
         <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-12 p-6 z-10`}>
           <h3 className='text-4xl text-gradient font-bold mb-6'>Sumate a la Comunidad</h3>

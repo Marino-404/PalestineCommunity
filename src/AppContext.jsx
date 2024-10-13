@@ -7,7 +7,7 @@ export const AppProvider = ({ children }) => {
     return localStorage.getItem('mode') === 'true';
   });
   
-  const [activeSection, setActiveSection] = useState('about'); // Nuevo estado
+  const [activeSection, setActiveSection] = useState('about'); 
 
   const toggleMode = () => {
     setMode(prev => {
@@ -18,7 +18,7 @@ export const AppProvider = ({ children }) => {
   };
 
   const changeSection = (section) => {
-    setActiveSection(section); // Nueva función para cambiar la sección
+    setActiveSection(section); 
   };
 
   useEffect(() => {
