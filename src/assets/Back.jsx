@@ -5,7 +5,7 @@ import { IoIosArrowBack } from "react-icons/io";
 
 const Back = () => {
   return (
-    <div className='w-full h-auto flex justify-start pl-60 pt-12'>
+    <div className='w-full h-auto flex justify-start xl:pl-60 pl-20 pt-12 '>
       <Link 
         className='flex font-poppins font-normal items-center text-md'
         to={'/'}>
