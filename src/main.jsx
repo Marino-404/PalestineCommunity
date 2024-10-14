@@ -4,8 +4,8 @@ import { StrictMode } from 'react';
 import { AppProvider } from './AppContext.jsx'; 
 import App from './App.jsx';
 import BackGroundPage from './assets/BackGroundPage.jsx';
-import './index.css'; 
 import AnimatedLines from './assets/AnimatedLines.jsx';
+import './index.css'; 
 import { BrowserRouter } from 'react-router-dom';
 
 
