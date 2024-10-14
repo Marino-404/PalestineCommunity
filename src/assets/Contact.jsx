@@ -58,8 +58,8 @@ const Contact = () => {
     };
 
     return (
-        <div className=" w-full h-[50vh] xl:h-[55vh] flex flex-col items-center justify-center dark:text-white">
-            <h2 id='Contact' className={`text-xl font-poppins font-bold flex justify-center mb-4 ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'}`}>¡Ponete en contacto!</h2>
+        <div className=" w-full h-auto flex flex-col items-center justify-center dark:text-white">
+            <h2 id='Contact' className={`text-md underline font-poppins font-bold flex justify-center my-4 ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'}`}>¡Ponete en contacto!</h2>
             <form ref={formRef} onSubmit={handleSubmit} className='w-[100%] xl:w-[75%] flex flex-col items-center'>
                 <input 
                     type="text"
@@ -82,12 +82,21 @@ const Contact = () => {
                     onChange={(e) => setMessage(e.target.value)}
                     cols="30"
                     rows="10" 
-                    className='bg-gray-100 dark:bg-[#131313] w-[90%] h-[20vw] xl:h-[6vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal resize-none placeholder:text-sm' 
+                    className='bg-gray-100 dark:bg-[#131313] w-[90%] h-[20vw] xl:h-[6vw] rounded-lg p-1 focus:outline-none px-4 font-poppins font-normal resize-none placeholder:text-sm' 
                 ></textarea>
-                <Button />
-                {warning && <div className="flex text-sm text-gradient font-poppins font-semibold">{warning}</div>}
-                {sent && <div className="flex text-sm text-gradient font-poppins font-semibold">¡Enviado correctamente!</div>}
-                {sending && <div className="flex text-sm text-gradient font-poppins font-semibold">Enviando...</div>}
+
+                <div className="flex flex-col items-center">
+                  <div className="flex text-sm m-4 font-poppins font-semibold">
+                    {warning && <div>{warning}</div>}
+                    {sent && <div>¡Enviado correctamente!</div>}
+                    {sending && <div>Enviando...</div>}
+                  </div>
+
+                  <div className='pt-4' >
+                    <Button />
+                  </div>
+                </div>
+                
             </form>
         </div>
     );
