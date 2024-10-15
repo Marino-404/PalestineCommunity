@@ -28,7 +28,7 @@ const Cards = () => {
     Celebridades: <BsFillPeopleFill className="text-6xl md:text-7xl opacity-10" />,
     Podcast: <FaPodcast className="text-6xl md:text-7xl opacity-10" />,
     Media: <IoPlayCircleSharp className="text-6xl md:text-7xl opacity-10" />,
-    Ong: <RiOrganizationChart className="text-6xl md:text-7xl opacity-10" />,
+    ONG: <RiOrganizationChart className="text-6xl md:text-7xl opacity-10" />,
     Turismo: <MdOutlineTravelExplore className="text-6xl md:text-7xl opacity-10" />,
     Instituciones: <BiSolidInstitution className="text-6xl md:text-7xl opacity-10" />,
   };
@@ -57,7 +57,7 @@ const Cards = () => {
           { title: 'Celebridades', className: 'card-7', path: '/cards/detail7' },
           { title: 'Podcast', className: 'card-8', path: '/cards/detail8' },
           { title: 'Media', className: 'card-9', path: '/cards/detail9' },
-          { title: 'Ong', className: 'card-10', path: '/cards/detail10' },
+          { title: 'ONG', className: 'card-10', path: '/cards/detail10' },
           { title: 'Turismo', className: 'card-11', path: '/cards/detail11' },
           { title: 'Instituciones', className: 'card-12', path: '/cards/detail12' },
         ].map((card, index) => (
