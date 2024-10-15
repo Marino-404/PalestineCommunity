@@ -5,13 +5,7 @@ import { div } from 'framer-motion/client';
 const CardDetail1 = () => {
   return (
     <div>
-      
-      <Back />
-    
-      <div className='w-full flex text-center items-center justify-center' >
-        <h1>Películas</h1>
-      </div>
-
+      <Back SectionName={'Peliculas'} />
     </div>
   );
 };

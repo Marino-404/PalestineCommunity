@@ -19,7 +19,7 @@ const About = () => {
   });
 
   return (
-    <div className={`w-full h-auto flex flex-col items-center text-center xl:justify-start ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'}`}>
+    <div className={`w-full h-auto flex flex-col items-center text-center xl:justify-start ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} z-50`}>
 
       <div className={`w-[96%] xl:w-[55%] h-auto flex flex-row items-center justify-center xl:gap-20 gap-6 z-10`}>
         <button id='About' className={buttonClasses} style={activeStyle('about')} onClick={() => changeSection('about')}>

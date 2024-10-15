@@ -58,7 +58,7 @@ const Contact = () => {
     };
 
     return (
-        <div className=" w-full h-auto flex flex-col items-center justify-center dark:text-white">
+        <div className=" w-full h-auto flex flex-col items-center justify-center dark:text-white z-50">
             <h2 id='Contact' className={`text-md underline font-poppins font-bold flex justify-center my-4 ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'}`}>¡Ponete en contacto!</h2>
             <form ref={formRef} onSubmit={handleSubmit} className='w-[100%] xl:w-[75%] flex flex-col items-center'>
                 <input 
