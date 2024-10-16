@@ -14,6 +14,7 @@ import { BiSolidInstitution } from "react-icons/bi";
 import { text } from 'framer-motion/client';
 import DivLineCards from '../assets/DivLineCards';
 import { Link } from 'react-router-dom';
+import Video from '../assets/Video';
 
 const Cards = () => {
   const { mode } = useAppContext();
@@ -45,6 +46,8 @@ const Cards = () => {
       </div>
 
       <DivLineCards />
+
+      <Video />      
 
       <div className="xl:w-[68%] w-full flex flex-wrap justify-center py-8 xl:gap-8 gap-3 z-10">
         {[
