@@ -11,7 +11,7 @@ const Back = ({SectionName}) => {
   const {mode} = useAppContext(); 
 
   return (
-    <div className={`w-full h-auto flex text-xs font-poppins font-normal text-center justify-center pt-4 ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'}`}>
+    <div className={`w-full h-auto flex text-sm font-poppins font-normal text-center justify-center pt-4 ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'}`}>
       <Link 
         className='flex items-center'
         to={'/'}>
