@@ -170,7 +170,6 @@ const About = () => {
 
         </div>
       )}
-      
     </div>
   );
 }

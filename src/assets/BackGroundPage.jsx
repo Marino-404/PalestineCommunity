@@ -1,8 +1,8 @@
 import React from "react";
-import { useAppContext } from '../AppContext'; // Asegúrate de que la ruta sea correcta
+import { useAppContext } from '../AppContext';
 
 function BackGroundPage() {
-  const { mode } = useAppContext(); // Accede al estado del modo
+  const { mode } = useAppContext();
 
   return (
     <div

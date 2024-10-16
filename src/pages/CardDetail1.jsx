@@ -1,14 +1,13 @@
 import React from 'react';
 import Back from '../assets/Back';
+import PhotoMovie from '../assets/PhotoMovie';
+import DivLineCards from '../assets/DivLineCards';
+import Footer from '../Components/Footer';
 import { div } from 'framer-motion/client';
 import img1 from "/src/images/peliculas/pelicula1.png"
 import img2 from "/src/images/peliculas/pelicula2.png"
 import img3 from "/src/images/peliculas/pelicula3.png"
 
-const PhotoStyle = {
-  width: '200px',
-  height: '200px',
-};
 
 const CardDetail1 = () => {
   return (
@@ -17,15 +16,14 @@ const CardDetail1 = () => {
         <Back SectionName={'Peliculas'} />
       </div>
       <section>
-        <div>
-           <img src={img2} alt="" />
-        </div>
-        <div>
-            <img src={img1} alt="" />
-        </div>
-        <div>
-            <img src={img3} alt="" />
-        </div>
+        <DivLineCards />
+        <PhotoMovie img={img2} />
+        <DivLineCards />
+        <PhotoMovie img={img1} />
+        <DivLineCards />
+        <PhotoMovie img={img3} />
+        <DivLineCards />
+        <Footer />
       </section>
     </>
   );
