@@ -2,7 +2,7 @@ import React from 'react';
 import Back from '../assets/Back';
 import PhotoMovie from '../assets/PhotoMovie';
 import DivLineCards from '../assets/DivLineCards';
-import Footer from '../Components/Footer';
+import Footer from '../components/Footer';
 import { div } from 'framer-motion/client';
 import img1 from "/src/images/peliculas/pelicula1.png"
 import img2 from "/src/images/peliculas/pelicula2.png"
