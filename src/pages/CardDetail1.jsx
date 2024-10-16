@@ -8,23 +8,32 @@ import img1 from "/src/images/peliculas/pelicula1.png"
 import img2 from "/src/images/peliculas/pelicula2.png"
 import img3 from "/src/images/peliculas/pelicula3.png"
 
+export const SectionStyle = 'flex flex-col xl:flex-row justify-center items-center xl:justify-start xl:items-start md:items-start md:justify-start ';
 
 const CardDetail1 = () => {
+
   return (
-    <>
-      <div>
-        <Back SectionName={'Peliculas'} />
-      </div>
-      <section>
-        <DivLineCards />
+   <>
+    <div>
+      <Back SectionName={'Peliculas'} />
+    </div>
+
+    <div className='w-[98%] xl:w-[68%] xl:mx-auto md:mx-auto flex flex-col' >
+      <DivLineCards />
+      <section className={SectionStyle} >
         <PhotoMovie img={img2} />
-        <DivLineCards />
-        <PhotoMovie img={img1} />
-        <DivLineCards />
-        <PhotoMovie img={img3} />
-        <DivLineCards />
-        <Footer />
       </section>
+      <DivLineCards />
+      <section className={SectionStyle} >
+        <PhotoMovie img={img1} />
+      </section>
+      <DivLineCards />
+      <section className={SectionStyle} >
+        <PhotoMovie img={img3} />
+      </section>
+      <DivLineCards />
+      <Footer />
+    </div>
     </>
   );
 };

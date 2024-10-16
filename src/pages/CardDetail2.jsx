@@ -3,6 +3,7 @@ import Back from '../assets/Back';
 import PhotoMovie from '../assets/PhotoMovie';
 import DivLineCards from '../assets/DivLineCards';
 import Footer from '../components/Footer';
+import { SectionStyle } from './CardDetail1';
 
 import img1 from "/src/images/series/serie1.png"
 import img2 from "/src/images/series/serie2.png"
@@ -17,26 +18,41 @@ const CardDetail2 = () => {
   return (
     <>
       <div>
-        <Back SectionName={'Peliculas'} />
+        <Back SectionName={'Series'} />
       </div>
-      <section>
-        <DivLineCards />
-        <PhotoMovie img={img1} />
-        <DivLineCards />
+
+      <div className='w-[98%] xl:w-[68%] mx-auto flex flex-col' >
+      <DivLineCards />
+      <section className={SectionStyle} >
         <PhotoMovie img={img2} />
-        <DivLineCards />
-        <PhotoMovie img={img3} />
-        <DivLineCards />
-        <PhotoMovie img={img4} />
-        <DivLineCards />
-        <PhotoMovie img={img5} />
-        <DivLineCards />
-        <PhotoMovie img={img6} />
-        <DivLineCards />
-        <PhotoMovie img={img7} />
-        <DivLineCards />
-        <Footer />
       </section>
+      <DivLineCards />
+      <section className={SectionStyle} >
+        <PhotoMovie img={img1} />
+      </section>
+      <DivLineCards />
+      <section className={SectionStyle} >
+        <PhotoMovie img={img3} />
+      </section>
+      <DivLineCards />
+      <section className={SectionStyle} >
+        <PhotoMovie img={img4} />
+      </section>
+      <DivLineCards />
+      <section className={SectionStyle} >
+        <PhotoMovie img={img5} />
+      </section>
+      <DivLineCards />
+      <section className={SectionStyle} >
+        <PhotoMovie img={img6} />
+      </section>
+      <DivLineCards />
+      <section className={SectionStyle} >
+        <PhotoMovie img={img7} />
+      </section>
+      <DivLineCards />
+      <Footer />
+    </div>
     </>
   );
 };
