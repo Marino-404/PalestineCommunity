@@ -8,7 +8,7 @@ const Video = () => {
 
   return (
     <>
-      <div className='w-[98%] h-[48vw] xl:h-[20vw] xl:w-[40%] md:h-[20vw] md:w-[40%] flex flex-col  z-50 mb-6 gap-4' >
+      <div className='w-[98%] h-[48vw] xl:h-[20vw] xl:w-[40%] md:h-[24vw] md:w-[40%] flex flex-col  z-50 mb-6 gap-4' >
           <span className={`items-start text-center justify-start font-poppins font-semibold ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'}`} >
             Últimos contenidos
           </span>
