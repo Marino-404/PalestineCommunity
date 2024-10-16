@@ -14,7 +14,7 @@ import { BiSolidInstitution } from "react-icons/bi";
 import { text } from 'framer-motion/client';
 import DivLineCards from '../assets/DivLineCards';
 import { Link } from 'react-router-dom';
-import Video from '../assets/Video';
+import New from '../assets/New';
 
 const Cards = () => {
   const { mode } = useAppContext();
@@ -39,7 +39,7 @@ const Cards = () => {
       id="Connect"
       className={'w-full h-auto flex flex-col items-center justify-center text-[#ffffffd9]  px-2  z-10 '}
     >
-      <div className='flex items-center justify-center ' >
+      <div className='flex items-center justify-center' >
         <span className='flex items-center justify-center text-center text-4xl text-gradient font-bebas' >
             Tu enlace con la Cultura, Historia y Resistencia. 
         </span>
@@ -47,7 +47,9 @@ const Cards = () => {
 
       <DivLineCards />
 
-      <Video />      
+      <New />      
+
+      <DivLineCards />
 
       <div className="xl:w-[68%] w-full flex flex-wrap justify-center py-8 xl:gap-8 gap-3 z-10">
         {[

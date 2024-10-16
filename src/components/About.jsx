@@ -43,7 +43,7 @@ const About = () => {
             <div className='text-xl mr-1'>
             <CiCircleChevDown />
             </div>
-            <h4 className='text-xl font-bold my-2'>Nuestra Misión</h4>
+            <h4 className='text-xl text-gradient font-bold my-2'>Nuestra Misión</h4>
           </div>
 
           <div className='flex flex-row items-center text-start justify-start mb-4'>
@@ -64,7 +64,7 @@ const About = () => {
             <div className='text-xl mr-1'>
             <CiCircleChevDown />
             </div>
-            <h4 className='text-xl font-bold my-2'>Quiénes Somos</h4>
+            <h4 className='text-xl text-gradient font-bold my-2'>Quiénes Somos</h4>
           </div>
  
           <div className='flex flex-row items-center text-start justify-start mb-4'>
@@ -92,7 +92,7 @@ const About = () => {
           <div className='text-xl mr-1'>
             <CiCircleChevDown />
           </div>
-          <h4 className='text-xl font-bold my-2'>Nuestros Proyectos</h4>
+          <h4 className='text-xl text-gradient font-bold my-2'>Nuestros Proyectos</h4>
         </div>
     
         <ul>
@@ -148,7 +148,7 @@ const About = () => {
               <div className='text-xl mr-1'>
                 <CiCircleChevDown />
               </div>
-              <h4 className='text-xl font-bold my-2'>Sumate a la Comunidad</h4>
+              <h4 className='text-xl text-gradient font-bold my-2'>Sumate a la Comunidad</h4>
             </div>
 
             <div className='flex flex-row items-center text-start justify-start mb-4'>
@@ -162,7 +162,7 @@ const About = () => {
               <div className='text-2xl mr-2' >
                 <BsArrowRightShort />
               </div>
-              <span>Conéctate, colabora y comparte. ¡Hagamos que el mundo escuche a Palestina!</span>
+              <span>¡Conectate, colaborá y compartí!<br />Hagamos que el mundo escuche a Palestina.</span>
             </div>
 
             <Contact />
@@ -170,6 +170,7 @@ const About = () => {
 
         </div>
       )}
+      
     </div>
   );
 }
