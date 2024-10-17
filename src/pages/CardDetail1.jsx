@@ -15,8 +15,8 @@ import { FaPlayCircle } from "react-icons/fa";
 
 
 export const SectionStyle = 'flex flex-col xl:flex-row justify-center items-center xl:justify-center xl:items-start md:items-start md:justify-start ';
-export const TitleStyle = 'font-poppins font-bold text-3xl pt-4 xl-pt-0'
-export const DescriptionStyle = 'font-poppins font-normal text-xl py-2 px-8'
+export const TitleStyle = 'font-poppins font-bold text-3xl pt-4'
+export const DescriptionStyle = 'font-poppins font-normal text-xl py-0 px-8'
 
 const CardDetail1 = () => {
 
