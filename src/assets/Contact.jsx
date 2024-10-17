@@ -34,7 +34,7 @@ const Contact = () => {
         } else if (!validateEmail(email)) {
             setWarning("Email inválido.");
         } else {
-            const serviceID = "service_1234";
+            const serviceID = "service_1889";
             const templateID = "template_1234";
 
             setSending(true);
@@ -64,6 +64,7 @@ const Contact = () => {
                 <input 
                     type="text"
                     placeholder='Nombre'
+                    name='name'
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     className='bg-gray-100 dark:bg-[#131313] w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm' 
@@ -71,12 +72,14 @@ const Contact = () => {
                 <input 
                     type="text" 
                     placeholder='Email'
+                    name='email'
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className='bg-gray-100 dark:bg-[#131313] border-5 w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm' 
                 />
                 <textarea
                     placeholder='Escribe tu mensaje'
+                    name="message"
                     id="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
