@@ -142,7 +142,7 @@ const CardDetail2 = () => {
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
-            GAZA
+            El color de los Olivos
           </h1>
           <span className={DescriptionStyle} >
             Diversos personajes muestran la vulneración de derechos humanos que sufre diariamente la población palestina en la Franja de Gaza y la situación de bloqueo y posguerra en la que trata de sobrevivir.
@@ -168,7 +168,7 @@ const CardDetail2 = () => {
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
-            El color de los Olivos
+            Inch Allah
           </h1>
           <span className={DescriptionStyle} >
             La familia Amer vive rodeada por el muro en Cisjordania, puertas electrificadas, candados y la presencia constante de soldados. Se revelan sus luchas constantes y los pequeños detalles de su vida.
@@ -194,7 +194,7 @@ const CardDetail2 = () => {
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
-            Inch Allah
+            GAZA
           </h1>
           <span className={DescriptionStyle} >
             Chloe es una joven tocóloga que se ocupa de mujeres embarazadas bajo la supervisión de Michael, un médico francés, en un ambulatorio improvisado en un campo de refugiados de Cisjordania. Debe enfrentarse a diario a los controles y al conflicto que afectan a la vida de las personas.
