@@ -5,8 +5,9 @@ import DivLine from "./assets/DivLine.jsx";
 import About from "./components/About.jsx";
 import Footer from "./components/Footer.jsx";
 import Main from "./components/Main.jsx";
+import ScrollToTop from "./assets/ScrollToTop.jsx";
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Router } from 'react-router-dom';
 import CardDetail1 from './pages/CardDetail1.jsx';
 import CardDetail2 from './pages/CardDetail2.jsx'; 
 import CardDetail3 from './pages/CardDetail3.jsx'; 
@@ -22,6 +23,8 @@ import CardDetail12 from './pages/CardDetail12.jsx';
 
 function App() {
   return (
+    <>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={
         <>
@@ -50,6 +53,7 @@ function App() {
       <Route path="/cards/detail11" element={<CardDetail11 />} />
       <Route path="/cards/detail12" element={<CardDetail12 />} />
     </Routes>
+    </>
   );
 }
 
