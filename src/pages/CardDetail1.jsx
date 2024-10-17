@@ -2,7 +2,7 @@ import React from 'react';
 import { useAppContext } from '../AppContext.jsx';
 import Back from '../assets/Back';
 import PhotoMovie from '../assets/PhotoMovie';
-import DivLineCards from '../assets/DivLineCards';
+import DivLinePages from '../assets/DivLinePages.jsx';
 import Footer from '../components/Footer';
 import { div } from 'framer-motion/client';
 import img1 from "/src/images/peliculas/pelicula1.png"
@@ -28,8 +28,9 @@ const CardDetail1 = () => {
       <Back SectionName={'Peliculas'} />
     </div>
 
-    <div className={`w-[98%] xl:w-[68%] xl:mx-auto md:mx-auto flex flex-col ${ mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} z-50`} >
-      <DivLineCards />
+    <div className={`w-[98%] xl:w-[60%] xl:mx-auto md:mx-auto flex flex-col ${ mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} z-50`} >
+      
+      <DivLinePages />
 
       <div className='flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
@@ -49,13 +50,13 @@ const CardDetail1 = () => {
             <FaStar />
             <FaStarHalfAlt />
           </div>
-          <a href='https://www.netflix.com/ar/title/81443440?source=35&preventIntent=true' target="_blank" rel="noopener noreferrer" className='text-5xl' >
+          <a href='https://www.netflix.com/search?q=200%20metros&jbv=81443440' target="_blank" rel="noopener noreferrer" className='text-5xl' >
             <FaPlayCircle />
           </a>
         </div>
       </div>
 
-      <DivLineCards />
+      <DivLinePages />
 
       <div className='flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
@@ -66,7 +67,7 @@ const CardDetail1 = () => {
             La sal de este mar
           </h1>
           <span className={DescriptionStyle} >
-            Soraya tiene veintiocho años. Nació y se educó en Brooklyn, pero ha decidido regresar a Palestina, país del que su familia tuvo que exiliarse en 1948. Desde su llegada a Ramallah, intenta recuperar el dinero de sus abuelos. Por su parte Emad, nacido en los territorios palestinos, ha conocido toda su vida la ocupación y la realidad palestina, y tiene como máximo sueño obtener un visado para ir a estudiar a Canadá y marcharse de allí.  
+            Soraya nació y se educó en Brooklyn, pero ha decidido regresar a Palestina, país del que su familia tuvo que exiliarse en 1948. Por su parte Emad, nacido en los territorios palestinos, ha conocido toda su vida la ocupación y la realidad palestina, y sueña con obtener un visado para ir a estudiar a Canadá y marcharse de allí.  
           </span>
           <div className='flex flex-row text-xl' >
             <FaStar />
@@ -81,7 +82,7 @@ const CardDetail1 = () => {
         </div>
       </div>
 
-      <DivLineCards />
+      <DivLinePages />
 
       <div className='flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
@@ -107,7 +108,8 @@ const CardDetail1 = () => {
         </div>
       </div>
 
-      <DivLineCards />
+      <DivLinePages />
+
       <Footer />
     </div>
     </>

@@ -2,7 +2,7 @@ import React from 'react';
 import { useAppContext } from '../AppContext';
 import Back from '../assets/Back';
 import PhotoMovie from '../assets/PhotoMovie';
-import DivLineCards from '../assets/DivLineCards';
+import DivLinePages from '../assets/DivLinePages';
 import Footer from '../components/Footer';
 import { SectionStyle, TitleStyle, DescriptionStyle } from './CardDetail1';
 import { FaStarHalfAlt } from "react-icons/fa";
@@ -30,7 +30,7 @@ const CardDetail2 = () => {
     </div>
 
     <div className={`w-[98%] xl:w-[68%] xl:mx-auto md:mx-auto flex flex-col ${ mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} z-50`} >
-      <DivLineCards />
+      <DivLinePages />
 
       <div className='flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
@@ -56,7 +56,7 @@ const CardDetail2 = () => {
         </div>
       </div>
 
-      <DivLineCards />
+      <DivLinePages />
 
       <div className='flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
@@ -82,7 +82,7 @@ const CardDetail2 = () => {
         </div>
       </div>
 
-      <DivLineCards />
+      <DivLinePages />
 
       <div className='flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
@@ -108,7 +108,7 @@ const CardDetail2 = () => {
         </div>
       </div>
 
-      <DivLineCards />
+      <DivLinePages />
 
       <div className='flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
@@ -134,7 +134,7 @@ const CardDetail2 = () => {
         </div>
       </div>
 
-      <DivLineCards />
+      <DivLinePages />
 
       <div className='flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
@@ -160,7 +160,7 @@ const CardDetail2 = () => {
         </div>
       </div>
 
-      <DivLineCards />
+      <DivLinePages />
 
       <div className='flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
@@ -186,7 +186,7 @@ const CardDetail2 = () => {
         </div>
       </div>
 
-      <DivLineCards />
+      <DivLinePages />
 
       <div className='flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
@@ -212,7 +212,7 @@ const CardDetail2 = () => {
         </div>
       </div>
 
-      <DivLineCards />
+      <DivLinePages />
 
       <Footer />
     </div>
