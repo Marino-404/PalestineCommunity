@@ -32,7 +32,7 @@ const CardDetail2 = () => {
     <div className={`w-[98%] xl:w-[68%] xl:mx-auto md:mx-auto flex flex-col ${ mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} z-50`} >
       <DivLinePages />
 
-      <div className='flex xl:flex-row flex-col' >
+      <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
           <PhotoMovie img={img1} />
         </section>
@@ -58,7 +58,7 @@ const CardDetail2 = () => {
 
       <DivLinePages />
 
-      <div className='flex xl:flex-row flex-col' >
+      <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
           <PhotoMovie img={img2} />
         </section>
@@ -84,7 +84,7 @@ const CardDetail2 = () => {
 
       <DivLinePages />
 
-      <div className='flex xl:flex-row flex-col' >
+      <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
           <PhotoMovie img={img3} />
         </section>
@@ -110,7 +110,7 @@ const CardDetail2 = () => {
 
       <DivLinePages />
 
-      <div className='flex xl:flex-row flex-col' >
+      <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
           <PhotoMovie img={img4} />
         </section>
@@ -136,7 +136,7 @@ const CardDetail2 = () => {
 
       <DivLinePages />
 
-      <div className='flex xl:flex-row flex-col' >
+      <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
           <PhotoMovie img={img5} />
         </section>
@@ -162,7 +162,7 @@ const CardDetail2 = () => {
 
       <DivLinePages />
 
-      <div className='flex xl:flex-row flex-col' >
+      <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
           <PhotoMovie img={img6} />
         </section>
@@ -188,7 +188,7 @@ const CardDetail2 = () => {
 
       <DivLinePages />
 
-      <div className='flex xl:flex-row flex-col' >
+      <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
           <PhotoMovie img={img7} />
         </section>
