@@ -9,6 +9,19 @@
 @tailwind utilities;
 
 
+::-webkit-scrollbar {
+  width: 4px;
+  height: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #60723f;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #778F43;
+}
+
 .infiniteMove {
   animation: infiniteMove 7s ease-in-out infinite;
 }
