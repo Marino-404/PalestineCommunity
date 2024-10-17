@@ -1,14 +1,15 @@
 import React from 'react'
-import { useAppContext } from '../AppContext';
 import { Link } from 'react-router-dom'
 import { IoIosArrowBack } from "react-icons/io";
-import { BsArrowRightShort } from "react-icons/bs";
+import { useAppContext } from '../AppContext';
+
+
 
 
 
 const Back = ({SectionName}) => {
 
-  const {mode} = useAppContext(); 
+  const {mode} = useAppContext();
 
   return (
     <div className={`w-full h-auto flex text-sm font-poppins font-normal text-center justify-center pt-4 ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'}`}>
