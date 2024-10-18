@@ -9,7 +9,7 @@ const Hero = () => {
   const { mode } = useAppContext();
 
   return (
-    <section id='Home' className='w-full  xl:h-[62vh] flex flex-col items-center font-poppins ' >
+    <section id='Home' className='w-full  xl:h-[62vh] flex flex-col items-center font-poppins animate-fade-down animate-duration-[1000ms]' >
       <div className=' w-full md:w-[80%] xl:h-[67vh] flex flex-col items-center  font-poppins  xl:pt-[10vh]' >
         <div className='w-[100%] flex justify-center items-center p-4' >
             <Logo />

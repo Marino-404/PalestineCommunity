@@ -69,7 +69,7 @@ const Cards = () => {
           <Link
             key={index}
             to={card.path}
-            className={`w-[47%] md:w-1/4 xl:w-1/4 xl:h-[6vw] h-[21vw] flex justify-center items-center relative ${card.className} rounded-lg`}
+            className={`w-[47%] md:w-1/4 xl:w-1/4 xl:h-[6vw] h-[21vw] flex justify-center items-center relative ${card.className} rounded-md`}
           >
             <h1 className="absolute text-lg font-normal">{card.title}</h1>
             <span className='xl:hover:scale-125 transition-transform duration-300 xl:py-2 xl:px-24'>

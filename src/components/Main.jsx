@@ -6,7 +6,7 @@ import Connect from '../assets/Connect.jsx';
 
 const Main = () => {
   return (
-    <main className='w-[98%] xl:w-full md:h-[30vw] h-[95vw] m-auto flex flex-col items-center justify-center' >
+    <main className='w-[98%] xl:w-full md:h-[30vw] h-[95vw] m-auto flex flex-col items-center justify-center animate-fade-down animate-duration-[1000ms]' >
       <CarouselOne />
       <Connect />
       <CarouselTwo />
