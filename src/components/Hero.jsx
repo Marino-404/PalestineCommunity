@@ -17,7 +17,6 @@ const Hero = () => {
         <div className={`xl:w-1/2 w-[100%] flex flex-col items-center justify-center text-center ${mode ? 'text-custom-white' : 'text-custom-black'}`}  >
             <h1 className='text-5xl xl:text-6xl text-gradient font-bebas font-light flex text-center justify-center xl:justify-start xl:text-start' >Connect Palestine</h1>  
             <h2 className='text-3xl font-poppins font-light xl:pb-2 pb-4'>Community</h2> 
-            <h3>hola hola hola</h3>
             <a className='text-2xl flex justify-center items-center'  href="#Connect"><AiOutlineDown className='animate-bounce animate-infinite animate-ease-in-out' /></a>
         </div>
       </div>
