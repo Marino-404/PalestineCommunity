@@ -52,7 +52,7 @@ const Header = () => {
               onClick={toggleMode}
               className={`${
                 mode ? "bottom-[200px] xl:top-[18px]" : "bottom-[-400px] xl:top-[-150px]"
-                } cursor-pointer transition-all duration-300 absolute h-[20px] w-[20px]`} 
+                } cursor-pointer transition-all duration-300 absolute w-[30px] h-[30px] xl:h-[20px] xl:w-[20px]`} 
             />
         </div>
       </nav>
