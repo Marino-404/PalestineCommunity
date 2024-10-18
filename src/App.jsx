@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useAppContext } from "./AppContext";
 import Cards from "./components/Cards.jsx";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
@@ -20,40 +21,47 @@ import CardDetail9 from './pages/CardDetail9.jsx';
 import CardDetail10 from './pages/CardDetail10.jsx'; 
 import CardDetail11 from './pages/CardDetail11.jsx'; 
 import CardDetail12 from './pages/CardDetail12.jsx'; 
+import { div } from 'framer-motion/m';
 
 function App() {
+
+  const { mode } = useAppContext();
+
   return (
-    <>
-    <ScrollToTop />
-    <Routes>
-      <Route path="/" element={
-        <>
-          <Header />
-          <Hero />
-          <DivLine />
-          <Main />
-          <DivLine />
-          <Cards />
-          <DivLine />
-          <About />
-          <DivLine />
-          <Footer />
-        </>
-      } />
-      <Route path="/cards/detail1" element={<CardDetail1 />} />
-      <Route path="/cards/detail2" element={<CardDetail2 />} />
-      <Route path="/cards/detail3" element={<CardDetail3 />} />
-      <Route path="/cards/detail4" element={<CardDetail4 />} />
-      <Route path="/cards/detail5" element={<CardDetail5 />} />
-      <Route path="/cards/detail6" element={<CardDetail6 />} />
-      <Route path="/cards/detail7" element={<CardDetail7 />} />
-      <Route path="/cards/detail8" element={<CardDetail8 />} />
-      <Route path="/cards/detail9" element={<CardDetail9 />} />
-      <Route path="/cards/detail10" element={<CardDetail10 />} />
-      <Route path="/cards/detail11" element={<CardDetail11 />} />
-      <Route path="/cards/detail12" element={<CardDetail12 />} />
-    </Routes>
-    </>
+
+    
+
+    <div className={`${mode ? 'selection:bg-[#ffffffc2] selection:text-[#000000c2]' : 'selection:bg-[#000000c2] selection:text-[#ffffffc2]' }`}>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Header />
+              <Hero />
+              <DivLine />
+              <Main />
+              <DivLine />
+              <Cards />
+              <DivLine />
+              <About />
+              <DivLine />
+              <Footer />
+            </>
+          } />
+          <Route path="/cards/detail1" element={<CardDetail1 />} />
+          <Route path="/cards/detail2" element={<CardDetail2 />} />
+          <Route path="/cards/detail3" element={<CardDetail3 />} />
+          <Route path="/cards/detail4" element={<CardDetail4 />} />
+          <Route path="/cards/detail5" element={<CardDetail5 />} />
+          <Route path="/cards/detail6" element={<CardDetail6 />} />
+          <Route path="/cards/detail7" element={<CardDetail7 />} />
+          <Route path="/cards/detail8" element={<CardDetail8 />} />
+          <Route path="/cards/detail9" element={<CardDetail9 />} />
+          <Route path="/cards/detail10" element={<CardDetail10 />} />
+          <Route path="/cards/detail11" element={<CardDetail11 />} />
+          <Route path="/cards/detail12" element={<CardDetail12 />} />
+        </Routes>
+    </div>
   );
 }
 
