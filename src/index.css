@@ -9,18 +9,29 @@
 @tailwind utilities;
 
 
+
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 2px;
+  background: white;
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #000000;
-}
-
-*::-webkit-scrollbar-thumb:hover {
   background: #000000c2;
 }
+
+
+.dark::-webkit-scrollbar {
+  width: 5px;
+  height: 2px;
+  background: black;
+}
+
+.dark *::-webkit-scrollbar-thumb {
+  background: #e0e0e0; 
+}
+
 
 .infiniteMove {
   animation: infiniteMove 7s ease-in-out infinite;
@@ -98,7 +109,6 @@
 
 .navbar {
   padding: 0px 2px;
-  color: black;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;

@@ -31,7 +31,8 @@ function App() {
 
     
 
-    <div className={`${mode ? 'selection:bg-[#ffffffc2] selection:text-[#000000c2]' : 'selection:bg-[#000000c2] selection:text-[#ffffffc2]' }`}>
+    <div className={`${mode ? 'selection:bg-[#ffffffc2] selection:text-[#000000c2]' : 'selection:bg-[#000000c2] selection:text-[#ffffffc2]'} `}>
+        
         <ScrollToTop />
         <Routes>
           <Route path="/" element={

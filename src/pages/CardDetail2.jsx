@@ -29,7 +29,7 @@ const CardDetail2 = () => {
       <Back SectionName={'Series'} />
     </div>
 
-    <div className={`w-[98%] xl:w-[68%] xl:mx-auto md:mx-auto flex flex-col ${ mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} z-50`} >
+    <div className={`w-[98%] xl:w-[68%] xl:mx-auto md:mx-auto flex flex-col ${ mode ? 'text-custom-white' : 'text-custom-black'} z-50`} >
       <DivLinePages />
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >

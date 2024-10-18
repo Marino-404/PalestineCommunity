@@ -37,7 +37,7 @@ const Cards = () => {
   return (
     <section
       id="Connect"
-      className={'w-full h-auto flex flex-col items-center justify-center text-[#ffffffd9] px-2 z-10 '}
+      className={'w-full h-auto flex flex-col items-center justify-center text-custom-white px-2 z-10 '}
     >
       <div className='flex items-center justify-center' >
         <span className='flex items-center justify-center text-center text-4xl text-gradient font-bebas' >

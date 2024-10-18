@@ -9,7 +9,7 @@ import { CiCircleChevDown } from "react-icons/ci";
 const About = () => {
   const { mode, activeSection, changeSection } = useAppContext();
 
-  const buttonClasses = `text-xl ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} 
+  const buttonClasses = `text-xl ${mode ? 'text-custom-white' : 'text-custom-black'} 
                           hover:text-gradient font-bebas font-light flex justify-center`;
 
   const activeStyle = (section) => ({
@@ -19,7 +19,7 @@ const About = () => {
   });
 
   return (
-    <div className={`w-full h-auto flex flex-col items-center text-center xl:justify-start ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} z-50`}>
+    <div className={`w-full h-auto flex flex-col items-center text-center xl:justify-start ${mode ? 'text-custom-white' : 'text-custom-black'} z-50`}>
 
       <div className={`w-[96%] xl:w-[55%] h-auto flex flex-row items-center justify-center xl:gap-20 gap-6 z-10`}>
         <button id='About' className={buttonClasses} style={activeStyle('about')} onClick={() => changeSection('about')}>
@@ -37,7 +37,7 @@ const About = () => {
 
     
       {activeSection === 'about' && (
-        <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-12`}>
+        <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-12 animate-fade-down animate-duration-[800ms] animate-delay-0 animate-ease-in-out`}>
 
           <div className='flex flex-row items-center text-start justify-start mb-4' >
             <div className='text-xl mr-1'>
@@ -86,7 +86,7 @@ const About = () => {
 
 
       {activeSection === 'projects' && (
-      <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col pt-12`}>
+      <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col pt-12 animate-fade-down animate-duration-[800ms] animate-delay-0 animate-ease-in-out`}>
 
         <div className='flex flex-row items-center text-center justify-center mb-4'>
           <div className='text-xl mr-1'>
@@ -142,7 +142,7 @@ const About = () => {
 
       {activeSection === 'community' && (
 
-        <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col pt-12`}>
+        <div className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col pt-12 animate-fade-down animate-duration-[800ms] animate-delay-0 animate-ease-in-out`}>
 
             <div className='flex flex-row items-center text-center justify-center mb-4'>
               <div className='text-xl mr-1'>

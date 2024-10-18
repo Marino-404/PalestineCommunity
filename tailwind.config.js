@@ -13,6 +13,10 @@ export default {
         'bebas': ['Bebas Neue', 'cursive'],
         'sofia': ['Sofia', 'cursive'],
       },
+      colors: {
+        'custom-black': '#000000c2',
+        'custom-white': '#ffffffc2',
+      }
     },
   },
   plugins: [function({ addUtilities }) {

@@ -29,7 +29,7 @@ const CardDetail1 = () => {
       <Back SectionName={'Peliculas'} />
     </div>
 
-    <div className={`w-[98%] xl:w-[60%] xl:mx-auto md:mx-auto flex flex-col ${ mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'} z-50`} >
+    <div className={`w-[98%] xl:w-[60%] xl:mx-auto md:mx-auto flex flex-col ${ mode ? 'text-custom-white' : 'text-custom-black'} z-50`} >
       
       <DivLinePages />
 
