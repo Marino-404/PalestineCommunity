@@ -9,7 +9,7 @@ function DivLine () {
     return (
         <div 
         className={`mx-auto my-8 w-full xl:w-[75%] h-[2px] 
-         ${mode ? 'divisorDark' : 'divisorLight'} animate-fade animate-duration-[2000ms]`} >
+         ${mode ? 'divisorDark' : 'divisorLight'} animate-fade-down animate-duration-[2000ms]`} >
         </div>
     );
 }
