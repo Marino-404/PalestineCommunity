@@ -7,7 +7,7 @@ import img3 from '/src/images/comida/comida3.png';
 import img4 from '/src/images/comida/comida4.png';
 import DivLinePages from '../assets/DivLinePages';
 import { SectionStyle, TitleStyle, DescriptionStyle} from './CardDetail1';
-import { FaPlayCircle, FaYoutube, FaFacebook } from 'react-icons/fa';
+import { FaYoutube, FaFacebook } from 'react-icons/fa';
 import PhotoKitchen from '../assets/PhotoKitchen';
 import Footer from '../components/Footer';
 import { AiFillInstagram } from "react-icons/ai";
@@ -34,7 +34,7 @@ const CardDetail3 = () => {
           <PhotoKitchen img={img1} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
-          <h1 className={TitleStyle} >
+          <h1 className={TitleStyle}>
             JOUDIE KALLA - PALESTINE ON A PLATE
           </h1>
           <span className={DescriptionStyle} >
