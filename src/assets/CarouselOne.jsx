@@ -83,7 +83,7 @@ const CarouselOne = () => {
     <div className="w-full xl:w-[68%] h-[34vw] xl:h-[11vw] md:w-[68%] md:h-[11vw] flex items-center justify-center overflow-hidden mx-auto">
       <div className={`flex whitespace-nowrap h-full animate-scroll gap-2 xl:gap-5`}>
         {[...images].map((img, index) => (
-          <a
+          <div
             key={index}
             href="#"
             className='inline-block'
@@ -99,7 +99,7 @@ const CarouselOne = () => {
               className='w-full h-full object-cover object-center hover:scale-105 transition-all duration-300'
               style={{ height: '100%', maxHeight: '100%' }}
             />
-          </a>
+          </div>
         ))}
       </div>
     </div>
