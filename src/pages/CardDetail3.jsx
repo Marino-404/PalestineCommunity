@@ -8,7 +8,7 @@ import img4 from '/src/images/comida/comida4.png';
 import DivLinePages from '../assets/DivLinePages';
 import { SectionStyle, TitleStyle, DescriptionStyle} from './CardDetail1';
 import { FaYoutube, FaFacebook } from 'react-icons/fa';
-import PhotoKitchen from '../assets/PhotoKitchen';
+import PhotoSections from '../assets/PhotoSections';
 import Footer from '../components/Footer';
 import { AiFillInstagram } from "react-icons/ai";
 import { BiWorld } from "react-icons/bi";
@@ -31,7 +31,7 @@ const CardDetail3 = () => {
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoKitchen img={img1} />
+          <PhotoSections img={img1} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle}>
@@ -58,7 +58,7 @@ const CardDetail3 = () => {
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoKitchen img={img2} />
+          <PhotoSections img={img2} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -77,7 +77,7 @@ const CardDetail3 = () => {
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoKitchen img={img3} />
+          <PhotoSections img={img3} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -96,7 +96,7 @@ const CardDetail3 = () => {
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoKitchen img={img4} />
+          <PhotoSections img={img4} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
