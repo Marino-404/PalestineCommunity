@@ -21,13 +21,11 @@ const Contact = () => {
     const validateEmail = (email) => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
+    };
 
     const validatePhoneNumber = (number) => {
         const regex = /^\d{10,15}$/; 
         return regex.test(number);
-    };
-
-
     };
 
     const handleSubmit = (event) => {
@@ -41,9 +39,9 @@ const Contact = () => {
             setWarning("Por favor completa todos los campos.");
         } else if (!validateEmail(email)) {
             setWarning("Email inválido.");
-        } else if (number && !validatePhoneNumber(number)) 
-            setWarning("Número de celular inválido. Debe tener entre 10 y 15 dígitos.");
-         else {
+        } else if (number && !validatePhoneNumber(number)) {
+            setWarning("Número de celular inválido.");
+        } else {
             const serviceID = "service_1889";
             const templateID = "template_1234";
 
@@ -69,7 +67,7 @@ const Contact = () => {
     };
 
     return (
-        <div className= {`w-full h-auto flex flex-col items-center justify-center z-50 ${mode ? 'text-custom-white' : 'text-custom-black'}`}>
+        <div className={`w-full h-auto flex flex-col items-center justify-center z-50 ${mode ? 'text-custom-white' : 'text-custom-black'}`}>
             <h2 id='Contact' className={`text-md underline font-poppins font-bold flex justify-center my-4 ${mode ? 'text-[#ffffffc2]' : 'text-[#000000c2]'}`}>¡Ponete en contacto!</h2>
             <form ref={formRef} onSubmit={handleSubmit} className='w-[100%] xl:w-[75%] flex flex-col items-center'>
                 <input 
@@ -114,17 +112,17 @@ const Contact = () => {
                     {sending && <div>Enviando...</div>}
                   </div>
 
-                  <div className='pt-4' >
+                  <div className='pt-4'>
                     <Button />
                   </div>
                 </div>
-                
             </form>
         </div>
     );
 };
 
 export default Contact;
+
 
 
 
