@@ -1,19 +1,18 @@
 import React from 'react';
 import { useAppContext } from '../AppContext';
 import Back from '../assets/Back';
+import Footer from '../components/Footer';
+import DivLinePages from '../assets/DivLinePages';
+import PhotoSections from '../assets/PhotoSections';
+import { SectionStyle, TitleStyle, DescriptionStyle} from './CardDetail1';
+import { FaYoutube, FaFacebook } from 'react-icons/fa';
+import { AiFillInstagram } from "react-icons/ai";
+import { BiWorld } from "react-icons/bi";
+
 import img1 from '/src/images/comida/comida1.png';
 import img2 from '/src/images/comida/comida2.png';
 import img3 from '/src/images/comida/comida3.png';
 import img4 from '/src/images/comida/comida4.png';
-import DivLinePages from '../assets/DivLinePages';
-import { SectionStyle, TitleStyle, DescriptionStyle} from './CardDetail1';
-import { FaYoutube, FaFacebook } from 'react-icons/fa';
-import PhotoSections from '../assets/PhotoSections';
-import Footer from '../components/Footer';
-import { AiFillInstagram } from "react-icons/ai";
-import { BiWorld } from "react-icons/bi";
-
-
 
 const CardDetail3 = () => {
 
