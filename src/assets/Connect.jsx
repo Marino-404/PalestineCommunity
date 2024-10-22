@@ -61,13 +61,14 @@ const Connect = () => {
           <FaSpotify className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
         </Link>
         
+        <Link to={'/cards/detail5'}>
+          <AiFillInstagram className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
+        </Link>
+        
         <Link to={'/cards/detail6'}>
           <FaPaintbrush className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
         </Link>
 
-        <Link to={'/cards/detail5'}>
-          <AiFillInstagram className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
-        </Link>
         
       </div>
     );

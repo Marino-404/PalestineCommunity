@@ -4,9 +4,6 @@ import { IoIosArrowBack } from "react-icons/io";
 import { useAppContext } from '../AppContext';
 
 
-
-
-
 const Back = ({SectionName}) => {
 
   const {mode} = useAppContext()

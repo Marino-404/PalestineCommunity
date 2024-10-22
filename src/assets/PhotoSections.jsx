@@ -2,7 +2,7 @@ import React from 'react'
 import { useAppContext } from '../AppContext';
 
 
-const PhotoKitchen = ({img}) => {
+const PhotoSections = ({img}) => {
   
   const { mode } = useAppContext();
 
@@ -15,4 +15,4 @@ const PhotoKitchen = ({img}) => {
   )
 }
 
-export default PhotoKitchen
+export default PhotoSections
