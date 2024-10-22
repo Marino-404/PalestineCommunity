@@ -10,6 +10,7 @@ const Contact = () => {
     
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [number, setNumber] = useState(''); 
     const [message, setMessage] = useState('');
     const [warning, setWarning] = useState('');
     const [sent, setSent] = useState(false);
@@ -20,6 +21,13 @@ const Contact = () => {
     const validateEmail = (email) => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
+
+    const validatePhoneNumber = (number) => {
+        const regex = /^\d{10,15}$/; 
+        return regex.test(number);
+    };
+
+
     };
 
     const handleSubmit = (event) => {
@@ -33,7 +41,9 @@ const Contact = () => {
             setWarning("Por favor completa todos los campos.");
         } else if (!validateEmail(email)) {
             setWarning("Email inválido.");
-        } else {
+        } else if (number && !validatePhoneNumber(number)) 
+            setWarning("Número de celular inválido. Debe tener entre 10 y 15 dígitos.");
+         else {
             const serviceID = "service_1889";
             const templateID = "template_1234";
 
@@ -47,6 +57,7 @@ const Contact = () => {
                     setSending(false);
                     setName('');
                     setEmail('');
+                    setNumber('');
                     setMessage('');
                 })
                 .catch((err) => {
@@ -78,9 +89,11 @@ const Contact = () => {
                     className='bg-gray-100 dark:bg-[#131313] border-5 w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm' 
                 />
                 <input 
-                    type="numer" 
+                    type="text" 
                     placeholder='Número de celular (opcional)'
                     name='number'
+                    value={number}
+                    onChange={(e) => setNumber(e.target.value)}
                     className='bg-gray-100 dark:bg-[#131313] border-5 w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm' 
                 />
                 <textarea
