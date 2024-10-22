@@ -166,7 +166,7 @@ const CardDetail5 = () => {
             NOOH AL-SHAGHNOBI
           </h1>
           <span className={DescriptionStyle} >
-            Fotógrafo
+            Fotógrafo.
           </span>
           <a href='https://www.instagram.com/nooh.xp?igsh=MW9kbTYwYnpnaGZ4Yw==' target="_blank" rel="noopener noreferrer" className='text-5xl' >
             <AiFillInstagram />
@@ -185,7 +185,7 @@ const CardDetail5 = () => {
             SALEH ALJAFARAWI
           </h1>
           <span className={DescriptionStyle} >
-            Fotógrafo
+            Fotógrafo.
           </span>
           <a href='https://www.instagram.com/saleh_aljafarawi?igsh=MWphdjI0dnF0aGkw' target="_blank" rel="noopener noreferrer" className='text-5xl' >
             <AiFillInstagram />
