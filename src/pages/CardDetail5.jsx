@@ -66,7 +66,7 @@ const CardDetail5 = () => {
             SALMA
           </h1>
           <span className={DescriptionStyle} >
-            Creadora de contenido palestino de Gaza.
+            Creadora de contenido palestino desde Gaza.
           </span>
           <div className='flex' >
             <a href='https://www.instagram.com/salma.shawa_/' target="_blank" rel="noopener noreferrer" className='text-5xl' >
