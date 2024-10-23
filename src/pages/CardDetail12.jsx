@@ -7,7 +7,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from 'react-icons/fa';
 
 const TitleStyle = 'font-poppins font-semibold text-2xl text-gradient'
-const UbicationStyle = 'font-poppins font-bold text-3xl mb-4 underline'
+const UbicationStyle = 'font-poppins font-bold text-3xl mb-4 '
 
 const CardDetail12 = () => {
 
@@ -23,7 +23,7 @@ const CardDetail12 = () => {
       
         <DivLinePages />
 
-        <div className='xl:h-[15vw] flex xl:flex-row flex-col' >
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
               EMBAJADA DE PALESTINA
@@ -44,7 +44,7 @@ const CardDetail12 = () => {
 
         <DivLinePages />
 
-        <div className='xl:h-[15vw] flex xl:flex-row flex-col' >
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
               EMBAJADA DE PALESTINA
@@ -60,7 +60,7 @@ const CardDetail12 = () => {
 
         <DivLinePages />
 
-        <div className='xl:h-[15vw] flex xl:flex-row flex-col' >
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
               EMBAJADA DE PALESTINA
@@ -76,7 +76,7 @@ const CardDetail12 = () => {
 
         <DivLinePages />
 
-        <div className='xl:h-[15vw] flex xl:flex-row flex-col' >
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
               EMBAJADA DE PALESTINA
@@ -92,7 +92,7 @@ const CardDetail12 = () => {
 
         <DivLinePages />
 
-        <div className='xl:h-[15vw] flex xl:flex-row flex-col' >
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
               EMBAJADA DE PALESTINA
@@ -108,7 +108,7 @@ const CardDetail12 = () => {
 
         <DivLinePages />
 
-        <div className='xl:h-[15vw] flex xl:flex-row flex-col' >
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
               EMBAJADA DE PALESTINA
@@ -124,7 +124,7 @@ const CardDetail12 = () => {
 
         <DivLinePages />
 
-        <div className='xl:h-[15vw] flex xl:flex-row flex-col' >
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
               EMBAJADA DE PALESTINA
