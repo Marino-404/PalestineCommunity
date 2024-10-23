@@ -3,9 +3,11 @@ import { useAppContext } from '../AppContext';
 import Back from '../assets/Back';
 import DivLinePages from '../assets/DivLinePages';
 import Footer from '../components/Footer';
-import {  TitleStyle} from './CardDetail1';
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from 'react-icons/fa';
+
+const TitleStyle = 'font-poppins font-semibold text-2xl mb-4'
+const UbicationStyle = 'font-poppins font-bold text-3xl'
 
 const CardDetail12 = () => {
 
@@ -24,7 +26,7 @@ const CardDetail12 = () => {
         <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
-              EMBAJADA DE PALESTINA EN ARGENTINA
+              EMBAJADA DE PALESTINA <span className={UbicationStyle}>EN ARGENTINA</span>
             </h1>
             <div className='flex gap-4' >
               <a href='https://www.instagram.com/palestinaenargentina?igsh=MXJ5aXo2d2RxbzdhZA==' target="_blank" rel="noopener noreferrer" className='text-5xl' >
