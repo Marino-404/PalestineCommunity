@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from 'react-icons/fa';
 
-const TitleStyle = 'font-poppins font-semibold text-2xl'
+const TitleStyle = 'font-poppins font-semibold text-2xl text-gradient'
 const UbicationStyle = 'font-poppins font-bold text-3xl mb-4 underline'
 
 const CardDetail12 = () => {
