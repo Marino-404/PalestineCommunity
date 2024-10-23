@@ -105,31 +105,31 @@ const CardDetail7 = () => {
 
           <div className='flex flex-col text-start items-center gap-1' >
 
-            <div className='w-full flex flex-row items-center text-start gap-2' >
-              <a href='https://youtu.be/COgKs7YcRQE?si=YS97q3jXvCsJlYyv' target="_blank" rel="noopener noreferrer" className='text-5xl' >
-                <FaYoutube />
-              </a>
+            <div className='w-full flex flex-col items-center text-start gap-0' >
               <p className='font-poppins' >
                 <span className='font-bold'>Bajo los escombros</span>
               </p>
-            </div>
-
-            <div className='w-full flex flex-row items-center text-start gap-2' >
-              <a href='https://youtu.be/EjSCy1GC6Sc?si=K_8Ax1MWQiSzqVdU' target="_blank" rel="noopener noreferrer" className='text-5xl' >
+              <a href='https://youtu.be/COgKs7YcRQE?si=YS97q3jXvCsJlYyv' target="_blank" rel="noopener noreferrer" className='text-5xl' >
                 <FaYoutube />
               </a>
+            </div>
+
+            <div className='w-full flex flex-col items-center text-start gap-0' >
               <p className='font-poppins' >
                 <span className='font-bold'>Multi Viral</span>
               </p>
-            </div>
-
-            <div className='w-full flex flex-row items-center text-start gap-2' >
-              <a href='https://youtu.be/Zl_GlPquElI?si=xRXIhwmG16HD2PQe' target="_blank" rel="noopener noreferrer" className='text-5xl' >
+              <a href='https://youtu.be/EjSCy1GC6Sc?si=K_8Ax1MWQiSzqVdU' target="_blank" rel="noopener noreferrer" className='text-5xl' >
                 <FaYoutube />
               </a>
+            </div>
+
+            <div className='w-full flex flex-col items-center text-start gap-0' >
               <p className='font-poppins' >
                 <span className='font-bold'>Guerra</span>
               </p>
+              <a href='https://youtu.be/Zl_GlPquElI?si=xRXIhwmG16HD2PQe' target="_blank" rel="noopener noreferrer" className='text-5xl' >
+                <FaYoutube />
+              </a>
             </div>
 
           </div>
