@@ -91,45 +91,46 @@ const CardDetail7 = () => {
 
       <DivLinePages />
 
-      <div className='xl:h-auto flex xl:flex-row flex-col' >
+      <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
           <PhotoSections img={img4} />
         </section>
         <div className='flex w-full flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
-            Residente
+            RESIDENTE
           </h1>
           <span className={DescriptionStyle} >
             Rapero y compositor puertorriqueño.
           </span>
+          <span className='font-poppins pb-4' >Canciones para Palestina:</span>
 
-          <div className='flex flex-col text-start items-center gap-1' >
+          <div className='flex flex-col xl:flex-row text-center items-center md:gap-6 gap-4' >
 
-            <div className='w-full flex flex-col items-center text-start gap-0' >
-              <p className='font-poppins' >
-                <span className='font-bold'>Bajo los escombros</span>
-              </p>
-              <a href='https://youtu.be/COgKs7YcRQE?si=YS97q3jXvCsJlYyv' target="_blank" rel="noopener noreferrer" className='text-5xl' >
-                <FaYoutube />
-              </a>
-            </div>
-
-            <div className='w-full flex flex-col items-center text-start gap-0' >
-              <p className='font-poppins' >
-                <span className='font-bold'>Multi Viral</span>
-              </p>
+            <div className='w-full md:w-auto  flex flex-row items-center text-center gap-1' >
               <a href='https://youtu.be/EjSCy1GC6Sc?si=K_8Ax1MWQiSzqVdU' target="_blank" rel="noopener noreferrer" className='text-5xl' >
                 <FaYoutube />
               </a>
+              <p className='font-poppins' >
+                <span className='font-bold'>MULTI VIRAL</span>
+              </p>
             </div>
 
-            <div className='w-full flex flex-col items-center text-start gap-0' >
+            <div className='w-full md:w-auto  flex flex-row items-center text-center gap-1' >
+              <a href='https://youtu.be/COgKs7YcRQE?si=YS97q3jXvCsJlYyv' target="_blank" rel="noopener noreferrer" className='text-5xl' >
+                <FaYoutube />
+              </a>
               <p className='font-poppins' >
-                <span className='font-bold'>Guerra</span>
+                <span className='font-bold'>BAJO LOS ESCOMBROS</span>
               </p>
+            </div>
+
+            <div className='w-full md:w-auto flex flex-row items-center text-center gap-1' >
               <a href='https://youtu.be/Zl_GlPquElI?si=xRXIhwmG16HD2PQe' target="_blank" rel="noopener noreferrer" className='text-5xl' >
                 <FaYoutube />
               </a>
+              <p className='font-poppins' >
+                <span className='font-bold'>GUERRA</span>
+              </p>
             </div>
 
           </div>
