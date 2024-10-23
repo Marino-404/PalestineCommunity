@@ -160,7 +160,7 @@ const CardDetail6 = () => {
           <span className={DescriptionStyle} >
             Tatreez es una forma de arte del bordado tradicional palestino con siglos de antigüedad. Tatreez significa bordado en árabe, simboliza la eterna resistencia palestina, impulsa oportunidades económicas para las mujeres palestinas y presenta historias de su tierra natal.Cada pueblo y ciudad de Palestina tiene diseños específicos de su región.Detrás de los textiles hay historia, identidad y hogar.
           </span>
-          <div className='flex' >
+          <div className='flex gap-4' >
             <a href='https://www.instagram.com/tatreeztraditions?utm_source=qr' target="_blank" rel="noopener noreferrer" className='text-5xl' >
               <AiFillInstagram />
             </a>
