@@ -33,6 +33,25 @@ const CardDetail4 = () => {
 
       <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
+          <PhotoSections img={img2} />
+        </section>
+        <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
+          <h1 className={TitleStyle} >
+            MOHAMMED ASSAF SHAQOURA
+          </h1>
+          <span className={DescriptionStyle} >
+            - 131.803 Oyentes mensuales.
+          </span>
+          <a href='https://open.spotify.com/artist/0IjIdnhlsKfAfOl5ph5TsE?si=C7fVhF_vQgqWdOZVluNTTQ' target="_blank" rel="noopener noreferrer" className='text-5xl' >
+            <FaSpotify />
+          </a>
+        </div>
+      </div>
+
+      <DivLinePages />
+
+      <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
+        <section className={SectionStyle} >
           <PhotoSections img={img1} />
         </section>
         <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
@@ -43,25 +62,6 @@ const CardDetail4 = () => {
             - 93.238 Oyentes mensuales.
           </span>
           <a href='https://open.spotify.com/artist/17WvUHY56BGNm6i6uTqyj1?si=KDZlkivOQxi-k6GPXmAtQA' target="_blank" rel="noopener noreferrer" className='text-5xl' >
-            <FaSpotify />
-          </a>
-        </div>
-      </div>
-
-      <DivLinePages />
-
-      <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
-        <section className={SectionStyle} >
-          <PhotoSections img={img2} />
-        </section>
-        <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
-          <h1 className={TitleStyle} >
-            HAMADA SHAQOURA
-          </h1>
-          <span className={DescriptionStyle} >
-            - 131.803 Oyentes mensuales.
-          </span>
-          <a href='https://open.spotify.com/artist/0IjIdnhlsKfAfOl5ph5TsE?si=C7fVhF_vQgqWdOZVluNTTQ' target="_blank" rel="noopener noreferrer" className='text-5xl' >
             <FaSpotify />
           </a>
         </div>
