@@ -174,7 +174,7 @@ const CardDetail9 = () => {
 
             <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-12'>
               <h1 className={TitleStyle}>
-                AJYAL Radio (راديو أجيال) en vivo:
+                AJYAL Radio (راديو أجيال)
               </h1>
               <a href='https://mytuner-radio.com/es/emisora/ajyal-radio-rdyw-jyl-397032/' target="_blank" rel="noopener noreferrer" className='text-5xl'>
                 <BiWorld />
@@ -183,7 +183,7 @@ const CardDetail9 = () => {
 
             <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-12'>
               <h1 className={TitleStyle}>
-                Raya FM (اذاعة راية اف ام) en vivo
+                Raya FM (اذاعة راية اف ام)
               </h1>
               <a href='https://mytuner-radio.com/es/emisora/raya-fm-dh-ry-f-m-432682/' target="_blank" rel="noopener noreferrer" className='text-5xl'>
                 <BiWorld />
@@ -192,7 +192,7 @@ const CardDetail9 = () => {
 
             <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-12'>
               <h1 className={TitleStyle}>
-                Al Huriya News Agency (شبكة الحرية الإعلامية ) en vivo
+                Al Huriya News Agency (شبكة الحرية الإعلامية )
               </h1>
               <a href='https://mytuner-radio.com/es/emisora/al-huriya-news-agency-shbk-lhry-llmy-396823/' target="_blank" rel="noopener noreferrer" className='text-5xl'>
                 <BiWorld />
@@ -201,7 +201,8 @@ const CardDetail9 = () => {
 
             <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-12'>
               <h1 className={TitleStyle}>
-                Radio Mawwal (راديو موال) en vivo              </h1>
+                Radio Mawwal (راديو موال) 
+              </h1>
               <a href='https://mytuner-radio.com/es/emisora/radio-mawwal-rdyw-mwl-410844/' target="_blank" rel="noopener noreferrer" className='text-5xl'>
                 <BiWorld />
               </a>
@@ -209,7 +210,8 @@ const CardDetail9 = () => {
 
             <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-12'>
               <h1 className={TitleStyle}>
-                Alaqsa Voice (اذاعة صوت الأقصى) en vivo              </h1>
+                Alaqsa Voice (اذاعة صوت الأقصى)
+              </h1>
               <a href='https://mytuner-radio.com/es/emisora/alaqsa-voice-dh-swt-lqs-409637/' target="_blank" rel="noopener noreferrer" className='text-5xl'>
                 <BiWorld />
               </a>
@@ -226,7 +228,7 @@ const CardDetail9 = () => {
 
             <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-12'>
               <h1 className={TitleStyle}>
-                Palestine Youth Radio (راديو شبا ) en vivo
+                Palestine Youth Radio (راديو شبا )
               </h1>
               <a href='https://mytuner-radio.com/es/emisora/palestine-youth-radio-rdyw-shbb-flstyn-440150/' target="_blank" rel="noopener noreferrer" className='text-5xl'>
                 <BiWorld />
