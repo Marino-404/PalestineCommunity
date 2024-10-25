@@ -15,7 +15,7 @@ import colombia from '../images/flags/colombia.png';
 import españa from '../images/flags/españa.png';
 
 const imgStyle = 'w-[34px] h-[34px]'
-const TitleStyle = 'font-poppins font-semibold text-2xl text-gradient'
+const TitleStyle = 'font-poppins font-semibold text-md text-gradient'
 const UbicationStyle = 'flex flex-row font-poppins font-semibold text-3xl mb-4 gap-2'
 
 const CardDetail12 = () => {
