@@ -13,7 +13,7 @@ const About = () => {
                           hover:text-gradient font-bebas font-light flex justify-center`;
 
   const activeStyle = (section) => ({
-    background: activeSection === section ? 'linear-gradient(to bottom, #247043, #778F43)' : '',
+    background: activeSection === section ? 'linear-gradient(to bottom, #2F5A19, #527C39)' : '',
     WebkitBackgroundClip: activeSection === section ? 'text' : '',
     color: activeSection === section ? 'transparent' : ''
   });

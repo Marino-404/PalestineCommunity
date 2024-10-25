@@ -22,7 +22,7 @@ export default {
   plugins: [function({ addUtilities }) {
     addUtilities({
       '.text-gradient': {
-        background: 'linear-gradient(to bottom, #247043, #778F43)',
+        background: 'linear-gradient(to bottom, #2F5A19, #527C39)', //#2F5A19, #527C39 //#247043, #778F43
         '-webkit-background-clip': 'text',
         '-webkit-text-fill-color': 'transparent',
         'background-clip': 'text',
