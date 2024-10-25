@@ -4,9 +4,10 @@ import Back from '../components/Back';
 import DivLinePages from '../components/DivLinePages';
 import Footer from '../sections/Footer';
 import { FaYoutube } from 'react-icons/fa';
-import { TitleStyle } from './CardDetail1';
+import TourismVideo from '../components/TourismVideo';
+import DivLineCards from '../components/DivLineCards';
 
-const UbicationStyle = 'font-poppins font-bold text-3xl mb-4 '
+const TitleStyle = 'font-poppins font-bold text-xl xl:pt-0 md:pt-0 px-6 md:px-0 text-gradient uppercase'
 
 const CardDetail11 = () => {
 
@@ -18,35 +19,21 @@ const CardDetail11 = () => {
         <Back SectionName={'Turismo'} />
       </div>
 
-      <div className={`w-[98%] xl:w-[50%] xl:mx-auto md:mx-auto flex flex-col ${ mode ? 'text-custom-white' : 'text-custom-black'} z-50`} >
+      <div className={`w-[98%] xl:w-[60%] xl:mx-auto md:mx-auto flex flex-col ${ mode ? 'text-custom-white' : 'text-custom-black'} z-50`} >
       
         <DivLinePages />
 
-        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
-          <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
-            <h1 className={TitleStyle} >
-              Turismo en Palestina
-            </h1>
-            <span className={UbicationStyle} >
-              Videos:
-            </span>
-            <div className='flex gap-4' >
-              <a href='https://www.youtube.com/watch?v=QDkeiezIOdY' target="_blank" rel="noopener noreferrer" className='text-5xl' >
-                <FaYoutube />
-              </a> 
-              <a href='https://www.youtube.com/watch?v=arfeUUdAZHY' target="_blank" rel="noopener noreferrer" className='text-5xl' >
-                <FaYoutube />
-              </a>
-              <a href='https://www.youtube.com/watch?v=MJ339LbuByM' target="_blank" rel="noopener noreferrer" className='text-5xl' >
-                <FaYoutube />
-              </a>
-              <a href='https://www.youtube.com/watch?v=v8ACR1Jn9k4' target="_blank" rel="noopener noreferrer" className='text-5xl' >
-                <FaYoutube />
-              </a>
-            </div>
-          </div>
+        <div className='flex w-full flex-col text-center justify-center items-center mx-auto' >
+          <h1 className={TitleStyle} >
+            Turismo en Palestina
+          </h1>
+          <DivLineCards />
         </div>
 
+        
+ 
+        <TourismVideo />
+           
         <DivLinePages />
 
         <Footer />
