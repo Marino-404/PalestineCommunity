@@ -1,13 +1,13 @@
 import React from 'react';
 import { useAppContext } from '../AppContext';
-import Back from '../assets/Back';
-import DivLinePages from '../assets/DivLinePages';
-import DivLineCards from '../assets/DivLineCards';
-import Footer from '../components/Footer';
+import Back from '../components/Back';
+import DivLinePages from '../components/DivLinePages';
+import DivLineCards from '../components/DivLineCards';
+import Footer from '../sections/Footer';
 import { AiFillInstagram, AiFillTikTok } from "react-icons/ai";
 import { FaYoutube } from 'react-icons/fa';
 import { BiWorld } from "react-icons/bi";
-import PhotoSections from '../assets/PhotoSections';
+import SectionPhoto from '../components/SectionPhoto';
 import { SectionStyle, TitleStyle } from './CardDetail1';
 
 
@@ -47,7 +47,7 @@ const CardDetail9 = () => {
 
         <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <section className={SectionStyle} >
-            <PhotoSections img={img1} />
+            <SectionPhoto img={img1} />
           </section>
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
@@ -65,7 +65,7 @@ const CardDetail9 = () => {
 
         <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <section className={SectionStyle} >
-            <PhotoSections img={img2} />
+            <SectionPhoto img={img2} />
           </section> 
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
@@ -81,7 +81,7 @@ const CardDetail9 = () => {
 
         <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <section className={SectionStyle} >
-            <PhotoSections img={img3} />
+            <SectionPhoto img={img3} />
           </section> 
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
@@ -97,7 +97,7 @@ const CardDetail9 = () => {
 
         <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <section className={SectionStyle} >
-            <PhotoSections img={img4} />
+            <SectionPhoto img={img4} />
           </section> 
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
@@ -113,7 +113,7 @@ const CardDetail9 = () => {
 
         <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <section className={SectionStyle} >
-            <PhotoSections img={img5} />
+            <SectionPhoto img={img5} />
           </section> 
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
@@ -129,7 +129,7 @@ const CardDetail9 = () => {
 
         <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <section className={SectionStyle} >
-            <PhotoSections img={img6} />
+            <SectionPhoto img={img6} />
           </section> 
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
@@ -152,7 +152,7 @@ const CardDetail9 = () => {
 
         <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <section className={SectionStyle} >
-            <PhotoSections img={img7} />
+            <SectionPhoto img={img7} />
           </section> 
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
@@ -168,7 +168,7 @@ const CardDetail9 = () => {
 
         <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <section className={SectionStyle} >
-            <PhotoSections img={img8} />
+            <SectionPhoto img={img8} />
           </section> 
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
@@ -184,7 +184,7 @@ const CardDetail9 = () => {
 
         <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
           <section className={SectionStyle} >
-            <PhotoSections img={img9} />
+            <SectionPhoto img={img9} />
           </section> 
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >

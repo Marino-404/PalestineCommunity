@@ -1,8 +1,8 @@
 import React from 'react';
 import { useAppContext } from '../AppContext';
-import Back from '../assets/Back';
-import DivLinePages from '../assets/DivLinePages';
-import Footer from '../components/Footer';
+import Back from '../components/Back';
+import DivLinePages from '../components/DivLinePages';
+import Footer from '../sections/Footer';
 import { TitleStyle } from './CardDetail1';
 import { AiFillInstagram } from "react-icons/ai";
 import { BiWorld } from 'react-icons/bi';

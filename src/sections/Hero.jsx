@@ -1,8 +1,8 @@
 import React from 'react'
 import { useAppContext } from '../AppContext';
-import Logo from '../assets/Logo.jsx';
+import Logo from '../components/Logo.jsx';
 import { AiOutlineDown } from "react-icons/ai";
-import DivLine from '../assets/DivLine.jsx'
+import DivLine from '../components/DivLine.jsx'
 
 const Hero = () => {
 

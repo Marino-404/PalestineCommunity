@@ -12,9 +12,9 @@ import { RiOrganizationChart } from "react-icons/ri";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { BiSolidInstitution } from "react-icons/bi";
 import { text } from 'framer-motion/client';
-import DivLineCards from '../assets/DivLineCards';
+import DivLineCards from '../components/DivLineCards';
 import { Link } from 'react-router-dom';
-import New from '../assets/New';
+import New from '../components/New';
 
 const Cards = () => {
   const { mode } = useAppContext();

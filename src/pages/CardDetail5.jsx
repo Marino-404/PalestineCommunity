@@ -1,9 +1,9 @@
 import React from 'react';
 import { useAppContext } from '../AppContext';
-import Footer from '../components/Footer';
-import Back from '../assets/Back';
-import DivLinePages from '../assets/DivLinePages';
-import PhotoInstagram from '../assets/PhotoInstagram';
+import Footer from '../sections/Footer';
+import Back from '../components/Back';
+import DivLinePages from '../components/DivLinePages';
+import InstagramPhoto from '../components/InstagramPhoto';
 import { SectionStyle, TitleStyle, DescriptionStyle} from './CardDetail1';
 import { AiFillInstagram, AiFillTikTok } from "react-icons/ai";
 
@@ -59,7 +59,7 @@ const CardDetail5 = () => {
 
       <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoInstagram img={salmaImg}  />
+          <InstagramPhoto img={salmaImg}  />
         </section>
         <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle}>
@@ -83,7 +83,7 @@ const CardDetail5 = () => {
 
       <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoInstagram img={motazImg} />
+          <InstagramPhoto img={motazImg} />
         </section>
         <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -102,7 +102,7 @@ const CardDetail5 = () => {
 
       <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoInstagram img={bisanImg} />
+          <InstagramPhoto img={bisanImg} />
         </section>
         <div className='flex w-full flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -121,7 +121,7 @@ const CardDetail5 = () => {
 
       <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoInstagram img={hossamImg} />
+          <InstagramPhoto img={hossamImg} />
         </section>
         <div className='flex w-full flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -140,7 +140,7 @@ const CardDetail5 = () => {
 
       <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoInstagram img={wissamImg} />
+          <InstagramPhoto img={wissamImg} />
         </section>
         <div className='flex w-full flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -159,7 +159,7 @@ const CardDetail5 = () => {
 
       <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoInstagram img={noohImg} />
+          <InstagramPhoto img={noohImg} />
         </section>
         <div className='flex w-full flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -178,7 +178,7 @@ const CardDetail5 = () => {
 
       <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoInstagram img={salehImg} />
+          <InstagramPhoto img={salehImg} />
         </section>
         <div className='flex w-full flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >

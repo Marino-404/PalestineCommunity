@@ -1,9 +1,9 @@
 import React from 'react';
 import { useAppContext } from '../AppContext';
-import Back from '../assets/Back';
-import PhotoMovie from '../assets/PhotoMovie';
-import DivLinePages from '../assets/DivLinePages';
-import Footer from '../components/Footer';
+import Back from '../components/Back';
+import MoviePhoto from '../components/MoviePhoto';
+import DivLinePages from '../components/DivLinePages';
+import Footer from '../sections/Footer';
 import { SectionStyle, TitleStyle, DescriptionStyle, Stars } from './CardDetail1';
 import { FaStarHalfAlt } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
@@ -34,7 +34,7 @@ const CardDetail2 = () => {
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoMovie img={img1} />
+          <MoviePhoto img={img1} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -60,7 +60,7 @@ const CardDetail2 = () => {
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoMovie img={img2} />
+          <MoviePhoto img={img2} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -86,7 +86,7 @@ const CardDetail2 = () => {
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoMovie img={img3} />
+          <MoviePhoto img={img3} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -112,7 +112,7 @@ const CardDetail2 = () => {
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoMovie img={img4} />
+          <MoviePhoto img={img4} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -138,7 +138,7 @@ const CardDetail2 = () => {
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoMovie img={img5} />
+          <MoviePhoto img={img5} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -164,7 +164,7 @@ const CardDetail2 = () => {
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoMovie img={img6} />
+          <MoviePhoto img={img6} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -190,7 +190,7 @@ const CardDetail2 = () => {
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoMovie img={img7} />
+          <MoviePhoto img={img7} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >

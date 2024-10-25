@@ -1,9 +1,9 @@
 import React from 'react';
 import { useAppContext } from '../AppContext.jsx';
-import Back from '../assets/Back';
-import PhotoMovie from '../assets/PhotoMovie';
-import DivLinePages from '../assets/DivLinePages.jsx';
-import Footer from '../components/Footer';
+import Back from '../components/Back';
+import MoviePhoto from '../components/MoviePhoto';
+import DivLinePages from '../components/DivLinePages.jsx';
+import Footer from '../sections/Footer.jsx';
 import { div } from 'framer-motion/client';
 import img1 from "/src/images/peliculas/pelicula1.png"
 import img2 from "/src/images/peliculas/pelicula2.png"
@@ -35,7 +35,7 @@ const CardDetail1 = () => {
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoMovie img={img2} />
+          <MoviePhoto img={img2} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -61,7 +61,7 @@ const CardDetail1 = () => {
 
       <div className='xl:h-auto flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoMovie img={img1} />
+          <MoviePhoto img={img1} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -87,7 +87,7 @@ const CardDetail1 = () => {
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoMovie img={img3} />
+          <MoviePhoto img={img3} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >

@@ -1,8 +1,8 @@
 import { main } from 'framer-motion/client'
 import React from 'react'
-import CarouselOne from '../assets/CarouselOne.jsx';
-import CarouselTwo from '../assets/CarouselTwo.jsx';
-import Connect from '../assets/Connect.jsx';
+import CarouselOne from '../components/CarouselOne.jsx';
+import CarouselTwo from '../components/CarouselTwo.jsx';
+import Connect from '../components/Connect.jsx';
 
 const Main = () => {
   return (

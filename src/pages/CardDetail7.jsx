@@ -1,9 +1,9 @@
 import React from 'react';
 import { useAppContext } from '../AppContext';
-import Footer from '../components/Footer';
-import Back from '../assets/Back';
-import DivLinePages from '../assets/DivLinePages';
-import PhotoSections from '../assets/PhotoSections';
+import Footer from '../sections/Footer';
+import Back from '../components/Back';
+import DivLinePages from '../components/DivLinePages';
+import SectionPhoto from '../components/SectionPhoto';
 import { SectionStyle, TitleStyle, DescriptionStyle} from './CardDetail1';
 import { FaYoutube } from 'react-icons/fa';
 import { AiFillInstagram } from "react-icons/ai";
@@ -31,7 +31,7 @@ const CardDetail7 = () => {
 
       <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoSections img={img1} />
+          <SectionPhoto img={img1} />
         </section>
         <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -50,7 +50,7 @@ const CardDetail7 = () => {
 
       <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoSections img={img2} />
+          <SectionPhoto img={img2} />
         </section>
         <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle}>
@@ -69,7 +69,7 @@ const CardDetail7 = () => {
 
       <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoSections img={img3} />
+          <SectionPhoto img={img3} />
         </section>
         <div className='flex w-full flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
@@ -93,7 +93,7 @@ const CardDetail7 = () => {
 
       <div className='xl:h-[20vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <PhotoSections img={img4} />
+          <SectionPhoto img={img4} />
         </section>
         <div className='flex w-full flex-col text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >

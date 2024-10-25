@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAppContext } from '../AppContext.jsx';
-import Contact from '../assets/Contact.jsx';
-import DivLineAbout from '../assets/DivLineAbout.jsx';
+import Contact from '../components/Contact.jsx';
+import DivLineAbout from '../components/DivLineAbout.jsx';
 import { BsArrowRightShort } from "react-icons/bs";
 import { CiCircleChevDown } from "react-icons/ci";
 
