@@ -28,7 +28,7 @@ const Cards = () => {
     Arte: <FaPaintbrush className="text-6xl md:text-7xl opacity-10" />,
     Celebridades: <BsFillPeopleFill className="text-6xl md:text-7xl opacity-10" />,
     Podcast: <FaPodcast className="text-6xl md:text-7xl opacity-10" />,
-    Media: <IoPlayCircleSharp className="text-6xl md:text-7xl opacity-10" />,
+    "Media/TV/Radio": <IoPlayCircleSharp className="text-6xl md:text-7xl opacity-10" />,
     ONG: <RiOrganizationChart className="text-6xl md:text-7xl opacity-10" />,
     Turismo: <MdOutlineTravelExplore className="text-6xl md:text-7xl opacity-10" />,
     Instituciones: <BiSolidInstitution className="text-6xl md:text-7xl opacity-10" />,
