@@ -28,6 +28,25 @@ const Contact = () => {
         return regex.test(number);
     };
 
+    const completeEmail = async ( name, email, number ) => {
+        const res = fetch(import.meta.env.VITE_API_URL, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                number: number,
+            })
+        })
+        const resJson = await res.json(); 
+        if (resJson.status !== 200)
+            console.log("Error al enviar el correo");
+        else
+            console.log("Correo enviado");
+    };
+
     const handleSubmit = (event) => {
         event.preventDefault();
 
@@ -44,6 +63,8 @@ const Contact = () => {
         } else {
             const serviceID = "service_1889";
             const templateID = "template_1234";
+            completeEmail(name, email, number ? number : '');
+
 
             setSending(true);
 
