@@ -106,31 +106,31 @@ const CardDetail7 = () => {
 
           <div className='flex flex-col xl:flex-row text-center items-center md:gap-6 gap-4' >
 
-            <div className='w-full md:w-auto  flex flex-row items-center text-center gap-1' >
-              <a href='https://youtu.be/EjSCy1GC6Sc?si=K_8Ax1MWQiSzqVdU' target="_blank" rel="noopener noreferrer" className='text-5xl' >
-                <FaYoutube />
-              </a>
+            <div className='w-full md:w-auto  flex flex-col items-center text-center gap-1' >
               <p className='font-poppins' >
                 <span className='font-bold'>MULTI VIRAL</span>
               </p>
-            </div>
-
-            <div className='w-full md:w-auto  flex flex-row items-center text-center gap-1' >
-              <a href='https://youtu.be/COgKs7YcRQE?si=YS97q3jXvCsJlYyv' target="_blank" rel="noopener noreferrer" className='text-5xl' >
+              <a href='https://youtu.be/EjSCy1GC6Sc?si=K_8Ax1MWQiSzqVdU' target="_blank" rel="noopener noreferrer" className='text-5xl' >
                 <FaYoutube />
               </a>
+            </div>
+
+            <div className='w-full md:w-auto  flex flex-col items-center text-center gap-1' >
               <p className='font-poppins' >
                 <span className='font-bold'>BAJO LOS ESCOMBROS</span>
               </p>
-            </div>
-
-            <div className='w-full md:w-auto flex flex-row items-center text-center gap-1' >
-              <a href='https://youtu.be/Zl_GlPquElI?si=xRXIhwmG16HD2PQe' target="_blank" rel="noopener noreferrer" className='text-5xl' >
+              <a href='https://youtu.be/COgKs7YcRQE?si=YS97q3jXvCsJlYyv' target="_blank" rel="noopener noreferrer" className='text-5xl' >
                 <FaYoutube />
               </a>
+            </div>
+
+            <div className='w-full md:w-auto flex flex-col items-center text-center gap-1' >
               <p className='font-poppins' >
                 <span className='font-bold'>GUERRA</span>
               </p>
+              <a href='https://youtu.be/Zl_GlPquElI?si=xRXIhwmG16HD2PQe' target="_blank" rel="noopener noreferrer" className='text-5xl' >
+                <FaYoutube />
+              </a>
             </div>
 
           </div>

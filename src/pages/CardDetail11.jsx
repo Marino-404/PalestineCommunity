@@ -4,8 +4,8 @@ import Back from '../assets/Back';
 import DivLinePages from '../assets/DivLinePages';
 import Footer from '../components/Footer';
 import { FaYoutube } from 'react-icons/fa';
+import { TitleStyle } from './CardDetail1';
 
-const TitleStyle = 'font-poppins font-semibold text-2xl text-gradient'
 const UbicationStyle = 'font-poppins font-bold text-3xl mb-4 '
 
 const CardDetail11 = () => {

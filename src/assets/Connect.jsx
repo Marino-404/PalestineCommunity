@@ -19,54 +19,54 @@ const Connect = () => {
     const { mode } = useAppContext();
 
     return (
-      <div className={`flex items-center w-[98%] xl:w-[68%] justify-center gap-1 xl:gap-6 my-6 xl:my-2 ${mode ? 'bg-[#00000097]' : 'bg-[#ffffff97]'}`}>
+      <div className={`flex items-center w-[98%] xl:w-[68%] justify-center gap-0 xl:gap-6 my-6 xl:my-2 ${mode ? 'bg-[#00000097]' : 'bg-[#ffffff97]'}`}>
 
         <Link to={'/cards/detail7'}>
-          <BsFillPeopleFill className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
+          <BsFillPeopleFill className={`text-3xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
         </Link>
 
         <Link to={'/cards/detail8'}>
-          <FaPodcast className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
+          <FaPodcast className={`text-3xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
         </Link>
 
         <Link to={'/cards/detail9'}>
-          <IoPlayCircleSharp className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
+          <IoPlayCircleSharp className={`text-3xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
         </Link>
 
         <Link to={'/cards/detail10'}>
-          <RiOrganizationChart className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
+          <RiOrganizationChart className={`text-3xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
         </Link>
 
         <Link to={'/cards/detail11'}>
-          <MdOutlineTravelExplore className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
+          <MdOutlineTravelExplore className={`text-3xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
         </Link>
 
         <Link to={'/cards/detail12'}>
-          <BiSolidInstitution className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
+          <BiSolidInstitution className={`text-3xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
         </Link>
         
         <Link to={'/cards/detail1'}>
-          <PiFilmSlateBold className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
+          <PiFilmSlateBold className={`text-3xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
         </Link>
         
         <Link to={'/cards/detail2'}>
-          <GiFilmProjector className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
+          <GiFilmProjector className={`text-3xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
         </Link>
         
         <Link to={'/cards/detail3'}>
-          <TbToolsKitchen2 className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
+          <TbToolsKitchen2 className={`text-3xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
         </Link>
         
         <Link to={'/cards/detail4'}>
-          <FaSpotify className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
+          <FaSpotify className={`text-3xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
         </Link>
         
         <Link to={'/cards/detail5'}>
-          <AiFillInstagram className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
+          <AiFillInstagram className={`text-3xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
         </Link>
         
         <Link to={'/cards/detail6'}>
-          <FaPaintbrush className={`text-2xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
+          <FaPaintbrush className={`text-3xl xl:text-6xl text-[#247043] ${mode ? 'opacity-30' : 'opacity-40'}`} />
         </Link>
 
         

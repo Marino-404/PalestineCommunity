@@ -2,20 +2,33 @@ import React from 'react';
 import { useAppContext } from '../AppContext';
 import Back from '../assets/Back';
 import DivLinePages from '../assets/DivLinePages';
+import DivLineCards from '../assets/DivLineCards';
 import Footer from '../components/Footer';
 import { AiFillInstagram, AiFillTikTok } from "react-icons/ai";
 import { FaYoutube } from 'react-icons/fa';
 import { BiWorld } from "react-icons/bi";
+import PhotoSections from '../assets/PhotoSections';
+import { SectionStyle, TitleStyle } from './CardDetail1';
 
 
+import img1 from '/src/images/media/1.png';
+import img2 from '/src/images/media/2.png';
+import img3 from '/src/images/media/3.png';
+import img4 from '/src/images/media/4.png';
+import img5 from '/src/images/media/5.png';
+import img6 from '/src/images/media/6.png';
 
-const TitleStyle = 'font-poppins font-semibold text-2xl text-gradient'
+import img7 from '/src/images/media/tv/1.png';
+import img8 from '/src/images/media/tv/2.png';
+import img9 from '/src/images/media/tv/3.png';
+
+
 
 const CardDetail9 = () => {
 
   const { mode } = useAppContext();
 
-  return (
+  return ( 
     <>
       <div>
         <Back SectionName={'Media'} />
@@ -25,7 +38,17 @@ const CardDetail9 = () => {
       
         <DivLinePages />
 
-        <div className='xl:h-[12vw] flex xl:flex-row flex-col' >
+        <div className='flex w-[60%] flex-col text-center justify-center items-center mx-auto' >
+         <h1 className={`font-semibold font-poppins text-2xl ${mode ? 'text-custom-white' : 'text-custom-black'}`} >
+           Media
+          </h1>
+          <DivLineCards />
+        </div>
+
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
+          <section className={SectionStyle} >
+            <PhotoSections img={img1} />
+          </section>
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
               AJ PLUS ESPAÑOL
@@ -40,7 +63,10 @@ const CardDetail9 = () => {
 
         <DivLinePages />
 
-        <div className='xl:h-[12vw] flex xl:flex-row flex-col' >
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
+          <section className={SectionStyle} >
+            <PhotoSections img={img2} />
+          </section> 
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
               COMUNIDAD PALESTINA DE CHILE
@@ -53,20 +79,10 @@ const CardDetail9 = () => {
 
         <DivLinePages />
 
-        <div className='xl:h-[12vw] flex xl:flex-row flex-col' >
-          <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
-            <h1 className={TitleStyle} >
-              EMBAJADA DE PALESTINA
-            </h1>
-            <a href='https://www.instagram.com/embajadapalestinachile?igsh=MWdtZTdzenIzbHo2Yw==' target="_blank" rel="noopener noreferrer" className='text-5xl' >
-              <AiFillInstagram />
-            </a> 
-          </div>
-        </div>
-
-        <DivLinePages />
-
-        <div className='xl:h-[12vw] flex xl:flex-row flex-col' >
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
+          <section className={SectionStyle} >
+            <PhotoSections img={img3} />
+          </section> 
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
               EL CALAMO
@@ -79,20 +95,10 @@ const CardDetail9 = () => {
 
         <DivLinePages />
 
-        <div className='xl:h-[12vw] flex xl:flex-row flex-col' >
-          <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
-            <h1 className={TitleStyle} >
-              EMBAJADA DE PALESTINA
-            </h1>
-            <a href='https://www.instagram.com/palestinaennicaragua?igsh=MTFzMHJxeGFtcGliaA==' target="_blank" rel="noopener noreferrer" className='text-5xl' >
-              <AiFillInstagram />
-            </a> 
-          </div>
-        </div>
-
-        <DivLinePages />
-
-        <div className='xl:h-[12vw] flex xl:flex-row flex-col' >
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
+          <section className={SectionStyle} >
+            <PhotoSections img={img4} />
+          </section> 
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
               ANNUR TV
@@ -105,7 +111,10 @@ const CardDetail9 = () => {
 
         <DivLinePages />
 
-        <div className='xl:h-[12vw] flex xl:flex-row flex-col' >
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
+          <section className={SectionStyle} >
+            <PhotoSections img={img5} />
+          </section> 
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
               PALESTINA HOY
@@ -118,7 +127,10 @@ const CardDetail9 = () => {
 
         <DivLinePages />
 
-        <div className='xl:h-[12vw] flex xl:flex-row flex-col' >
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
+          <section className={SectionStyle} >
+            <PhotoSections img={img6} />
+          </section> 
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
               EYE ON PALESTINE
@@ -131,48 +143,71 @@ const CardDetail9 = () => {
 
         <DivLinePages />
 
-        <div className='xl:h-auto justify-center items-center flex flex-col'>
-            <h1 className='font-poppins font-bold text-3xl mb-12'>
-              TV PALESTINAS
+        <div className='flex w-[60%] flex-col text-center justify-center items-center mx-auto pb-8' >
+         <h1 className={`font-semibold font-poppins text-2xl ${mode ? 'text-custom-white' : 'text-custom-black'}`} >
+           TV
+          </h1>
+          <DivLineCards />
+        </div>
+
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
+          <section className={SectionStyle} >
+            <PhotoSections img={img7} />
+          </section> 
+          <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
+            <h1 className={TitleStyle} >
+              PALESTINE TV CHANNEL
             </h1>
-
-            <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-6'>
-              <h1 className={TitleStyle}>
-                PALESTINE TV CHANNEL
-              </h1>
-              <a href='https://www.youtube.com/@palestinetvchannel' target="_blank" rel="noopener noreferrer" className='text-5xl'>
-                <FaYoutube />
-              </a>
-            </div>
-
-            <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-6'>
-              <h1 className={TitleStyle}>
-                AL QUDS TV
-              </h1>
-              <a href='https://www.youtube.com/@livequds' target="_blank" rel="noopener noreferrer" className='text-5xl'>
-                <FaYoutube />
-              </a>
-            </div>
-
-            <div className='flex flex-col w-full text-center justify-center items-center gap-2 '>
-              <h1 className={TitleStyle}>
-                MUSAWA CHANNEL
-              </h1>
-              <a href='https://www.youtube.com/@MusawaChannel' target="_blank" rel="noopener noreferrer" className='text-5xl'>
-                <FaYoutube />
-              </a>
-            </div>
+            <a href='https://www.youtube.com/@palestinetvchannel' target="_blank" rel="noopener noreferrer" className='text-5xl' >
+              <FaYoutube />
+            </a> 
           </div>
-
+        </div>
 
         <DivLinePages />
 
-        <div className='xl:h-auto justify-center items-center flex flex-col'>
-            <h1 className='font-poppins font-bold text-3xl mb-12'>
-              RADIOS PALESTINAS
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
+          <section className={SectionStyle} >
+            <PhotoSections img={img8} />
+          </section> 
+          <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
+            <h1 className={TitleStyle} >
+              PALESTINE TV CHANNEL
             </h1>
+            <a href='https://www.youtube.com/@palestinetvchannel' target="_blank" rel="noopener noreferrer" className='text-5xl' >
+              <FaYoutube />
+            </a> 
+          </div>
+        </div>
 
-            <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-12'>
+        <DivLinePages />
+
+        <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
+          <section className={SectionStyle} >
+            <PhotoSections img={img9} />
+          </section> 
+          <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
+            <h1 className={TitleStyle} >
+              PALESTINE TV CHANNEL
+            </h1>
+            <a href='https://www.youtube.com/@palestinetvchannel' target="_blank" rel="noopener noreferrer" className='text-5xl' >
+              <FaYoutube />
+            </a> 
+          </div>
+        </div>
+
+        <DivLinePages />
+
+        <div className='flex w-[60%] flex-col text-center justify-center items-center mx-auto' >
+         <h1 className={`font-semibold font-poppins text-2xl ${mode ? 'text-custom-white' : 'text-custom-black'}`} >
+           Radio
+          </h1>
+          <DivLineCards />
+        </div>
+ 
+        <div className='xl:h-auto justify-center items-center flex flex-col'>
+
+            <div className='md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2'>
               <h1 className={TitleStyle}>
                 AJYAL Radio (راديو أجيال)
               </h1>
@@ -181,7 +216,9 @@ const CardDetail9 = () => {
               </a>
             </div>
 
-            <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-12'>
+            <DivLinePages />
+
+            <div className='md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2'>
               <h1 className={TitleStyle}>
                 Raya FM (اذاعة راية اف ام)
               </h1>
@@ -190,7 +227,9 @@ const CardDetail9 = () => {
               </a>
             </div>
 
-            <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-12'>
+            <DivLinePages />
+
+            <div className='md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2'>
               <h1 className={TitleStyle}>
                 Al Huriya News Agency (شبكة الحرية الإعلامية )
               </h1>
@@ -199,7 +238,9 @@ const CardDetail9 = () => {
               </a>
             </div>
 
-            <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-12'>
+            <DivLinePages />
+
+            <div className='md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2'>
               <h1 className={TitleStyle}>
                 Radio Mawwal (راديو موال) 
               </h1>
@@ -208,7 +249,9 @@ const CardDetail9 = () => {
               </a>
             </div>
 
-            <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-12'>
+            <DivLinePages />
+
+            <div className='md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2'>
               <h1 className={TitleStyle}>
                 Alaqsa Voice (اذاعة صوت الأقصى)
               </h1>
@@ -217,7 +260,9 @@ const CardDetail9 = () => {
               </a>
             </div>
 
-            <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-12'>
+            <DivLinePages />
+
+            <div className='md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2'>
               <h1 className={TitleStyle}>
                 Gaza FM en vivo
               </h1>
@@ -226,7 +271,9 @@ const CardDetail9 = () => {
               </a>
             </div>
 
-            <div className='flex flex-col w-full text-center justify-center items-center gap-2 mb-12'>
+            <DivLinePages />
+
+            <div className='md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2'>
               <h1 className={TitleStyle}>
                 Palestine Youth Radio (راديو شبا )
               </h1>
@@ -237,17 +284,18 @@ const CardDetail9 = () => {
 
           </div>
 
-          
-
-
+        
         <DivLinePages />
+
+        </div>
 
         <Footer />
          
-      </div>
+      
 
     </>
   );
+
 };
 
 export default CardDetail9;

@@ -61,7 +61,7 @@ const Cards = () => {
           { title: 'Arte', className: 'card-6', path: '/cards/detail6' },
           { title: 'Celebridades', className: 'card-7', path: '/cards/detail7' },
           { title: 'Podcast', className: 'card-8', path: '/cards/detail8' },
-          { title: 'Media', className: 'card-9', path: '/cards/detail9' },
+          { title: 'Media/TV/Radio', className: 'card-9', path: '/cards/detail9' },
           { title: 'ONG', className: 'card-10', path: '/cards/detail10' },
           { title: 'Turismo', className: 'card-11', path: '/cards/detail11' },
           { title: 'Instituciones', className: 'card-12', path: '/cards/detail12' },

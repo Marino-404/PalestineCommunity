@@ -1,12 +1,15 @@
 import React from 'react';
 import { useAppContext } from '../AppContext';
 import Back from '../assets/Back';
+import PhotoSections from '../assets/PhotoSections';
 import DivLinePages from '../assets/DivLinePages';
 import Footer from '../components/Footer';
 import { FaSpotify } from 'react-icons/fa';
+import { SectionStyle, TitleStyle } from './CardDetail1';
+import img1 from '../images/podcast/1.png';
 
-const TitleStyle = 'font-poppins font-semibold text-2xl text-gradient'
-const UbicationStyle = 'font-poppins font-bold text-3xl mb-4 '
+
+const UbicationStyle = 'font-poppins font-bold text-3xl mb-4'
 
 const CardDetail8 = () => {
 
@@ -23,6 +26,9 @@ const CardDetail8 = () => {
         <DivLinePages />
 
         <div className='xl:h-[18vw] flex xl:flex-row flex-col' >
+          <section className={SectionStyle} >
+            <PhotoSections img={img1} />
+          </section>
           <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
             <h1 className={TitleStyle} >
               ETERNAMENTE PALESTINA

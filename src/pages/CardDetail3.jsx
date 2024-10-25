@@ -28,7 +28,7 @@ const CardDetail3 = () => {
       
       <DivLinePages />
 
-      <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
+      <div className='xl:h-auto flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
           <PhotoSections img={img1} />
         </section>
