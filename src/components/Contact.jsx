@@ -54,7 +54,7 @@ const Contact = () => {
         setSent(false);
         setSending(false);
 
-        if (!name || !email || !message) {
+        if (!name || !email ) {
             setWarning("Por favor completa todos los campos.");
         } else if (!validateEmail(email)) {
             setWarning("Email inválido.");
@@ -116,7 +116,7 @@ const Contact = () => {
                     className='bg-gray-100 dark:bg-[#131313] border-5 w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm' 
                 />
                 <textarea
-                    placeholder='Escribe tu mensaje'
+                    placeholder='Escribe tu mensaje (opcional)'
                     name="message"
                     id="message"
                     value={message}

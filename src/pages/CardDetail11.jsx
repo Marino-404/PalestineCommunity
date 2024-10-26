@@ -3,7 +3,6 @@ import { useAppContext } from '../AppContext';
 import Back from '../components/Back';
 import DivLinePages from '../components/DivLinePages';
 import Footer from '../sections/Footer';
-import { FaYoutube } from 'react-icons/fa';
 import TourismVideo from '../components/TourismVideo';
 import DivLineCards from '../components/DivLineCards';
 
@@ -29,9 +28,7 @@ const CardDetail11 = () => {
           </h1>
           <DivLineCards />
         </div>
-
-        
- 
+    
         <TourismVideo />
            
         <DivLinePages />

@@ -211,7 +211,7 @@ const CardDetail9 = () => {
               <h1 className={TitleStyle}>
                 AJYAL Radio (راديو أجيال)
               </h1>
-              <a href='https://mytuner-radio.com/es/emisora/ajyal-radio-rdyw-jyl-397032/' target="_blank" rel="noopener noreferrer" className='text-5xl'>
+              <a href='http://tun.in/se4VO' target="_blank" rel="noopener noreferrer" className='text-5xl'>
                 <BiWorld />
               </a>
             </div>
@@ -222,7 +222,7 @@ const CardDetail9 = () => {
               <h1 className={TitleStyle}>
                 Raya FM (اذاعة راية اف ام)
               </h1>
-              <a href='https://mytuner-radio.com/es/emisora/raya-fm-dh-ry-f-m-432682/' target="_blank" rel="noopener noreferrer" className='text-5xl'>
+              <a href='http://tun.in/seLHR' target="_blank" rel="noopener noreferrer" className='text-5xl'>
                 <BiWorld />
               </a>
             </div>
@@ -233,7 +233,7 @@ const CardDetail9 = () => {
               <h1 className={TitleStyle}>
                 Al Huriya News Agency (شبكة الحرية الإعلامية )
               </h1>
-              <a href='https://mytuner-radio.com/es/emisora/al-huriya-news-agency-shbk-lhry-llmy-396823/' target="_blank" rel="noopener noreferrer" className='text-5xl'>
+              <a href='http://tun.in/seS0j' target="_blank" rel="noopener noreferrer" className='text-5xl'>
                 <BiWorld />
               </a>
             </div>
@@ -244,7 +244,7 @@ const CardDetail9 = () => {
               <h1 className={TitleStyle}>
                 Radio Mawwal (راديو موال) 
               </h1>
-              <a href='https://mytuner-radio.com/es/emisora/radio-mawwal-rdyw-mwl-410844/' target="_blank" rel="noopener noreferrer" className='text-5xl'>
+              <a href='http://tun.in/seLL7' target="_blank" rel="noopener noreferrer" className='text-5xl'>
                 <BiWorld />
               </a>
             </div>

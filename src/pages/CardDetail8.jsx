@@ -9,7 +9,7 @@ import { SectionStyle, TitleStyle } from './CardDetail1';
 import img1 from '../images/podcast/1.png';
 
 
-const UbicationStyle = 'font-poppins font-bold text-3xl mb-4'
+const SubTitleStyle = 'font-poppins font-semibold text-3xl mb-4'
 
 const CardDetail8 = () => {
 
@@ -33,7 +33,7 @@ const CardDetail8 = () => {
             <h1 className={TitleStyle} >
               ETERNAMENTE PALESTINA
             </h1>
-            <span className={UbicationStyle} >
+            <span className={SubTitleStyle} >
               Podcast:
             </span>
             <div className='flex gap-4' >
