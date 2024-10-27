@@ -209,7 +209,7 @@ const CardDetail9 = () => {
 
             <div className='md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2'>
               <h1 className={TitleStyle}>
-                AJYAL Radio (راديو أجيال)
+                Shabab FM
               </h1>
               <a href='http://tun.in/se4VO' target="_blank" rel="noopener noreferrer" className='text-5xl'>
                 <BiWorld />
@@ -220,7 +220,7 @@ const CardDetail9 = () => {
 
             <div className='md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2'>
               <h1 className={TitleStyle}>
-                Raya FM (اذاعة راية اف ام)
+                Raya FM
               </h1>
               <a href='http://tun.in/seLHR' target="_blank" rel="noopener noreferrer" className='text-5xl'>
                 <BiWorld />
@@ -231,8 +231,8 @@ const CardDetail9 = () => {
 
             <div className='md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2'>
               <h1 className={TitleStyle}>
-                Al Huriya News Agency (شبكة الحرية الإعلامية )
-              </h1>
+                Radio Bethlehem
+              </h1>  
               <a href='http://tun.in/seS0j' target="_blank" rel="noopener noreferrer" className='text-5xl'>
                 <BiWorld />
               </a>
@@ -242,42 +242,9 @@ const CardDetail9 = () => {
 
             <div className='md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2'>
               <h1 className={TitleStyle}>
-                Radio Mawwal (راديو موال) 
+                Radio Mawwal 
               </h1>
               <a href='http://tun.in/seLL7' target="_blank" rel="noopener noreferrer" className='text-5xl'>
-                <BiWorld />
-              </a>
-            </div>
-
-            <DivLinePages />
-
-            <div className='md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2'>
-              <h1 className={TitleStyle}>
-                Alaqsa Voice (اذاعة صوت الأقصى)
-              </h1>
-              <a href='https://mytuner-radio.com/es/emisora/alaqsa-voice-dh-swt-lqs-409637/' target="_blank" rel="noopener noreferrer" className='text-5xl'>
-                <BiWorld />
-              </a>
-            </div>
-
-            <DivLinePages />
-
-            <div className='md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2'>
-              <h1 className={TitleStyle}>
-                Gaza FM en vivo
-              </h1>
-              <a href='https://mytuner-radio.com/es/emisora/gaza-fm-432683/' target="_blank" rel="noopener noreferrer" className='text-5xl'>
-                <BiWorld />
-              </a>
-            </div>
-
-            <DivLinePages />
-
-            <div className='md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2'>
-              <h1 className={TitleStyle}>
-                Palestine Youth Radio (راديو شبا )
-              </h1>
-              <a href='https://mytuner-radio.com/es/emisora/palestine-youth-radio-rdyw-shbb-flstyn-440150/' target="_blank" rel="noopener noreferrer" className='text-5xl'>
                 <BiWorld />
               </a>
             </div>
