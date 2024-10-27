@@ -36,7 +36,7 @@
   height: 100vh;
   background: #247043;
   position: fixed;
-  transition: transform 0.7s ease-in-out; /* Define la transición */
+  transition: transform 1s ease-in-out; 
 }
 
 .line1 {
@@ -59,10 +59,22 @@
   left: 15vw;
 }
 
-
-.line.moving {
-  transform: translateY(-100vh); 
+.line1.moving {
+  transform: translateY(-100vh);
 }
+
+.line2.moving {
+  transform: translateY(100vh);
+}
+
+.line3.moving {
+  transform: translateY(-100vh);
+}
+
+.line4.moving {
+  transform: translateY(100vh);
+}
+
 
 
 .divisorLight {
