@@ -1,36 +1,21 @@
-import React from 'react'
+import React from 'react';
 
+const AnimatedLine = ({ className, position }) => (
+    <div
+        className={`fixed ${className} w-2 rounded h-screen ${position}`}
+        style={{ background: '#247043' }}
+    ></div>
+);
 
 function AnimatedLines() {
-
     return (
         <div className="fixed z-0 opacity-20">
-            <div
-            className="fixed infiniteMove4 w-2 rounded  h-screen top-0 right-[10vw]"
-            style={{
-                background: '#247043'
-                }}
-            ></div>
-            <div
-            className="fixed infiniteMove w-2 rounded  h-screen top-0 right-[15vw]"
-            style={{
-                background: '#247043'
-                }}
-            ></div>
-            <div
-            className="fixed infiniteMove2 w-2 rounded  h-screen top-0 left-[10vw]"
-            style={{
-                background: '#247043'
-                }}
-            ></div>
-            <div
-            className="fixed infiniteMove3 w-2 rounded  h-screen top-0 left-[15vw]"
-            style={{
-                background: '#247043'
-                }}
-            ></div>
-      </div>
-    )
+            <AnimatedLine className="infiniteMove4" position="top-0 right-[10vw]" />
+            <AnimatedLine className="infiniteMove" position="top-0 right-[15vw]" />
+            <AnimatedLine className="infiniteMove2" position="top-0 left-[10vw]" />
+            <AnimatedLine className="infiniteMove3" position="top-0 left-[15vw]" />
+        </div>
+    );
 }
 
-export default AnimatedLines
+export default AnimatedLines;

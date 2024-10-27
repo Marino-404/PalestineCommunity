@@ -17,8 +17,8 @@ root.render(
   <StrictMode>
     <AppProvider>
       <BrowserRouter>
-        <BackGroundPage />
         <AnimatedLines />
+        <BackGroundPage />
         <App />
       </BrowserRouter>
     </AppProvider>
