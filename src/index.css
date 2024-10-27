@@ -47,6 +47,10 @@
   animation: infiniteMove4 7s ease-in-out infinite;
 }
 
+.infiniteMove, .infiniteMove2, .infiniteMove3, .infiniteMove4 {
+  will-change: transform;
+}
+
 @keyframes infiniteMove {
   0% {
     transform: translateY(0);

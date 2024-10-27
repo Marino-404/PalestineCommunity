@@ -6,6 +6,7 @@ import App from './App.jsx';
 import BackGroundPage from './components/BackGroundPage.jsx';
 import './index.css'; 
 import { BrowserRouter } from 'react-router-dom';
+import AnimatedLines from './components/AnimatedLines.jsx';
 
 
 const rootElement = document.getElementById('root');
@@ -17,6 +18,7 @@ root.render(
     <AppProvider>
       <BrowserRouter>
         <BackGroundPage />
+        <AnimatedLines />
         <App />
       </BrowserRouter>
     </AppProvider>
