@@ -31,71 +31,37 @@
 }
 
 
-.infiniteMove {
-  animation: infiniteMove 7s ease-in-out infinite;
+.line {
+  width: 4px;
+  height: 100vh;
+  background: #247043;
+  position: fixed;
+  transition: transform 0.7s ease-in-out; /* Define la transición */
 }
 
-.infiniteMove2 {
-  animation: infiniteMove2 7s ease-in-out infinite;
+.line1 {
+  top: 0;
+  right: 10vw;
 }
 
-.infiniteMove3 {
-  animation: infiniteMove3 7s ease-in-out infinite;
+.line2 {
+  top: 0;
+  right: 15vw;
 }
 
-.infiniteMove4 {
-  animation: infiniteMove4 7s ease-in-out infinite;
+.line3 {
+  top: 0;
+  left: 10vw;
 }
 
-.infiniteMove, .infiniteMove2, .infiniteMove3, .infiniteMove4 {
-  will-change: transform;
+.line4 {
+  top: 0;
+  left: 15vw;
 }
 
-@keyframes infiniteMove {
-  0% {
-    transform: translateY(0);
-  }
-  70% {
-    transform: translateY(100vh);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes infiniteMove2 {
-  0% {
-    transform: translateY(-100vh);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-100vh);
-  }
-}
 
-@keyframes infiniteMove3 {
-  0% {
-    transform: translateY(-100vh);
-  }
-  70% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-100vh);
-  }
-}
-
-@keyframes infiniteMove4 {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(100vh);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.line.moving {
+  transform: translateY(-100vh); 
 }
 
 
