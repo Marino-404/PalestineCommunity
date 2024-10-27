@@ -13,13 +13,15 @@ const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
+  <>
+  <AnimatedLines />
   <StrictMode>
     <AppProvider>
       <BrowserRouter>
         <BackGroundPage />
-        <AnimatedLines />
         <App />
       </BrowserRouter>
     </AppProvider>
   </StrictMode>
+  </>
 );
