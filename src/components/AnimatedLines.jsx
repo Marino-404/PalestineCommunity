@@ -8,7 +8,7 @@ const AnimatedLines = () => {
             setMovingLines((prev) => 
                 prev.map((moving, index) => !moving) 
             );
-        }, 1500); 
+        }, 2000); 
 
         return () => clearInterval(interval);
     }, []);
