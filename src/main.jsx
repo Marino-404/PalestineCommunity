@@ -4,7 +4,6 @@ import { StrictMode } from 'react';
 import { AppProvider } from './AppContext.jsx'; 
 import App from './App.jsx';
 import BackGroundPage from './components/BackGroundPage.jsx';
-import AnimatedLines from './components/AnimatedLines.jsx';
 import './index.css'; 
 import { BrowserRouter } from 'react-router-dom';
 
@@ -14,7 +13,6 @@ const root = createRoot(rootElement);
 
 root.render(
   <>
-  <AnimatedLines />
   <StrictMode>
     <AppProvider>
       <BrowserRouter>
