@@ -36,7 +36,6 @@ const Cards = () => {
 
   return (
     <section
-      id="Connect"
       className={'w-full h-auto flex flex-col items-center justify-center text-custom-white px-2 z-10 '}
     >
       <div className='flex items-center justify-center' >
@@ -51,7 +50,9 @@ const Cards = () => {
 
       <DivLineCards />
 
-      <div className="xl:w-[68%] w-full flex flex-wrap justify-center py-8 xl:gap-8 gap-3 z-10">
+      <div 
+        id="Connect" 
+        className="xl:w-[68%] w-full flex flex-wrap justify-center py-8 xl:gap-8 gap-3 z-10">
         {[
           { title: 'Peliculas', className: 'card-1', path: '/cards/detail1' },
           { title: 'Series', className: 'card-2', path: '/cards/detail2' },
