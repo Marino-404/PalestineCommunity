@@ -38,6 +38,7 @@ const Contact = () => {
         name: name,
         email: email,
         number: number,
+        messages: message ? message : "",
       }),
     });
     const resJson = await res.json();

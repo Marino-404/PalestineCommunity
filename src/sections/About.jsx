@@ -128,7 +128,7 @@ const About = () => {
 
           <div className="flex flex-row items-center text-center justify-center">
             <span className="text-sm font-light">
-              Desarrollado por el centro palestino de Rosario
+              Desarrollado por el Centro Palestino de Rosario
             </span>
           </div>
         </div>

@@ -21,6 +21,11 @@ import img7 from "/src/images/media/tv/1.png";
 import img8 from "/src/images/media/tv/2.png";
 import img9 from "/src/images/media/tv/3.png";
 
+import img10 from "/src/images/media/radio/1.png";
+import img11 from "/src/images/media/radio/2.png";
+import img12 from "/src/images/media/radio/3.png";
+import img13 from "/src/images/media/radio/4.png";
+
 const CardDetail9 = () => {
   const { mode } = useAppContext();
 
@@ -243,8 +248,11 @@ const CardDetail9 = () => {
           <DivLineCards />
         </div>
 
-        <div className="xl:h-auto justify-center items-center flex flex-col">
-          <div className="md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2">
+        <div className="xl:h-[18vw] flex xl:flex-row flex-col">
+          <section className={SectionStyle}>
+            <SectionPhoto img={img10} />
+          </section>
+          <div className="flex flex-col w-full text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>Shabab FM</h1>
             <a
               href="http://tun.in/se4VO"
@@ -255,10 +263,15 @@ const CardDetail9 = () => {
               <BiWorld />
             </a>
           </div>
+        </div>
 
-          <DivLinePages />
+        <DivLinePages />
 
-          <div className="md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2">
+        <div className="xl:h-[18vw] flex xl:flex-row flex-col">
+          <section className={SectionStyle}>
+            <SectionPhoto img={img11} />
+          </section>
+          <div className="flex flex-col w-full text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>Raya FM</h1>
             <a
               href="http://tun.in/seLHR"
@@ -269,10 +282,15 @@ const CardDetail9 = () => {
               <BiWorld />
             </a>
           </div>
+        </div>
 
-          <DivLinePages />
+        <DivLinePages />
 
-          <div className="md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2">
+        <div className="xl:h-[18vw] flex xl:flex-row flex-col">
+          <section className={SectionStyle}>
+            <SectionPhoto img={img12} />
+          </section>
+          <div className="flex flex-col w-full text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>Radio Bethlehem</h1>
             <a
               href="http://tun.in/seS0j"
@@ -283,11 +301,16 @@ const CardDetail9 = () => {
               <BiWorld />
             </a>
           </div>
+        </div>
 
-          <DivLinePages />
+        <DivLinePages />
 
-          <div className="md:h-[14vw] flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>Radio Mawwal</h1>
+        <div className="xl:h-[18vw] flex xl:flex-row flex-col">
+          <section className={SectionStyle}>
+            <SectionPhoto img={img13} />
+          </section>
+          <div className="flex flex-col w-full text-center justify-center items-center gap-2">
+            <h1 className={TitleStyle}>Radio Mawwa</h1>
             <a
               href="http://tun.in/seLL7"
               target="_blank"
