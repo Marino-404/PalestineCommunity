@@ -74,11 +74,17 @@ const About = () => {
             <span>Connect Palestine es una plataforma digital innovadora diseñada para centralizar y compartir lo mejor de la cultura, historia, gastronomía, arte y actualidad de Palestina.</span>
           </div>
 
-          <div className='flex flex-row items-center text-start justify-start mb-4'>
+          <div className='flex flex-row items-center text-start justify-start mb-8'>
             <div className='text-2xl mr-2' >
             <BsArrowRightShort />
             </div>
             <span>Un portal dinámico que conecta a personas de todo el mundo interesadas en la riqueza de Palestina, y se convierte en una poderosa herramienta para fortalecer la narrativa de resistencia palestina en el mundo digital.</span>
+          </div>
+
+          <div className='flex flex-row items-center text-center justify-center' >
+            <span className='text-sm font-light' >
+              DESARROLLADO POR EL CENTRO PALESTINO DE ROSARIO
+            </span>
           </div>
 
         </div>
@@ -162,7 +168,7 @@ const About = () => {
               <div className='text-2xl mr-2' >
                 <BsArrowRightShort />
               </div>
-              <span>¡Conectate, colaborá y compartí!<br />Hagamos que el mundo escuche a Palestina.</span>
+              <span>¡Conectate! Recibí todas las novedades de connect palestine en tu casilla de mail.<br />Hagamos que el mundo escuche a Palestina.</span>
             </div>
 
             <Contact />

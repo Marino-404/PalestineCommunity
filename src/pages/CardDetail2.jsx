@@ -34,32 +34,6 @@ const CardDetail2 = () => {
 
       <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
         <section className={SectionStyle} >
-          <MoviePhoto img={img1} />
-        </section>
-        <div className='flex flex-col text-center justify-center items-center gap-2' >
-          <h1 className={TitleStyle} >
-            Fauda
-          </h1>
-          <span className={DescriptionStyle} >
-            Un veterano agente israelí vuelve a la caza en busca de un luchador palestino que creía muerto, poniendo en marcha una serie de eventos caóticos.
-          </span>
-          <div className={Stars} >
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStarHalfAlt />
-            <FaRegStar />
-          </div>
-          <a href='https://www.netflix.com/ar/title/80113612' target="_blank" rel="noopener noreferrer" className='text-5xl' >
-            <FaPlayCircle />
-          </a>
-        </div>
-      </div>
-
-      <DivLinePages />
-
-      <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
-        <section className={SectionStyle} >
           <MoviePhoto img={img2} />
         </section>
         <div className='flex flex-col text-center justify-center items-center gap-2' >
@@ -207,6 +181,32 @@ const CardDetail2 = () => {
             <FaRegStar />
           </div>
           <a href='https://www.filmin.es/pelicula/inchallah' target="_blank" rel="noopener noreferrer" className='text-5xl' >
+            <FaPlayCircle />
+          </a>
+        </div>
+      </div>
+
+      <DivLinePages />
+
+      <div className='xl:h-[24vw] flex xl:flex-row flex-col' >
+        <section className={SectionStyle} >
+          <MoviePhoto img={img1} />
+        </section>
+        <div className='flex flex-col text-center justify-center items-center gap-2' >
+          <h1 className={TitleStyle} >
+            Fauda
+          </h1>
+          <span className={DescriptionStyle} >
+            Un veterano agente israelí vuelve a la caza en busca de un luchador palestino que creía muerto, poniendo en marcha una serie de eventos caóticos.
+          </span>
+          <div className={Stars} >
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStarHalfAlt />
+            <FaRegStar />
+          </div>
+          <a href='https://www.netflix.com/ar/title/80113612' target="_blank" rel="noopener noreferrer" className='text-5xl' >
             <FaPlayCircle />
           </a>
         </div>

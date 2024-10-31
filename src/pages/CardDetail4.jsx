@@ -37,7 +37,7 @@ const CardDetail4 = () => {
         </section>
         <div className='flex flex-col w-full text-center justify-center items-center gap-2' >
           <h1 className={TitleStyle} >
-            MOHAMMED ASSAF SHAQOURA
+            MOHAMMED ASSAF
           </h1>
           <span className={DescriptionStyle} >
             - 131.803 Oyentes mensuales.
