@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import heroImg from "/src/images/Logo.png";
 
 function Logo() {

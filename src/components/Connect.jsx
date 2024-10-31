@@ -11,7 +11,6 @@ import { IoPlayCircleSharp } from "react-icons/io5";
 import { RiOrganizationChart } from "react-icons/ri";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { BiSolidInstitution } from "react-icons/bi";
-import { div } from "framer-motion/client";
 import { Link } from "react-router-dom";
 
 const Connect = () => {
