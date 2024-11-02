@@ -21,7 +21,6 @@ import CardDetail9 from "./pages/CardDetail9.jsx";
 import CardDetail10 from "./pages/CardDetail10.jsx";
 import CardDetail11 from "./pages/CardDetail11.jsx";
 import CardDetail12 from "./pages/CardDetail12.jsx";
-import { div } from "framer-motion/m";
 
 function App() {
   const { mode } = useAppContext();
