@@ -4,7 +4,7 @@ const AppContext = createContext(undefined);
 
 export const AppProvider = ({ children }) => {
   const [mode, setMode] = useState(() => {
-    return localStorage.getItem("mode") === "true";
+    return localStorage.getItem("mode") === "false";
   });
 
   const [activeSection, setActiveSection] = useState("about");
