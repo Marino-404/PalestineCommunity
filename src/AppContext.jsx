@@ -4,7 +4,7 @@ const AppContext = createContext(undefined);
 
 export const AppProvider = ({ children }) => {
   const [mode, setMode] = useState(() => {
-    return localStorage.getItem("mode") === "false";
+    return localStorage.getItem("mode") === "true";
   });
 
   const [activeSection, setActiveSection] = useState("about");
@@ -22,7 +22,7 @@ export const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    document.body.className = mode ? "light" : "dark";
+    document.body.className = mode ? "dark" : "light";
   }, [mode]);
 
   return (

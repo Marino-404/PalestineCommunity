@@ -96,7 +96,7 @@ const Header = () => {
               className={`${
                 !mode
                   ? "bottom-[200px] xl:top-[12px]"
-                  : "bottom-[-400px] xl:top-[-150px]"
+                  : "bottom-[-8000px] xl:top-[-150px]"
               } cursor-pointer transition-all duration-100 xl:duration-300 absolute w-[30px] h-[30px] xl:h-[20px] xl:w-[20px]`}
             />
             <AiFillSun
@@ -107,7 +107,7 @@ const Header = () => {
               className={`${
                 mode
                   ? "bottom-[200px] xl:top-[12px]"
-                  : "bottom-[-400px] xl:top-[-150px]"
+                  : "bottom-[-8000px] xl:top-[-150px]"
               } cursor-pointer transition-all duration-100 xl:duration-300 absolute w-[30px] h-[30px] xl:h-[20px] xl:w-[20px]`}
             />
           </div>
