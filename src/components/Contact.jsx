@@ -112,7 +112,9 @@ const Contact = () => {
           name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="bg-gray-100 dark:bg-[#131313] w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm"
+          className={`  ${
+            mode ? "bg-[#131313]" : "bg-gray-100"
+          } w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm`}
         />
         <input
           type="text"
@@ -120,7 +122,9 @@ const Contact = () => {
           name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="bg-gray-100 dark:bg-[#131313] border-5 w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm"
+          className={`${
+            mode ? "bg-[#131313]" : "bg-gray-100"
+          } border-5 w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm`}
         />
         <input
           type="text"
@@ -128,7 +132,9 @@ const Contact = () => {
           name="number"
           value={number}
           onChange={(e) => setNumber(e.target.value)}
-          className="bg-gray-100 dark:bg-[#131313] border-5 w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm"
+          className={`${
+            mode ? "bg-[#131313]" : "bg-gray-100"
+          } border-5 w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm`}
         />
         <textarea
           placeholder="Escribe tu mensaje (opcional)"
@@ -138,7 +144,9 @@ const Contact = () => {
           onChange={(e) => setMessage(e.target.value)}
           cols="30"
           rows="10"
-          className="bg-gray-100 dark:bg-[#131313] w-[90%] h-[20vw] xl:h-[6vw] rounded-lg p-1 focus:outline-none px-4 font-poppins font-normal resize-none placeholder:text-sm"
+          className={`${
+            mode ? "bg-[#131313]" : "bg-gray-100"
+          } w-[90%] h-[20vw] xl:h-[6vw] rounded-lg p-1 focus:outline-none px-4 font-poppins font-normal resize-none placeholder:text-sm`}
         ></textarea>
 
         <div className="flex flex-col items-center">
