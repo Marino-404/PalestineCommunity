@@ -151,7 +151,7 @@ const CardDetail2 = () => {
               <FaRegStar />
             </div>
             <a
-              href="https://www.filmin.es/corto/gaza"
+              href="https://www.filmin.es/pelicula/el-color-de-los-olivos?origin=searcher&origin-query=primary"
               target="_blank"
               rel="noopener noreferrer"
               className="text-5xl"
@@ -182,7 +182,7 @@ const CardDetail2 = () => {
               <FaStarHalfAlt />
             </div>
             <a
-              href="https://www.filmin.es/pelicula/el-color-de-los-olivos"
+              href="https://www.primevideo.com/-/es/detail/InchAllah/0OEET133USRQRFE1EYASVS6VRG"
               target="_blank"
               rel="noopener noreferrer"
               className="text-5xl"
@@ -215,7 +215,7 @@ const CardDetail2 = () => {
               <FaRegStar />
             </div>
             <a
-              href="https://www.filmin.es/pelicula/inchallah"
+              href="https://www.filmin.es/corto/gaza?origin=searcher&origin-query=primary"
               target="_blank"
               rel="noopener noreferrer"
               className="text-5xl"

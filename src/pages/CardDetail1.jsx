@@ -4,10 +4,10 @@ import Back from "../components/Back";
 import MoviePhoto from "../components/MoviePhoto";
 import DivLinePages from "../components/DivLinePages.jsx";
 import Footer from "../sections/Footer.jsx";
-import { div } from "framer-motion/client";
 import img1 from "/src/images/peliculas/pelicula1.png";
 import img2 from "/src/images/peliculas/pelicula2.png";
 import img3 from "/src/images/peliculas/pelicula3.png";
+import img4 from "/src/images/peliculas/pelicula4.png";
 import { FaStarHalfAlt } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
@@ -69,28 +69,26 @@ const CardDetail1 = () => {
 
         <DivLinePages />
 
-        <div className="xl:h-auto flex xl:flex-row flex-col">
+        <div className="xl:h-[24vw] flex xl:flex-row flex-col">
           <section className={SectionStyle}>
-            <MoviePhoto img={img1} />
+            <MoviePhoto img={img4} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>La sal de este mar</h1>
+            <h1 className={TitleStyle}>EL IDOLO</h1>
             <span className={DescriptionStyle}>
-              Soraya nació y se educó en Brooklyn, pero ha decidido regresar a
-              Palestina, país del que su familia tuvo que exiliarse en 1948. Por
-              su parte Emad, nacido en los territorios palestinos, ha conocido
-              toda su vida la ocupación y la realidad palestina, y sueña con
-              obtener un visado para ir a estudiar a Canadá y marcharse de allí.
+              Película sobre el popular cantante palestino Mohammad Assaf, desde
+              su niñez a su etapa adulta, y su vida en Gaza hasta su triunfo en
+              el concurso de talentos 'Arab Idol'.
             </span>
             <div className={Stars}>
               <FaStar />
               <FaStar />
               <FaStar />
-              <FaStarHalfAlt />
+              <FaStar />
               <FaRegStar />
             </div>
             <a
-              href="https://www.netflix.com/title/70117041?preventIntent=true"
+              href="https://www.primevideo.com/region/na/detail/0QSVJZ84KNE0W5VN4D9SHBFJIN/ref=atv_sr_fle_c_Tn74RA_2_1_2?sr=1-2&pageTypeIdSource=ASIN&pageTypeId=B085LSTJ48&qid=1730756211723"
               target="_blank"
               rel="noopener noreferrer"
               className="text-5xl"
@@ -121,7 +119,43 @@ const CardDetail1 = () => {
               <FaRegStar />
             </div>
             <a
-              href="https://www.justwatch.com/mx/pelicula/nacido-en-gaza"
+              href="https://www.youtube.com/watch?v=zMEWDj7CXd0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-5xl"
+            >
+              <FaPlayCircle />
+            </a>
+          </div>
+        </div>
+
+        <DivLinePages />
+
+        <div className="xl:h-auto flex xl:flex-row flex-col">
+          <section className={SectionStyle}>
+            <MoviePhoto img={img1} />
+          </section>
+          <div className="flex flex-col text-center justify-center items-center gap-2">
+            <h1 className={TitleStyle}>La sal de este mar</h1>
+            <span className={DescriptionStyle}>
+              <p className="font-semibold mb-2">
+                Censurada por Netflix recientemente.
+              </p>
+              Soraya nació y se educó en Brooklyn, pero ha decidido regresar a
+              Palestina, país del que su familia tuvo que exiliarse en 1948. Por
+              su parte Emad, nacido en los territorios palestinos, ha conocido
+              toda su vida la ocupación y la realidad palestina, y sueña con
+              obtener un visado para ir a estudiar a Canadá y marcharse de allí.
+            </span>
+            <div className={Stars}>
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStarHalfAlt />
+              <FaRegStar />
+            </div>
+            <a
+              href="https://www.netflix.com/title/70117041?preventIntent=true"
               target="_blank"
               rel="noopener noreferrer"
               className="text-5xl"
