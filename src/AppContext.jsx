@@ -22,7 +22,7 @@ export const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    document.body.className = mode ? "dark" : "light";
+    document.body.className = mode ? "light" : "dark";
   }, [mode]);
 
   return (
