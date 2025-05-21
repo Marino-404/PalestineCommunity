@@ -36,12 +36,12 @@ const CardDetail12 = () => {
 
         <div className="xl:h-[18vw] flex xl:flex-row flex-col">
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>EMBAJADA DE PALESTINA</h1>
-            <span className={UbicationStyle}>CENTRO PALESTINO DE ROSARIO</span>
+            <h1 className={TitleStyle}>CENTRO PALESTINO</h1>
+            <span className={UbicationStyle}>ROSARIO</span>
             <img src={arg} alt="arg" className={imgStyle} />
             <div className="flex gap-4">
               <a
-                href="https://www.instagram.com/palestina_en_rosario/?hl=es"
+                href="https://www.instagram.com/palestinosrosario/?hl=es"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-5xl"

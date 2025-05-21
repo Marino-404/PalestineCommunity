@@ -6,6 +6,7 @@ import DivLinePages from "../components/DivLinePages";
 import InstagramPhoto from "../components/InstagramPhoto";
 import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
 import { AiFillInstagram, AiFillTikTok } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
 
 import img1L from "/src/images/instagram/l1.png";
 import img2L from "/src/images/instagram/l2.png";
@@ -165,12 +166,12 @@ const CardDetail5 = () => {
             <h1 className={TitleStyle}>WISSAM NASSAR</h1>
             <span className={DescriptionStyle}>Fotógrafo.</span>
             <a
-              href="https://www.instagram.com/wissamgaza?igsh=ZnBoMWdmanI1NnVv"
+              href="https://www.facebook.com/wissamnassargaza/?locale=es_LA"
               target="_blank"
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaFacebook />
             </a>
           </div>
         </div>
@@ -204,6 +205,9 @@ const CardDetail5 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>SALEH ALJAFARAWI</h1>
             <span className={DescriptionStyle}>Fotógrafo.</span>
+            <p className="font-semibold mb-2">
+              Si no funciona es probable que haya sido censurado.
+            </p>
             <a
               href="https://www.instagram.com/saleh_aljafarawi?igsh=MWphdjI0dnF0aGkw"
               target="_blank"

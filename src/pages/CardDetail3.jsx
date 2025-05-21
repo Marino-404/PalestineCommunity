@@ -92,14 +92,24 @@ const CardDetail3 = () => {
               alimentarse con los escasos bienes básicos y ayuda humanitaria que
               Israel permite que llegue a la Franja.
             </span>
-            <a
-              href="https://www.facebook.com/share/jGxNevTXZUk9p3vj/?mibextid=qi2Omg"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-5xl"
-            >
-              <FaFacebook />
-            </a>
+            <div className="flex gap-4">
+              <a
+                href="https://www.instagram.com/hamadashoo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-5xl"
+              >
+                <AiFillInstagram />
+              </a>
+              <a
+                href="https://www.facebook.com/share/jGxNevTXZUk9p3vj/?mibextid=qi2Omg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-5xl"
+              >
+                <FaFacebook />
+              </a>
+            </div>
           </div>
         </div>
 

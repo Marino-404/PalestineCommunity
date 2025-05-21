@@ -43,6 +43,9 @@ const CardDetail1 = () => {
           <div className="flex flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>A 200 Metros</h1>
             <span className={DescriptionStyle}>
+              <p className="font-semibold mb-2">
+                Censurada por Netflix recientemente.
+              </p>
               Mustafa y su esposa Salwa provienen de dos aldeas palestinas que
               están a solo 200 metros de distancia, pero separadas por el muro.
               Su situación de vida inusual está comenzando a afectar su
