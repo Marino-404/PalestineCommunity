@@ -22,6 +22,7 @@ import img4 from "/src/images/series/serie4.png";
 import img5 from "/src/images/series/serie5.png";
 import img6 from "/src/images/series/serie6.png";
 import img7 from "/src/images/series/serie7.png";
+import img8 from "/src/images/series/serie8.webp";
 
 const CardDetail2 = () => {
   const { mode } = useAppContext();
@@ -37,6 +38,39 @@ const CardDetail2 = () => {
           mode ? "text-custom-white" : "text-custom-black"
         } z-50`}
       >
+        <DivLinePages />
+
+        <div className="xl:h-[24vw] flex xl:flex-row flex-col">
+          <section className={SectionStyle}>
+            <MoviePhoto img={img8} />
+          </section>
+          <div className="flex flex-col text-center justify-center items-center gap-2">
+            <h1 className={TitleStyle}>MO</h1>
+            <span className={DescriptionStyle}>
+              Mo Najjar, palestino que vive en Houston y lleva años intentando
+              conseguir la ciudadanía estadounidense mientras trabaja en empleos
+              informales y enfrenta múltiples obstáculos. La segunda temporada
+              incluye un viaje a México, una visita a Palestina y referencias
+              directas a la Nakba y la identidad cultural.
+            </span>
+            <div className={Stars}>
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaRegStar />
+            </div>
+            <a
+              href="https://www.netflix.com/ar/title/81134264"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-5xl"
+            >
+              <FaPlayCircle />
+            </a>
+          </div>
+        </div>
+
         <DivLinePages />
 
         <div className="xl:h-[24vw] flex xl:flex-row flex-col">

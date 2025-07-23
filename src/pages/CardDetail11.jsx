@@ -6,8 +6,7 @@ import Footer from "../sections/Footer";
 import TourismVideo from "../components/TourismVideo";
 import DivLineCards from "../components/DivLineCards";
 
-const TitleStyle =
-  "font-poppins font-bold text-xl xl:pt-0 md:pt-0 px-6 md:px-0 text-gradient uppercase";
+import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
 
 const CardDetail11 = () => {
   const { mode } = useAppContext();
@@ -28,6 +27,15 @@ const CardDetail11 = () => {
         <div className="flex w-full flex-col text-center justify-center items-center mx-auto">
           <h1 className={TitleStyle}>Turismo en Palestina</h1>
           <DivLineCards />
+        </div>
+
+        <div className="flex w-full flex-col text-center justify-center items-center mx-auto">
+          <span className={DescriptionStyle}>
+            Explora las calles de Belén, Palestina, en este recorrido a pie en
+            4K, capturando la vida cotidiana, los negocios locales y los
+            momentos auténticos desde una perspectiva única. Sin comentarios:
+            solo imágenes y sonidos reales.
+          </span>
         </div>
 
         <TourismVideo />

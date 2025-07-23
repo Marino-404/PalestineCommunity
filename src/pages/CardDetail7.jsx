@@ -12,6 +12,7 @@ import img1 from "/src/images/celebridades/1.png";
 import img2 from "/src/images/celebridades/2.png";
 import img3 from "/src/images/celebridades/3.png";
 import img4 from "/src/images/celebridades/4.png";
+import img5 from "/src/images/celebridades/5.webp";
 
 const CardDetail7 = () => {
   const { mode } = useAppContext();
@@ -27,6 +28,30 @@ const CardDetail7 = () => {
           mode ? "text-custom-white" : "text-custom-black"
         } z-50`}
       >
+        <DivLinePages />
+
+        <div className="xl:h-[20vw] flex xl:flex-row flex-col">
+          <section className={SectionStyle}>
+            <SectionPhoto img={img5} />
+          </section>
+          <div className="flex flex-col w-full text-center justify-center items-center gap-2">
+            <h1 className={TitleStyle}>BONO – U2</h1>
+            <span className={DescriptionStyle}>
+              U2 ha cambiado la letra de una de sus canciones más icónicas,
+              Pride (In the Name of Love), para recordar a las víctimas que han
+              muerto en los primeros días del conflicto entre Israel y Gaza.
+            </span>
+            <a
+              href="https://www.youtube.com/watch?v=FV2u0BxNxc8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-5xl"
+            >
+              <FaYoutube />
+            </a>
+          </div>
+        </div>
+
         <DivLinePages />
 
         <div className="xl:h-[20vw] flex xl:flex-row flex-col">

@@ -8,6 +8,8 @@ import img1 from "/src/images/peliculas/pelicula1.png";
 import img2 from "/src/images/peliculas/pelicula2.png";
 import img3 from "/src/images/peliculas/pelicula3.png";
 import img4 from "/src/images/peliculas/pelicula4.png";
+import img5 from "/src/images/peliculas/5.webp";
+import img6 from "/src/images/peliculas/6.webp";
 import { FaStarHalfAlt } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
@@ -34,6 +36,85 @@ const CardDetail1 = () => {
           mode ? "text-custom-white" : "text-custom-black"
         } z-50`}
       >
+        <DivLinePages />
+
+        <div className="xl:h-[24vw] flex xl:flex-row flex-col">
+          <section className={SectionStyle}>
+            <MoviePhoto img={img5} />
+          </section>
+          <div className="flex flex-col text-center justify-center items-center gap-2">
+            <h1 className={TitleStyle}>NO OTHER LAND</h1>
+            <span className={DescriptionStyle}>
+              Basel Adra, activista palestino que lucha contra el desplazamiento
+              forzado de su comunidad en Cisjordania. A través de su cámara,
+              documenta la destrucción de su tierra natal a manos del ejército
+              israelí, que derrumba casas y expulsa a los residentes para
+              instalar una zona de tiro militar. En medio de este conflicto,
+              Basel entabla una inesperada amistad con Yuval, un periodista
+              israelí judío que apoya su causa.
+              <br />
+              <br />
+              En Argentina, podés encontrarla en streaming en tres plataformas:
+              Prime Video, Filmin y Movistar+.
+            </span>
+            <div className={Stars}>
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStarHalfAlt />
+            </div>
+            <a
+              href="https://www.youtube.com/watch?v=-pI2IXKtlew&source_ve_path=OTY3MTQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-5xl"
+            >
+              <FaPlayCircle />
+            </a>
+          </div>
+        </div>
+
+        <DivLinePages />
+
+        <div className="xl:h-[24vw] flex xl:flex-row flex-col">
+          <section className={SectionStyle}>
+            <MoviePhoto img={img6} />
+          </section>
+          <div className="flex flex-col text-center justify-center items-center gap-2">
+            <h1 className={TitleStyle}>FARHA</h1>
+            <span className={DescriptionStyle}>
+              Farha, una niña de catorce años que vive con su padre en un pueblo
+              palestino. Amante de los libros, decide irse a vivir a la ciudad
+              para estudiar, pero sus planes se ven interrumpidos por la Nakba,
+              el conflicto político que derivo en la creación del estado de
+              Israel y que hizo que más de 800 mil palestinos abandonen sus
+              hogares.
+              <br />
+              <br />
+              Al intentar ver la película desde Argentina, Netflix muestra un
+              anuncio en la pantalla: "este título no está disponible en su
+              país". Sin embargo, se puede acceder a ella cambiando el idioma de
+              la cuenta a inglés.
+            </span>
+            <div className={Stars}>
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStarHalfAlt />
+            </div>
+            <a
+              href="https://www.youtube.com/watch?v=-pI2IXKtlew&source_ve_path=OTY3MTQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-5xl"
+            >
+              <FaPlayCircle />
+            </a>
+          </div>
+        </div>
+
         <DivLinePages />
 
         <div className="xl:h-[24vw] flex xl:flex-row flex-col">

@@ -13,6 +13,8 @@ import img3 from "/src/images/spotify/3.png";
 import img4 from "/src/images/spotify/4.png";
 import img5 from "/src/images/spotify/5.png";
 import img6 from "/src/images/spotify/6.png";
+import img7 from "/src/images/spotify/7.png";
+import img8 from "/src/images/spotify/8.png";
 
 const CardDetail4 = () => {
   const { mode } = useAppContext();
@@ -32,6 +34,26 @@ const CardDetail4 = () => {
 
         <div className="xl:h-[20vw] flex xl:flex-row flex-col">
           <section className={SectionStyle}>
+            <SectionPhoto img={img7} />
+          </section>
+          <div className="flex flex-col w-full text-center justify-center items-center gap-2">
+            <h1 className={TitleStyle}>ELYANNA</h1>
+            <span className={DescriptionStyle}>- 7.3M Oyentes mensuales.</span>
+            <a
+              href="https://open.spotify.com/intl-es/artist/0jIWKlfmD4Ew7HeVVrq03g"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-5xl"
+            >
+              <FaSpotify />
+            </a>
+          </div>
+        </div>
+
+        <DivLinePages />
+
+        <div className="xl:h-[20vw] flex xl:flex-row flex-col">
+          <section className={SectionStyle}>
             <SectionPhoto img={img2} />
           </section>
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
@@ -41,6 +63,28 @@ const CardDetail4 = () => {
             </span>
             <a
               href="https://open.spotify.com/artist/0IjIdnhlsKfAfOl5ph5TsE?si=C7fVhF_vQgqWdOZVluNTTQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-5xl"
+            >
+              <FaSpotify />
+            </a>
+          </div>
+        </div>
+
+        <DivLinePages />
+
+        <div className="xl:h-[20vw] flex xl:flex-row flex-col">
+          <section className={SectionStyle}>
+            <SectionPhoto img={img8} />
+          </section>
+          <div className="flex flex-col w-full text-center justify-center items-center gap-2">
+            <h1 className={TitleStyle}>TRIO JUBRAN</h1>
+            <span className={DescriptionStyle}>
+              - 137.400 Oyentes mensuales.
+            </span>
+            <a
+              href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO2Si3L2"
               target="_blank"
               rel="noopener noreferrer"
               className="text-5xl"

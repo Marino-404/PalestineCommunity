@@ -12,6 +12,16 @@ const TourismVideo = () => {
           controls
           width="100%"
           height="100%"
+          url="https://www.youtube.com/watch?v=XzGTJlyKKbk"
+        />
+      </div>
+
+      <DivLinePages />
+      <div className={VideoStyle}>
+        <ReactPlayer
+          controls
+          width="100%"
+          height="100%"
           url="https://www.youtube.com/watch?v=MJ339LbuByM"
         />
       </div>

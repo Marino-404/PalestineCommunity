@@ -16,6 +16,7 @@ import img4 from "/src/images/art/4.png";
 import img5 from "/src/images/art/5.png";
 import img6 from "/src/images/art/6.png";
 import img7 from "/src/images/art/7.png";
+import img8 from "/src/images/art/8.webp";
 
 const CardDetail6 = () => {
   const { mode } = useAppContext();
@@ -31,6 +32,54 @@ const CardDetail6 = () => {
           mode ? "text-custom-white" : "text-custom-black"
         } z-50`}
       >
+        <DivLinePages />
+
+        <div className="xl:h-auto flex xl:flex-row flex-col">
+          <section className={SectionStyle}>
+            <SectionPhoto img={img8} />
+          </section>
+          <div className="flex w-full flex-col text-center justify-center items-center gap-2">
+            <h1 className={TitleStyle}>Rafeef Ziadah</h1>
+            <span className={DescriptionStyle}>
+              Periodista, poeta y activista de los Derechos Humanos nacida en el
+              Líbano, pero de ascendencia palestina. Saltó a la fama con el
+              poema “Nosotros enseñamos vida señor”, durante la operación Plomo
+              Fundido en diciembre de 2008 y enero de 2009.
+              <br />
+              <br />
+              Sus poemas y escritos tratan del sufrimiento del pueblo palestino,
+              el derecho al retorno de los refugiados y descendientes y de la
+              hipocresía del sionismo.
+            </span>
+            <div className="flex gap-4">
+              <a
+                href="https://www.instagram.com/rafeef.ziadah/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-5xl"
+              >
+                <AiFillInstagram />
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=neYO0kJ-6XQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-5xl"
+              >
+                <FaYoutube />
+              </a>
+              <a
+                href="https://www.rafeefziadah.net/about/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-5xl"
+              >
+                <BiWorld />
+              </a>
+            </div>
+          </div>
+        </div>
+
         <DivLinePages />
 
         <div className="xl:h-[20vw] flex xl:flex-row flex-col">
