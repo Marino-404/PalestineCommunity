@@ -130,13 +130,13 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className={`w-full h-auto flex flex-col items-center justify-center z-50 ${
+      className={`py-8 w-full h-auto flex flex-col items-center justify-center z-50 ${
         mode ? "text-custom-white" : "text-custom-black"
       }`}
     >
       <h2
         id="Contact"
-        className={`text-md underline font-poppins font-bold flex justify-center my-4 ${
+        className={`text-md underline font-poppins font-light flex justify-center my-4 ${
           mode ? "text-[#ffffffc2]" : "text-[#000000c2]"
         }`}
       >

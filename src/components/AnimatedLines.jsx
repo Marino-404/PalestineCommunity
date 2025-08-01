@@ -13,10 +13,26 @@ const AnimatedLines = () => {
 
   return (
     <div className="fixed z-0 opacity-20">
-      <div className={`line line1 ${movingLines[0] ? "moving" : ""}`}></div>
-      <div className={`line line2 ${movingLines[1] ? "moving" : ""}`}></div>
-      <div className={`line line3 ${movingLines[2] ? "moving" : ""}`}></div>
-      <div className={`line line4 ${movingLines[3] ? "moving" : ""}`}></div>
+      <div
+        className={`line line1 hidden xl:block ${
+          movingLines[0] ? "moving" : ""
+        }`}
+      ></div>
+      <div
+        className={`line line2 hidden xl:block ${
+          movingLines[1] ? "moving" : ""
+        }`}
+      ></div>
+      <div
+        className={`line line3 hidden xl:block ${
+          movingLines[2] ? "moving" : ""
+        }`}
+      ></div>
+      <div
+        className={`line line4 hidden xl:block ${
+          movingLines[3] ? "moving" : ""
+        }`}
+      ></div>
     </div>
   );
 };

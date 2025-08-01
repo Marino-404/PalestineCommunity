@@ -139,22 +139,23 @@ const About = () => {
   const buttonClasses = `xl:text-xl text-sm ${
     mode ? "text-custom-white" : "text-custom-black"
   } 
-                          hover:text-gradient font-poppins font-light flex justify-center`;
+                          hover:text-gradient font-poppins font-normal flex  justify-center w-1/3 xl:w-1/4  items-center`;
 
   const activeStyle = (section) => ({
     background: activeSection === section ? "#1b5931" : "",
     WebkitBackgroundClip: activeSection === section ? "text" : "",
     color: activeSection === section ? "transparent" : "",
+    fontWeight: activeSection === section ? "bold" : "normal",
   });
 
   return (
     <div
       className={`w-full h-auto flex flex-col items-center text-center xl:justify-start ${
-        mode ? "text-custom-white" : "text-custom-black"
+        mode ? "text-custom-white" : "text-custom-black "
       } z-50`}
     >
       <div
-        className={`w-[96%] xl:w-[55%] h-auto flex flex-row items-center justify-center xl:gap-24 gap-8 z-10`}
+        className={` w-[94%] xl:w-[55%] h-auto flex flex-row items-center justify-center xl:gap-24 gap-8 z-10`}
       >
         <button
           id="About"
@@ -200,7 +201,7 @@ const About = () => {
           {t.about.missionPoints.map((point, i) => (
             <div
               key={"mission-" + i}
-              className="flex flex-row items-center text-start justify-start mb-4"
+              className="flex flex-row items-center text-start justify-start font-light mb-4"
               style={{
                 marginBottom:
                   i === t.about.missionPoints.length - 1 ? "3rem" : undefined,
@@ -213,7 +214,7 @@ const About = () => {
             </div>
           ))}
 
-          <div className="flex flex-row items-center text-start justify-start mb-4">
+          <div className="flex flex-row items-center text-start justify-start  mb-4">
             <div className="text-xl mr-1">
               <CiCircleChevDown />
             </div>
@@ -225,7 +226,7 @@ const About = () => {
           {t.about.whoWeArePoints.map((point, i) => (
             <div
               key={"who-" + i}
-              className="flex flex-row items-center text-start justify-start mb-4"
+              className="flex flex-row items-center text-start justify-start font-light mb-4"
               style={{
                 marginBottom:
                   i === t.about.whoWeArePoints.length - 1 ? "2rem" : undefined,
@@ -255,11 +256,11 @@ const About = () => {
 
           <ul>
             {t.projects.list.map((project, index) => (
-              <li key={index} className="flex flex-col text-start mb-4">
-                <div className="flex flex-row justify-start ml-8 underline font-semibold mb-2 ">
+              <li key={index} className="flex flex-col text-start mb-6">
+                <div className="flex flex-row justify-start ml-8 underline font-light mb-2 ">
                   <span>{project.title}</span>
                 </div>
-                <div className="flex flex-row items-center text-start justify-center ">
+                <div className="flex flex-row items-center text-start justify-center font-light">
                   <div className="text-2xl mr-2">
                     <BsArrowRightShort />
                   </div>
@@ -287,7 +288,7 @@ const About = () => {
           {t.community.points.map((point, i) => (
             <div
               key={"community-" + i}
-              className="flex flex-row items-center text-start justify-start mb-4"
+              className="flex flex-row items-center text-start justify-start font-light mb-4"
             >
               <div className="text-2xl mr-2">
                 <BsArrowRightShort />
