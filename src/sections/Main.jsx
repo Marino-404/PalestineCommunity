@@ -1,5 +1,3 @@
-import { main } from "framer-motion/client";
-import React from "react";
 import CarouselOne from "../components/CarouselOne.jsx";
 import CarouselTwo from "../components/CarouselTwo.jsx";
 import Connect from "../components/Connect.jsx";

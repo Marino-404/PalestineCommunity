@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const AppContext = createContext(undefined);
 
@@ -8,6 +8,15 @@ export const AppProvider = ({ children }) => {
   });
 
   const [activeSection, setActiveSection] = useState("about");
+
+  const [language, setLanguage] = useState(() => {
+    return localStorage.getItem("language") || "es";
+  });
+
+  const toggleLanguage = (lang) => {
+    setLanguage(lang);
+    localStorage.setItem("language", lang);
+  };
 
   const toggleMode = () => {
     setMode((prev) => {
@@ -25,9 +34,22 @@ export const AppProvider = ({ children }) => {
     document.body.className = mode ? "dark" : "light";
   }, [mode]);
 
+  useEffect(() => {
+    language === "es"
+      ? document.documentElement.setAttribute("lang", "es")
+      : document.documentElement.setAttribute("lang", "en");
+  }, [language]);
+
   return (
     <AppContext.Provider
-      value={{ mode, toggleMode, activeSection, changeSection }}
+      value={{
+        mode,
+        toggleMode,
+        activeSection,
+        changeSection,
+        language,
+        toggleLanguage,
+      }}
     >
       {children}
     </AppContext.Provider>

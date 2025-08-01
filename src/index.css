@@ -1,11 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .underline-animated {
+    position: relative;
+  }
+
+  .underline-animated::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0%;
+    background-color: #1b5931;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .underline-animated:hover::after {
+    width: 100%;
+  }
+}
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -30,7 +51,7 @@
 .line {
   width: 4px;
   height: 100vh;
-  background: #247043;
+  background: #1b5931;
   position: fixed;
   transition: transform 2s ease-in-out;
 }
@@ -72,70 +93,100 @@
 }
 
 .divisorLight {
-  background: linear-gradient(to right, #ffffff00, #247042ad, #ffffff00);
+  background: linear-gradient(to right, #ffffff00, #1b5931, #ffffff00);
 }
 
 .divisorDark {
-  background: linear-gradient(to right, #00000049, #247042ad, #00000049);
+  background: linear-gradient(to right, #00000049, #1b5931, #00000049);
 }
 
 .navbar {
   padding: 0px 2px;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .text-shadow {
   text-shadow: 0, 0, 15px rgba(0, 0, 0, 0.5);
 }
 
-.card-1 {
-  background-color: #662728;
-}
-
-.card-2 {
-  background-color: #8a4d2b;
-}
-
-.card-3 {
-  background-color: #99933d;
-}
-
-.card-4 {
-  background-color: #468639;
-}
-
-.card-5 {
-  background-color: #83396a;
-}
-
-.card-6 {
-  background-color: #202458;
-}
-
-.card-7 {
-  background-color: #517c9c;
-}
-
-.card-8 {
-  background-color: #5a5a36;
-}
-
-.card-9 {
-  background-color: #8d4d89;
-}
-
-.card-10 {
-  background-color: #378f77;
-}
-
-.card-11 {
-  background-color: #2e4d69;
-}
-
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6,
+.card-7,
+.card-8,
+.card-9,
+.card-10,
+.card-11,
 .card-12 {
-  background-color: #666666;
+  border-radius: 16px;
+  background-color: var(--card-bg-color);
+  backdrop-filter: blur(12px) brightness(1.1);
+  -webkit-backdrop-filter: blur(8px) brightness(0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-1 {
+  --card-bg-color: #662728;
+}
+.card-2 {
+  --card-bg-color: #8a4d2b;
+}
+.card-3 {
+  --card-bg-color: #99933d;
+}
+.card-4 {
+  --card-bg-color: #468639;
+}
+.card-5 {
+  --card-bg-color: #83396a;
+}
+.card-6 {
+  --card-bg-color: #202458;
+}
+.card-7 {
+  --card-bg-color: #517c9c;
+}
+.card-8 {
+  --card-bg-color: #5a5a36;
+}
+.card-9 {
+  --card-bg-color: #8d4d89;
+}
+.card-10 {
+  --card-bg-color: #378f77;
+}
+.card-11 {
+  --card-bg-color: #2e4d69;
+}
+.card-12 {
+  --card-bg-color: #666666;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover,
+.card-4:hover,
+.card-5:hover,
+.card-6:hover,
+.card-7:hover,
+.card-8:hover,
+.card-9:hover,
+.card-10:hover,
+.card-11:hover,
+.card-12:hover {
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.35);
 }
 
 #message {

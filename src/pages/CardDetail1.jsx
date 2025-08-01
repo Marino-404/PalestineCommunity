@@ -1,9 +1,8 @@
-import React from "react";
 import { useAppContext } from "../AppContext.jsx";
 import Back from "../components/Back";
 import MoviePhoto from "../components/MoviePhoto";
 import DivLinePages from "../components/DivLinePages.jsx";
-import Footer from "../sections/Footer.jsx";
+import Footer1 from "../sections/Footer1.jsx";
 import img1 from "/src/images/peliculas/pelicula1.png";
 import img2 from "/src/images/peliculas/pelicula2.png";
 import img3 from "/src/images/peliculas/pelicula3.png";
@@ -250,9 +249,8 @@ const CardDetail1 = () => {
         </div>
 
         <DivLinePages />
-
-        <Footer />
       </div>
+      <Footer1 />
     </>
   );
 };

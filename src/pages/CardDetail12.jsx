@@ -1,8 +1,7 @@
-import React from "react";
 import { useAppContext } from "../AppContext";
 import Back from "../components/Back";
 import DivLinePages from "../components/DivLinePages";
-import Footer from "../sections/Footer";
+import Footer1 from "../sections/Footer1";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
 
@@ -189,9 +188,8 @@ const CardDetail12 = () => {
         </div>
 
         <DivLinePages />
-
-        <Footer />
       </div>
+      <Footer1 />
     </>
   );
 };

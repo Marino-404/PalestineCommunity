@@ -1,6 +1,5 @@
-import React from "react";
 import { useAppContext } from "../AppContext";
-import Footer from "../sections/Footer";
+import Footer1 from "../sections/Footer1";
 import Back from "../components/Back";
 import DivLinePages from "../components/DivLinePages";
 import SectionPhoto from "../components/SectionPhoto";
@@ -203,9 +202,8 @@ const CardDetail4 = () => {
         </div>
 
         <DivLinePages />
-
-        <Footer />
       </div>
+      <Footer1 />
     </>
   );
 };

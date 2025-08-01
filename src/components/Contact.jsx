@@ -5,8 +5,49 @@ import emailjs from "@emailjs/browser";
 
 emailjs.init("q-vQQZk1DRHBdFody");
 
+const texts = {
+  es: {
+    title: "¡Ponete en contacto!",
+    placeholders: {
+      name: "Nombre",
+      email: "Email",
+      number: "Número de celular (opcional)",
+      message: "Escribe tu mensaje (opcional)",
+    },
+    warnings: {
+      emptyFields: "Por favor completa todos los campos.",
+      invalidEmail: "Email inválido.",
+      invalidNumber: "Número de celular inválido.",
+      sendError: "Hubo un error al enviar el mensaje.",
+      sentSuccess: "¡Enviado correctamente!",
+      sending: "Enviando...",
+    },
+  },
+  en: {
+    title: "Get in touch!",
+    placeholders: {
+      name: "Name",
+      email: "Email",
+      number: "Phone number (optional)",
+      message: "Write your message (optional)",
+    },
+    warnings: {
+      emptyFields: "Please fill in all required fields.",
+      invalidEmail: "Invalid email.",
+      invalidNumber: "Invalid phone number.",
+      sendError: "There was an error sending the message.",
+      sentSuccess: "Sent successfully!",
+      sending: "Sending...",
+    },
+  },
+};
+
 const Contact = () => {
-  const { mode } = useAppContext();
+  const { mode, language } = useAppContext();
+
+  const lang = language || "es";
+
+  const t = texts[lang];
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -54,11 +95,11 @@ const Contact = () => {
     setSending(false);
 
     if (!name || !email) {
-      setWarning("Por favor completa todos los campos.");
+      setWarning(t.warnings.emptyFields);
     } else if (!validateEmail(email)) {
-      setWarning("Email inválido.");
+      setWarning(t.warnings.invalidEmail);
     } else if (number && !validatePhoneNumber(number)) {
-      setWarning("Número de celular inválido.");
+      setWarning(t.warnings.invalidNumber);
     } else {
       const serviceID = "service_1889";
       const templateID = "template_1234";
@@ -80,7 +121,7 @@ const Contact = () => {
         })
         .catch((err) => {
           console.error("Error!", err.message);
-          setWarning("Hubo un error al enviar el mensaje.");
+          setWarning(t.warnings.sendError);
           setSending(false);
         });
     }
@@ -99,45 +140,45 @@ const Contact = () => {
           mode ? "text-[#ffffffc2]" : "text-[#000000c2]"
         }`}
       >
-        ¡Ponete en contacto!
+        {t.title}
       </h2>
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="w-[100%] xl:w-[75%] flex flex-col items-center"
+        className="w-[100%] xl:w-[100%] flex flex-col items-center"
       >
         <input
           type="text"
-          placeholder="Nombre"
+          placeholder={t.placeholders.name}
           name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           className={`  ${
-            mode ? "bg-[#131313]" : "bg-gray-100"
+            mode ? "bg-[#131313]" : "bg-gray-200"
           } w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm`}
         />
         <input
           type="text"
-          placeholder="Email"
+          placeholder={t.placeholders.email}
           name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className={`${
-            mode ? "bg-[#131313]" : "bg-gray-100"
+            mode ? "bg-[#131313]" : "bg-gray-200"
           } border-5 w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm`}
         />
         <input
           type="text"
-          placeholder="Número de celular (opcional)"
+          placeholder={t.placeholders.number}
           name="number"
           value={number}
           onChange={(e) => setNumber(e.target.value)}
           className={`${
-            mode ? "bg-[#131313]" : "bg-gray-100"
+            mode ? "bg-[#131313]" : "bg-gray-200"
           } border-5 w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm`}
         />
         <textarea
-          placeholder="Escribe tu mensaje (opcional)"
+          placeholder={t.placeholders.message}
           name="message"
           id="message"
           value={message}
@@ -145,15 +186,15 @@ const Contact = () => {
           cols="30"
           rows="10"
           className={`${
-            mode ? "bg-[#131313]" : "bg-gray-100"
+            mode ? "bg-[#131313]" : "bg-gray-200"
           } w-[90%] h-[20vw] xl:h-[6vw] rounded-lg p-1 focus:outline-none px-4 font-poppins font-normal resize-none placeholder:text-sm`}
         ></textarea>
 
         <div className="flex flex-col items-center">
           <div className="flex text-sm m-4 font-poppins font-semibold">
             {warning && <div>{warning}</div>}
-            {sent && <div>¡Enviado correctamente!</div>}
-            {sending && <div>Enviando...</div>}
+            {sent && <div>{t.warnings.sentSuccess}</div>}
+            {sending && <div>{t.warnings.sending}</div>}
           </div>
 
           <div className="pt-4">

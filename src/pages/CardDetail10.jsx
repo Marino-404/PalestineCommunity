@@ -1,8 +1,7 @@
-import React from "react";
 import { useAppContext } from "../AppContext";
 import Back from "../components/Back";
 import DivLinePages from "../components/DivLinePages";
-import Footer from "../sections/Footer";
+import Footer1 from "../sections/Footer";
 import SectionPhoto from "../components/SectionPhoto";
 import { TitleStyle, SectionStyle } from "./CardDetail1";
 import { BiWorld } from "react-icons/bi";
@@ -133,9 +132,8 @@ const CardDetail10 = () => {
         </div>
 
         <DivLinePages />
-
-        <Footer />
       </div>
+      <Footer1 />
     </>
   );
 };

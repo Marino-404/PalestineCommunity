@@ -1,7 +1,7 @@
 import React from "react";
 import { useAppContext } from "../AppContext";
 import Back from "../components/Back";
-import Footer from "../sections/Footer";
+import Footer1 from "../sections/Footer1";
 import DivLinePages from "../components/DivLinePages";
 import SectionPhoto from "../components/SectionPhoto";
 import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
@@ -166,9 +166,8 @@ const CardDetail3 = () => {
         </div>
 
         <DivLinePages />
-
-        <Footer />
       </div>
+      <Footer1 />
     </>
   );
 };

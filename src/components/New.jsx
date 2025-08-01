@@ -3,7 +3,12 @@ import { useAppContext } from "../AppContext";
 import ReactPlayer from "react-player";
 
 const Video = () => {
-  const { mode } = useAppContext();
+  const { mode, language } = useAppContext();
+
+  const text = {
+    es: "Últimos contenidos",
+    en: "Latest content",
+  };
 
   return (
     <>
@@ -13,7 +18,7 @@ const Video = () => {
             mode ? "text-custom-white" : "text-custom-black"
           }`}
         >
-          Últimos contenidos
+          {text[language] || text.es}
         </span>
         <div className="w-full h-[68vw] xl:h-[26vw] md:h-[26vw] rounded-lg mx-auto">
           <ReactPlayer

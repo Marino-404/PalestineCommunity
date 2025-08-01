@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useAppContext } from "../AppContext";
 
 import {
@@ -16,7 +16,8 @@ const Header = () => {
     document.body.style.overflow = showMenu ? "hidden" : "auto";
   }, [showMenu]);
 
-  const { mode, toggleMode, changeSection } = useAppContext();
+  const { mode, toggleMode, changeSection, language, toggleLanguage } =
+    useAppContext();
 
   useEffect(() => {
     const html = document.querySelector("html");
@@ -27,12 +28,34 @@ const Header = () => {
     }
   }, [mode]);
 
-  const HeaderStyle = "navbar hover:text-gradient transition-none";
+  const HeaderStyle =
+    "navbar min-w-[120px] flex items-center justify-center hover:text-[#1B5931] transition";
+
+  const LinkTextStyle =
+    "relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-current after:w-0 hover:after:w-full after:transition-all after:duration-300";
 
   const handleMenuItemClick = (section) => {
     changeSection(section);
     setShowMenu(false);
   };
+
+  const translations = {
+    es: {
+      connect: "Conectar",
+      about: "Sobre Nosotros",
+      projects: "Proyectos",
+      community: "Contacto",
+    },
+    en: {
+      connect: "Connect",
+      about: "About Us",
+      projects: "Projects",
+      community: "Contact",
+    },
+  };
+
+  // Fallback a español si el idioma no está definido
+  const t = translations[language] || translations["es"];
 
   return (
     <>
@@ -60,58 +83,64 @@ const Header = () => {
             href="#Connect"
             onClick={() => handleMenuItemClick("connect")}
           >
-            Connect
+            <span className={LinkTextStyle}>{t.connect}</span>
           </a>
+
           <a
             className={HeaderStyle}
             href="#About"
             onClick={() => handleMenuItemClick("about")}
           >
-            Sobre Nosotros
+            <span className={LinkTextStyle}>{t.about}</span>
           </a>
+
           <a
             className={HeaderStyle}
             href="#Projects"
             onClick={() => handleMenuItemClick("projects")}
           >
-            Proyectos
+            <span className={LinkTextStyle}>{t.projects}</span>
           </a>
+
           <a
             className={HeaderStyle}
             href="#Community"
             onClick={() => handleMenuItemClick("community")}
           >
-            Contacto
+            <span className={LinkTextStyle}>{t.community}</span>
           </a>
+
           <div
-            className={` ${
-              showMenu ? "block" : "hidden xl:block"
-            } flex flex-col items-center pt-10 cursor-default`}
+            className={`flex ${
+              showMenu ? "flex-col gap-2 pt-8" : "xl:flex-row gap-2"
+            } items-center justify-center min-w-[120px]`}
           >
-            <AiFillMoon
+            <button
               onClick={(e) => {
-                toggleMode();
                 e.stopPropagation();
+                toggleMode();
               }}
-              className={`${
-                !mode
-                  ? "bottom-[200px] xl:top-[12px]"
-                  : "bottom-[-8000px] xl:top-[-150px]"
-              } cursor-pointer transition-all duration-100 xl:duration-300 absolute w-[30px] h-[30px] xl:h-[20px] xl:w-[20px]`}
-            />
-            <AiFillSun
+              className="w-[24px] h-[24px] xl:w-[18px] xl:h-[18px] flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110"
+            >
+              {mode ? (
+                <AiFillSun className="w-full h-full transition-all duration-300 ease-in-out opacity-100 scale-100" />
+              ) : (
+                <AiFillMoon className="w-full h-full transition-all duration-300 ease-in-out opacity-100 scale-100" />
+              )}
+            </button>
+
+            <button
               onClick={(e) => {
-                toggleMode();
                 e.stopPropagation();
+                toggleLanguage(language === "es" ? "en" : "es");
               }}
-              className={`${
-                mode
-                  ? "bottom-[200px] xl:top-[12px]"
-                  : "bottom-[-8000px] xl:top-[-150px]"
-              } cursor-pointer transition-all duration-100 xl:duration-300 absolute w-[30px] h-[30px] xl:h-[20px] xl:w-[20px]`}
-            />
+              className="text-base font-semibold hover:text-[#1B5931] transition"
+            >
+              {language === "es" ? "En" : "Es"}
+            </button>
           </div>
         </nav>
+
         <div className="xl:hidden flex m-auto justify-center">
           <button
             onClick={() => setShowMenu(!showMenu)}
@@ -121,6 +150,7 @@ const Header = () => {
           </button>
         </div>
       </header>
+
       <ButtonFixedContact onClick={() => handleMenuItemClick("community")} />
     </>
   );

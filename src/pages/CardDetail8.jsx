@@ -1,9 +1,8 @@
-import React from "react";
 import { useAppContext } from "../AppContext";
 import Back from "../components/Back";
 import SectionPhoto from "../components/SectionPhoto";
 import DivLinePages from "../components/DivLinePages";
-import Footer from "../sections/Footer";
+import Footer1 from "../sections/Footer1";
 import { FaSpotify } from "react-icons/fa";
 import { SectionStyle, TitleStyle } from "./CardDetail1";
 import img1 from "../images/podcast/1.png";
@@ -20,7 +19,7 @@ const CardDetail8 = () => {
       </div>
 
       <div
-        className={`w-[98%] xl:w-[50%] xl:mx-auto md:mx-auto flex flex-col ${
+        className={`h-[100vh] w-[98%] xl:w-[50%] xl:mx-auto md:mx-auto flex flex-col ${
           mode ? "text-custom-white" : "text-custom-black"
         } z-50`}
       >
@@ -53,11 +52,10 @@ const CardDetail8 = () => {
             </div>
           </div>
         </div>
-
         <DivLinePages />
-
-        <Footer />
       </div>
+
+      <Footer1 />
     </>
   );
 };

@@ -1,8 +1,5 @@
-import React from "react";
 import { useAppContext } from "../AppContext";
 import Logo from "../components/Logo.jsx";
-import { AiOutlineDown } from "react-icons/ai";
-import DivLine from "../components/DivLine.jsx";
 
 const Hero = () => {
   const { mode } = useAppContext();
@@ -10,10 +7,10 @@ const Hero = () => {
   return (
     <section
       id="Home"
-      className="w-full  xl:h-[62vh] flex flex-col items-center font-poppins animate-fade animate-duration-[2000ms]"
+      className="w-full  xl:h-[68vh] flex flex-col items-center justify-center font-poppins animate-fade animate-duration-[2000ms]"
     >
-      <div className=" w-full md:w-[80%] xl:h-[67vh] flex flex-col items-center  font-poppins  xl:pt-[10vh]">
-        <div className="w-[100%] flex justify-center items-center p-4">
+      <div className=" w-full md:w-[80%] xl:h-[67vh] flex flex-col items-center justify-center gap-8 font-poppins  xl:pt-[10vh] py-20 xl:py-0">
+        <div className="w-[100%] flex justify-center items-center ">
           <Logo />
         </div>
         <div
@@ -21,18 +18,12 @@ const Hero = () => {
             mode ? "text-custom-white" : "text-custom-black"
           }`}
         >
-          <h1 className="text-5xl xl:text-6xl text-gradient font-bebas font-light flex text-center justify-center xl:justify-start xl:text-start">
+          <h1 className="text-5xl xl:text-6xl text-[#1B5931] font-poppins font-medium flex text-center justify-center xl:justify-start xl:text-start">
             Connect Palestine
           </h1>
-          <h2 className="text-3xl font-poppins font-light xl:pb-2 pb-4">
-            Community
+          <h2 className="text-3xl font-cairo font-light text-[#D4AF37]">
+            المجتمع الفلسطيني
           </h2>
-          <a
-            className="text-2xl flex justify-center items-center"
-            href="#Connect"
-          >
-            <AiOutlineDown className="animate-bounce animate-infinite animate-ease-in-out" />
-          </a>
         </div>
       </div>
     </section>

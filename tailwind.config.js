@@ -1,34 +1,29 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  "darkMode": 'class',
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif'],
-        'cursive': ['Cedarville Cursive', 'cursive'],
-        'bebas': ['Bebas Neue', 'cursive'],
-        'sofia': ['Sofia', 'cursive'],
+        poppins: ["Poppins", "sans-serif"],
+        bebas: ["Bebas Neue", "cursive"],
+        cairo: ["Cairo", "sans-serif"],
+        rubik: ["Rubik", "poppins", "sans-serif"],
       },
       colors: {
-        'custom-black': '#000000c2',
-        'custom-white': '#ffffffc2',
-      }
+        "custom-black": "#000000c2",
+        "custom-white": "#ffffffc2",
+      },
     },
   },
-  plugins: [function({ addUtilities }) {
-    addUtilities({
-      '.text-gradient': {
-        background: 'linear-gradient(to bottom, #2F5A19, #527C39)', //#2F5A19, #527C39 //#247043, #778F43
-        '-webkit-background-clip': 'text',
-        '-webkit-text-fill-color': 'transparent',
-        'background-clip': 'text',
-        'text-fill-color': 'transparent',
-      },
-    });
-  }, require('tailwindcss-animated')], 
-}
-
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".text-gradient": {
+          color: "#1B5931", // Color sólido
+        },
+      });
+    },
+    require("tailwindcss-animated"),
+  ],
+};

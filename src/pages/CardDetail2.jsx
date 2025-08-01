@@ -1,9 +1,8 @@
-import React from "react";
 import { useAppContext } from "../AppContext";
 import Back from "../components/Back";
 import MoviePhoto from "../components/MoviePhoto";
 import DivLinePages from "../components/DivLinePages";
-import Footer from "../sections/Footer";
+import Footer1 from "../sections/Footer1";
 import {
   SectionStyle,
   TitleStyle,
@@ -26,7 +25,6 @@ import img8 from "/src/images/series/serie8.webp";
 
 const CardDetail2 = () => {
   const { mode } = useAppContext();
-
   return (
     <>
       <div>
@@ -291,9 +289,8 @@ const CardDetail2 = () => {
         </div>
 
         <DivLinePages />
-
-        <Footer />
       </div>
+      <Footer1 />
     </>
   );
 };

@@ -11,40 +11,21 @@ const texts = {
   },
 };
 
-const Footer = () => {
+const Footer1 = () => {
   const { mode, language } = useAppContext();
 
-  // fallback para evitar undefined
   const lang = language || "es";
-  const t = texts[lang] || texts["es"];
+  const t = texts[lang];
 
   return (
     <footer className="w-full h-auto overflow-hidden flex flex-col items-center justify-center font-poppins py-6">
       <div
-        className={`${
+        className={` ${
           mode ? "text-custom-white" : "text-custom-black"
-        } w-[96%] xl:w-[40%] h-auto flex flex-col items-center justify-center mb-12 z-10`}
-      >
-        <div
-          className={`xl:w-1/2 w-[100%] flex flex-col items-center justify-center text-center ${
-            mode ? "text-custom-white" : "text-custom-black"
-          }`}
-        >
-          <h1 className="text-2xl text-[#1B5931] font-poppins font-medium flex text-center justify-center xl:justify-start xl:text-start">
-            Connect Palestine
-          </h1>
-          <h2 className="text-md font-cairo font-light text-[#D4AF37]">
-            المجتمع الفلسطيني
-          </h2>
-        </div>
-      </div>
-
-      <div
-        className={`${
-          mode ? "text-custom-white" : "text-custom-black"
-        } w-[96%] xl:w-[40%] h-auto flex flex-col text-center gap-2 xl:flex-row xl:justify-between xl:gap-auto`}
+        } w-[96%] xl:w-[40%] h-auto flex flex-col text-center gap-2 xl:flex-row xl:justify-between xl:gap-auto `}
       >
         <h1 className="font-poppins font-light text-xs">{t.reserved}</h1>
+
         <h1 className="font-poppins font-light text-xs">
           {t.designedBy}{" "}
           <a
@@ -62,4 +43,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer1;

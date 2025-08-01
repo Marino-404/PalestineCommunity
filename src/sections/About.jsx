@@ -5,8 +5,136 @@ import DivLineAbout from "../components/DivLineAbout.jsx";
 import { BsArrowRightShort } from "react-icons/bs";
 import { CiCircleChevDown } from "react-icons/ci";
 
+const texts = {
+  es: {
+    buttons: {
+      about: "Sobre Connect Palestine",
+      projects: "Nuestros proyectos",
+      community: "Sumate a la Comunidad",
+    },
+    about: {
+      missionTitle: "Nuestra Misión",
+      missionPoints: [
+        "Nuestra misión es crear una comunidad digital global que, a través de la tecnología y el acceso a contenido, impulse la visibilidad de Palestina.",
+        "Queremos que los usuarios se conecten, interactúen y aprendan, apoyando una red donde converjan la información, las voces y los talentos que defienden la identidad palestina.",
+      ],
+      whoWeAreTitle: "Quiénes Somos",
+      whoWeArePoints: [
+        "Connect Palestine es una plataforma digital innovadora diseñada para centralizar y compartir lo mejor de la cultura, historia, gastronomía, arte y actualidad de Palestina.",
+        "Un portal dinámico que conecta a personas de todo el mundo interesadas en la riqueza de Palestina, y se convierte en una poderosa herramienta para fortalecer la narrativa de resistencia palestina en el mundo digital.",
+      ],
+    },
+    projects: {
+      title: "Nuestros Proyectos",
+      list: [
+        {
+          title: "Biblioteca Digital Multimedia",
+          description:
+            "Un centro de contenidos con acceso a películas, documentales, series y más, todo centrado en la narrativa palestina.",
+        },
+        {
+          title: "Explora la Cocina Palestina",
+          description:
+            "Un espacio donde chefs y foodies pueden descubrir y compartir recetas tradicionales, interactuando con la comunidad y conectándose a través de la gastronomía.",
+        },
+        {
+          title: "Celebrities for Palestine",
+          description:
+            "Un espacio donde destacamos a personalidades públicas que muestran su apoyo y solidaridad con Palestina, amplificando su impacto en redes y medios.",
+        },
+        {
+          title: "Arte y Poesía Digital",
+          description:
+            "Una galería virtual que celebra el talento de artistas palestinos, conectando a los usuarios con la vibrante escena artística y poética de Palestina.",
+        },
+        {
+          title: "Podcasts y Opiniones",
+          description:
+            "Una sección dedicada a reseñas de podcasts, con análisis actuales sobre la cultura, política y resistencia palestina.",
+        },
+        {
+          title: "Redes y Medios Sociales",
+          description:
+            "Un radar que monitorea las principales cuentas y medios que están en la vanguardia de la narrativa digital sobre Palestina.",
+        },
+      ],
+    },
+    community: {
+      title: "Sumate a la Comunidad",
+      points: [
+        "Te invitamos a ser parte de esta comunidad en constante expansión, donde cada conexión amplifica las voces palestinas y refuerza una red de resistencia.",
+        "¡Conectate! Recibí todas las novedades de connect palestine en tu casilla de mail.\nHagamos que el mundo escuche a Palestina.",
+      ],
+    },
+  },
+  en: {
+    buttons: {
+      about: "About Connect Palestine",
+      projects: "Our Projects",
+      community: "Join the Community",
+    },
+    about: {
+      missionTitle: "Our Mission",
+      missionPoints: [
+        "Our mission is to create a global digital community that, through technology and content access, boosts the visibility of Palestine.",
+        "We want users to connect, interact, and learn, supporting a network where information, voices, and talents defending the Palestinian identity converge.",
+      ],
+      whoWeAreTitle: "Who We Are",
+      whoWeArePoints: [
+        "Connect Palestine is an innovative digital platform designed to centralize and share the best of Palestinian culture, history, gastronomy, art, and current affairs.",
+        "A dynamic portal connecting people worldwide interested in Palestine's richness, becoming a powerful tool to strengthen the Palestinian resistance narrative in the digital world.",
+      ],
+    },
+    projects: {
+      title: "Our Projects",
+      list: [
+        {
+          title: "Digital Multimedia Library",
+          description:
+            "A content center with access to films, documentaries, series, and more, all centered on the Palestinian narrative.",
+        },
+        {
+          title: "Explore Palestinian Cuisine",
+          description:
+            "A space where chefs and foodies can discover and share traditional recipes, interacting with the community and connecting through gastronomy.",
+        },
+        {
+          title: "Celebrities for Palestine",
+          description:
+            "A space highlighting public figures who show their support and solidarity with Palestine, amplifying their impact on networks and media.",
+        },
+        {
+          title: "Digital Art and Poetry",
+          description:
+            "A virtual gallery celebrating the talent of Palestinian artists, connecting users with Palestine’s vibrant artistic and poetic scene.",
+        },
+        {
+          title: "Podcasts and Opinions",
+          description:
+            "A section dedicated to podcast reviews, with current analyses on Palestinian culture, politics, and resistance.",
+        },
+        {
+          title: "Social Networks and Media",
+          description:
+            "A radar monitoring main accounts and media at the forefront of the digital narrative about Palestine.",
+        },
+      ],
+    },
+    community: {
+      title: "Join the Community",
+      points: [
+        "We invite you to be part of this ever-growing community, where every connection amplifies Palestinian voices and strengthens a resistance network.",
+        "Connect! Receive all the news from Connect Palestine in your email inbox.\nLet's make the world hear Palestine.",
+      ],
+    },
+  },
+};
+
 const About = () => {
-  const { mode, activeSection, changeSection } = useAppContext();
+  const { mode, activeSection, changeSection, language } = useAppContext();
+
+  const lang = language || "es"; // default to Spanish
+  const t = texts[lang] || texts["es"]; // fallback seguro
 
   const buttonClasses = `text-xl ${
     mode ? "text-custom-white" : "text-custom-black"
@@ -14,10 +142,7 @@ const About = () => {
                           hover:text-gradient font-bebas font-light flex justify-center`;
 
   const activeStyle = (section) => ({
-    background:
-      activeSection === section
-        ? "linear-gradient(to bottom, #2F5A19, #527C39)"
-        : "",
+    background: activeSection === section ? "#1b5931" : "",
     WebkitBackgroundClip: activeSection === section ? "text" : "",
     color: activeSection === section ? "transparent" : "",
   });
@@ -37,7 +162,7 @@ const About = () => {
           style={activeStyle("about")}
           onClick={() => changeSection("about")}
         >
-          Sobre Connect Palestine
+          {t.buttons.about}
         </button>
         <button
           id="Projects"
@@ -45,7 +170,7 @@ const About = () => {
           style={activeStyle("projects")}
           onClick={() => changeSection("projects")}
         >
-          Nuestros proyectos
+          {t.buttons.projects}
         </button>
         <button
           id="Community"
@@ -53,7 +178,7 @@ const About = () => {
           style={activeStyle("community")}
           onClick={() => changeSection("community")}
         >
-          Sumate a la Comunidad
+          {t.buttons.community}
         </button>
       </div>
 
@@ -61,125 +186,77 @@ const About = () => {
 
       {activeSection === "about" && (
         <div
-          className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col items-center pt-12 animate-fade-down animate-duration-[800ms] animate-delay-0 animate-ease-in-out`}
+          className={`xl:w-[40%] w-[96%] m-auto h-auto font-poppins flex flex-col items-center py-32 animate-fade-down animate-duration-[800ms] animate-delay-0 animate-ease-in-out`}
         >
+          {/* Mission */}
+          <div className="flex flex-row items-center text-start justify-start mb-4">
+            <div className="text-xl mr-1">
+              <CiCircleChevDown />
+            </div>
+            <h4 className="text-xl text-gradient font-bold my-2 ">
+              {t.about.missionTitle}
+            </h4>
+          </div>
+
+          {t.about.missionPoints.map((point, i) => (
+            <div
+              key={"mission-" + i}
+              className="flex flex-row items-center text-start justify-start mb-4"
+              style={{
+                marginBottom:
+                  i === t.about.missionPoints.length - 1 ? "3rem" : undefined,
+              }}
+            >
+              <div className="text-2xl mr-2">
+                <BsArrowRightShort />
+              </div>
+              <span>{point}</span>
+            </div>
+          ))}
+
+          {/* Who We Are */}
           <div className="flex flex-row items-center text-start justify-start mb-4">
             <div className="text-xl mr-1">
               <CiCircleChevDown />
             </div>
             <h4 className="text-xl text-gradient font-bold my-2">
-              Nuestra Misión
+              {t.about.whoWeAreTitle}
             </h4>
           </div>
 
-          <div className="flex flex-row items-center text-start justify-start mb-4">
-            <div className="text-2xl mr-2">
-              <BsArrowRightShort />
+          {t.about.whoWeArePoints.map((point, i) => (
+            <div
+              key={"who-" + i}
+              className="flex flex-row items-center text-start justify-start mb-4"
+              style={{
+                marginBottom:
+                  i === t.about.whoWeArePoints.length - 1 ? "2rem" : undefined,
+              }}
+            >
+              <div className="text-2xl mr-2">
+                <BsArrowRightShort />
+              </div>
+              <span>{point}</span>
             </div>
-            <span>
-              Nuestra misión es crear una comunidad digital global que, a través
-              de la tecnología y el acceso a contenido, impulse la visibilidad
-              de Palestina.
-            </span>
-          </div>
-
-          <div className="flex flex-row items-center text-start justify-start mb-4">
-            <div className="text-2xl mr-2">
-              <BsArrowRightShort />
-            </div>
-            <span>
-              Queremos que los usuarios se conecten, interactúen y aprendan,
-              apoyando una red donde converjan la información, las voces y los
-              talentos que defienden la identidad palestina.
-            </span>
-          </div>
-
-          <div className="flex flex-row items-center text-start justify-start mb-4">
-            <div className="text-xl mr-1">
-              <CiCircleChevDown />
-            </div>
-            <h4 className="text-xl text-gradient font-bold my-2">
-              Quiénes Somos
-            </h4>
-          </div>
-
-          <div className="flex flex-row items-center text-start justify-start mb-4">
-            <div className="text-2xl mr-2">
-              <BsArrowRightShort />
-            </div>
-            <span>
-              Connect Palestine es una plataforma digital innovadora diseñada
-              para centralizar y compartir lo mejor de la cultura, historia,
-              gastronomía, arte y actualidad de Palestina.
-            </span>
-          </div>
-
-          <div className="flex flex-row items-center text-start justify-start mb-8">
-            <div className="text-2xl mr-2">
-              <BsArrowRightShort />
-            </div>
-            <span>
-              Un portal dinámico que conecta a personas de todo el mundo
-              interesadas en la riqueza de Palestina, y se convierte en una
-              poderosa herramienta para fortalecer la narrativa de resistencia
-              palestina en el mundo digital.
-            </span>
-          </div>
-
-          <div className="flex flex-row items-center text-center justify-center">
-            <span className="text-sm font-light">
-              Desarrollado por el Centro Palestino de Rosario
-            </span>
-          </div>
+          ))}
         </div>
       )}
 
       {activeSection === "projects" && (
         <div
-          className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col pt-12 animate-fade-down animate-duration-[800ms] animate-delay-0 animate-ease-in-out`}
+          className={`xl:w-[40%] w-[96%] mx-auto h-auto font-poppins flex flex-col py-32 animate-fade-down animate-duration-[800ms] animate-delay-0 animate-ease-in-out`}
         >
           <div className="flex flex-row items-center text-center justify-center mb-4">
             <div className="text-xl mr-1">
               <CiCircleChevDown />
             </div>
             <h4 className="text-xl text-gradient font-bold my-2">
-              Nuestros Proyectos
+              {t.projects.title}
             </h4>
           </div>
 
           <ul>
-            {[
-              {
-                title: "Biblioteca Digital Multimedia",
-                description:
-                  "Un centro de contenidos con acceso a películas, documentales, series y más, todo centrado en la narrativa palestina.",
-              },
-              {
-                title: "Explora la Cocina Palestina",
-                description:
-                  "Un espacio donde chefs y foodies pueden descubrir y compartir recetas tradicionales, interactuando con la comunidad y conectándose a través de la gastronomía.",
-              },
-              {
-                title: "Celebrities for Palestine",
-                description:
-                  "Un espacio donde destacamos a personalidades públicas que muestran su apoyo y solidaridad con Palestina, amplificando su impacto en redes y medios.",
-              },
-              {
-                title: "Arte y Poesía Digital",
-                description:
-                  "Una galería virtual que celebra el talento de artistas palestinos, conectando a los usuarios con la vibrante escena artística y poética de Palestina.",
-              },
-              {
-                title: "Podcasts y Opiniones",
-                description:
-                  "Una sección dedicada a reseñas de podcasts, con análisis actuales sobre la cultura, política y resistencia palestina.",
-              },
-              {
-                title: "Redes y Medios Sociales",
-                description:
-                  "Un radar que monitorea las principales cuentas y medios que están en la vanguardia de la narrativa digital sobre Palestina.",
-              },
-            ].map((project, index) => (
+            {t.projects.list.map((project, index) => (
               <li key={index} className="flex flex-col text-start mb-4">
                 <div className="flex flex-row justify-start ml-8 underline font-semibold mb-2 ">
                   <span>{project.title}</span>
@@ -198,39 +275,28 @@ const About = () => {
 
       {activeSection === "community" && (
         <div
-          className={`xl:w-[55%] w-[96%] h-auto font-poppins flex flex-col pt-12 animate-fade-down animate-duration-[800ms] animate-delay-0 animate-ease-in-out`}
+          className={`xl:w-[40%] w-[96%] m-auto h-auto font-poppins flex flex-col py-32 animate-fade-down animate-duration-[800ms] animate-delay-0 animate-ease-in-out`}
         >
           <div className="flex flex-row items-center text-center justify-center mb-4">
             <div className="text-xl mr-1">
               <CiCircleChevDown />
             </div>
             <h4 className="text-xl text-gradient font-bold my-2">
-              Sumate a la Comunidad
+              {t.community.title}
             </h4>
           </div>
 
-          <div className="flex flex-row items-center text-start justify-start mb-4">
-            <div className="text-2xl mr-2">
-              <BsArrowRightShort />
+          {t.community.points.map((point, i) => (
+            <div
+              key={"community-" + i}
+              className="flex flex-row items-center text-start justify-start mb-4"
+            >
+              <div className="text-2xl mr-2">
+                <BsArrowRightShort />
+              </div>
+              <span style={{ whiteSpace: "pre-line" }}>{point}</span>
             </div>
-            <span>
-              Te invitamos a ser parte de esta comunidad en constante expansión,
-              donde cada conexión amplifica las voces palestinas y refuerza una
-              red de resistencia.
-            </span>
-          </div>
-
-          <div className="flex flex-row items-center text-start justify-start mb-4">
-            <div className="text-2xl mr-2">
-              <BsArrowRightShort />
-            </div>
-            <span>
-              ¡Conectate! Recibí todas las novedades de connect palestine en tu
-              casilla de mail.
-              <br />
-              Hagamos que el mundo escuche a Palestina.
-            </span>
-          </div>
+          ))}
 
           <Contact />
         </div>

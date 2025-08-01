@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const AnimatedLines = () => {
   const [movingLines, setMovingLines] = useState([false, false, false, false]);

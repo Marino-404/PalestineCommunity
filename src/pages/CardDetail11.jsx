@@ -1,12 +1,11 @@
-import React from "react";
 import { useAppContext } from "../AppContext";
 import Back from "../components/Back";
 import DivLinePages from "../components/DivLinePages";
-import Footer from "../sections/Footer";
+import Footer1 from "../sections/Footer1";
 import TourismVideo from "../components/TourismVideo";
 import DivLineCards from "../components/DivLineCards";
 
-import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
+import { TitleStyle, DescriptionStyle } from "./CardDetail1";
 
 const CardDetail11 = () => {
   const { mode } = useAppContext();
@@ -41,9 +40,8 @@ const CardDetail11 = () => {
         <TourismVideo />
 
         <DivLinePages />
-
-        <Footer />
       </div>
+      <Footer1 />
     </>
   );
 };
