@@ -57,11 +57,11 @@ const CardDetail1 = () => {
               Prime Video, Filmin y Movistar+.
             </span>
             <div className={Stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalfAlt />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStarHalfAlt className="text-[#D4AF37]" />
             </div>
             <a
               href="https://www.youtube.com/watch?v=-pI2IXKtlew&source_ve_path=OTY3MTQ"
@@ -97,11 +97,11 @@ const CardDetail1 = () => {
               la cuenta a inglés.
             </span>
             <div className={Stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalfAlt />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStarHalfAlt className="text-[#D4AF37]" />
             </div>
             <a
               href="https://www.youtube.com/watch?v=-pI2IXKtlew&source_ve_path=OTY3MTQ"
@@ -133,11 +133,11 @@ const CardDetail1 = () => {
               funcione.
             </span>
             <div className={Stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalfAlt />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStarHalfAlt className="text-[#D4AF37]" />
             </div>
             <a
               href="https://www.netflix.com/search?q=200%20metros&jbv=81443440"
@@ -164,11 +164,11 @@ const CardDetail1 = () => {
               el concurso de talentos 'Arab Idol'.
             </span>
             <div className={Stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaRegStar />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaRegStar className="text-[#D4AF37]" />
             </div>
             <a
               href="https://www.primevideo.com/region/na/detail/0QSVJZ84KNE0W5VN4D9SHBFJIN/ref=atv_sr_fle_c_Tn74RA_2_1_2?sr=1-2&pageTypeIdSource=ASIN&pageTypeId=B085LSTJ48&qid=1730756211723"
@@ -195,11 +195,11 @@ const CardDetail1 = () => {
               es su día a día bajo las bombas y el embargo.
             </span>
             <div className={Stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaRegStar />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaRegStar className="text-[#D4AF37]" />
             </div>
             <a
               href="https://www.youtube.com/watch?v=zMEWDj7CXd0"
@@ -231,11 +231,11 @@ const CardDetail1 = () => {
               obtener un visado para ir a estudiar a Canadá y marcharse de allí.
             </span>
             <div className={Stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalfAlt />
-              <FaRegStar />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStarHalfAlt className="text-[#D4AF37]" />
+              <FaRegStar className="text-[#D4AF37]" />
             </div>
             <a
               href="https://www.netflix.com/title/70117041?preventIntent=true"

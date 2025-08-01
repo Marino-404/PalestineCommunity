@@ -54,13 +54,12 @@ const Header = () => {
     },
   };
 
-  // Fallback a español si el idioma no está definido
   const t = translations[language] || translations["es"];
 
   return (
     <>
       <header
-        className={`xl:fixed flex items-center justify-between w-full h-[7vh] xl:h-[6vh] z-50 ${
+        className={`xl:fixed flex items-center justify-between w-full border-b border-[#D4AF37] h-[7vh] xl:h-[6vh] z-50 ${
           mode ? "text-custom-white" : "text-custom-black"
         } xl:animate-fade-down animate-duration-[1000ms]`}
       >
@@ -136,7 +135,7 @@ const Header = () => {
               }}
               className="text-base font-semibold hover:text-[#1B5931] transition"
             >
-              {language === "es" ? "En" : "Es"}
+              {language === "es" ? "en" : "es"}
             </button>
           </div>
         </nav>

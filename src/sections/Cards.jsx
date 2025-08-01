@@ -1,4 +1,3 @@
-import React from "react";
 import { useAppContext } from "../AppContext";
 import { PiFilmSlateBold } from "react-icons/pi";
 import { GiFilmProjector } from "react-icons/gi";
@@ -50,6 +49,9 @@ const translations = {
 
 const Cards = () => {
   const { language } = useAppContext() || {};
+
+  const { mode } = useAppContext();
+
   const lang = language || "es";
   const t = translations[lang] || translations["es"];
 
@@ -94,7 +96,11 @@ const Cards = () => {
   return (
     <section className="w-full h-auto flex flex-col items-center justify-center text-custom-white px-2 z-10">
       <div className="flex items-center justify-center">
-        <span className="flex items-center justify-center text-center text-3xl text-gradient font-rubik font-medium">
+        <span
+          className={` ${
+            mode ? "text-custom-white" : "text-custom-black"
+          }  flex items-center justify-center text-center xl:text-3xl text-md font-poppins font-light`}
+        >
           {t.intro}
         </span>
       </div>

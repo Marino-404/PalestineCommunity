@@ -52,11 +52,11 @@ const CardDetail2 = () => {
               directas a la Nakba y la identidad cultural.
             </span>
             <div className={Stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaRegStar />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaRegStar className="text-[#D4AF37]" />
             </div>
             <a
               href="https://www.netflix.com/ar/title/81134264"
@@ -83,11 +83,11 @@ const CardDetail2 = () => {
               israelíes.
             </span>
             <div className={Stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalfAlt />
-              <FaRegStar />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStarHalfAlt className="text-[#D4AF37]" />
+              <FaRegStar className="text-[#D4AF37]" />
             </div>
             <a
               href="https://www.filmin.es/serie/east-side"
@@ -113,11 +113,11 @@ const CardDetail2 = () => {
               frontera del horror. Gaza, hoy.
             </span>
             <div className={Stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalfAlt />
-              <FaRegStar />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStarHalfAlt className="text-[#D4AF37]" />
+              <FaRegStar className="text-[#D4AF37]" />
             </div>
             <a
               href="https://www.filmin.es/pelicula/gaza-mon-amour"
@@ -144,11 +144,11 @@ const CardDetail2 = () => {
               mujeres policías de las fuerzas de seguridad palestinas.
             </span>
             <div className={Stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaRegStar />
-              <FaRegStar />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaRegStar className="text-[#D4AF37]" />
+              <FaRegStar className="text-[#D4AF37]" />
             </div>
             <a
               href="https://www.filmin.es/pelicula/lo-que-walaa-quiere"
@@ -176,11 +176,11 @@ const CardDetail2 = () => {
               sobrevivir.
             </span>
             <div className={Stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaRegStar />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaRegStar className="text-[#D4AF37]" />
             </div>
             <a
               href="https://www.filmin.es/pelicula/el-color-de-los-olivos?origin=searcher&origin-query=primary"
@@ -207,11 +207,11 @@ const CardDetail2 = () => {
               revelan sus luchas constantes y los pequeños detalles de su vida.
             </span>
             <div className={Stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalfAlt />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStarHalfAlt className="text-[#D4AF37]" />
             </div>
             <a
               href="https://www.primevideo.com/-/es/detail/InchAllah/0OEET133USRQRFE1EYASVS6VRG"
@@ -240,11 +240,11 @@ const CardDetail2 = () => {
               afectan a la vida de las personas.
             </span>
             <div className={Stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaRegStar />
-              <FaRegStar />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaRegStar className="text-[#D4AF37]" />
+              <FaRegStar className="text-[#D4AF37]" />
             </div>
             <a
               href="https://www.filmin.es/corto/gaza?origin=searcher&origin-query=primary"
@@ -271,11 +271,11 @@ const CardDetail2 = () => {
               de eventos caóticos.
             </span>
             <div className={Stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalfAlt />
-              <FaRegStar />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStar className="text-[#D4AF37]" />
+              <FaStarHalfAlt className="text-[#D4AF37]" />
+              <FaRegStar className="text-[#D4AF37]" />
             </div>
             <a
               href="https://www.netflix.com/ar/title/80113612"

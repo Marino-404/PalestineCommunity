@@ -133,13 +133,13 @@ const texts = {
 const About = () => {
   const { mode, activeSection, changeSection, language } = useAppContext();
 
-  const lang = language || "es"; // default to Spanish
-  const t = texts[lang] || texts["es"]; // fallback seguro
+  const lang = language || "es";
+  const t = texts[lang] || texts["es"];
 
-  const buttonClasses = `text-xl ${
+  const buttonClasses = `xl:text-xl text-sm ${
     mode ? "text-custom-white" : "text-custom-black"
   } 
-                          hover:text-gradient font-bebas font-light flex justify-center`;
+                          hover:text-gradient font-poppins font-light flex justify-center`;
 
   const activeStyle = (section) => ({
     background: activeSection === section ? "#1b5931" : "",
@@ -154,7 +154,7 @@ const About = () => {
       } z-50`}
     >
       <div
-        className={`w-[96%] xl:w-[55%] h-auto flex flex-row items-center justify-center xl:gap-20 gap-6 z-10`}
+        className={`w-[96%] xl:w-[55%] h-auto flex flex-row items-center justify-center xl:gap-24 gap-8 z-10`}
       >
         <button
           id="About"
@@ -188,7 +188,6 @@ const About = () => {
         <div
           className={`xl:w-[40%] w-[96%] m-auto h-auto font-poppins flex flex-col items-center py-32 animate-fade-down animate-duration-[800ms] animate-delay-0 animate-ease-in-out`}
         >
-          {/* Mission */}
           <div className="flex flex-row items-center text-start justify-start mb-4">
             <div className="text-xl mr-1">
               <CiCircleChevDown />
@@ -214,7 +213,6 @@ const About = () => {
             </div>
           ))}
 
-          {/* Who We Are */}
           <div className="flex flex-row items-center text-start justify-start mb-4">
             <div className="text-xl mr-1">
               <CiCircleChevDown />

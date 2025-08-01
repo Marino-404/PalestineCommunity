@@ -174,21 +174,6 @@
   --card-bg-color: #666666;
 }
 
-.card-1:hover,
-.card-2:hover,
-.card-3:hover,
-.card-4:hover,
-.card-5:hover,
-.card-6:hover,
-.card-7:hover,
-.card-8:hover,
-.card-9:hover,
-.card-10:hover,
-.card-11:hover,
-.card-12:hover {
-  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.35);
-}
-
 #message {
   scrollbar-width: thin;
   scrollbar-color: #4a5568 #e2e8f0;

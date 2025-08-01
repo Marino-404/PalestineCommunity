@@ -29,8 +29,8 @@ function App() {
     <div
       className={`${
         mode
-          ? "selection:bg-[#ffffffc2] selection:text-[#000000c2]"
-          : "selection:bg-[#000000c2] selection:text-[#ffffffc2]"
+          ? "selection:bg-[#000000c2] selection:text-[#ffffffc2]"
+          : "selection:bg-[#ffffffc2] selection:text-[#000000c2]"
       } `}
     >
       <ScrollToTop />

@@ -9,7 +9,7 @@ const Hero = () => {
       id="Home"
       className="w-full  xl:h-[68vh] flex flex-col items-center justify-center font-poppins animate-fade animate-duration-[2000ms]"
     >
-      <div className=" w-full md:w-[80%] xl:h-[67vh] flex flex-col items-center justify-center gap-8 font-poppins  xl:pt-[10vh] py-20 xl:py-0">
+      <div className=" w-full md:w-[80%] xl:h-[67vh] flex flex-col items-center justify-center gap-8 font-poppins  xl:pt-[10vh] py-16 xl:py-0">
         <div className="w-[100%] flex justify-center items-center ">
           <Logo />
         </div>
