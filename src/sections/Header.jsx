@@ -42,7 +42,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`xl:fixed flex items-center justify-between w-full border-b border-[#D4AF37] h-[7vh] xl:h-[6vh] z-50 ${
+        className={`fixed flex items-center justify-between w-full border-b border-[#D4AF37] h-[7vh] xl:h-[6vh] z-50 ${
           mode ? "text-custom-white" : "text-custom-black"
         } xl:animate-fade-down animate-duration-[1000ms]`}
       >
