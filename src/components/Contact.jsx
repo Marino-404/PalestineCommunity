@@ -1,53 +1,15 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { useAppContext } from "../store/AppContext";
 import Button from "./Button";
 import emailjs from "@emailjs/browser";
+import { contactTextContent } from "../utils/text-content.js";
 
 emailjs.init("q-vQQZk1DRHBdFody");
 
-const texts = {
-  es: {
-    title: "¡Ponete en contacto!",
-    placeholders: {
-      name: "Nombre",
-      email: "Email",
-      number: "Número de celular (opcional)",
-      message: "Escribe tu mensaje (opcional)",
-    },
-    warnings: {
-      emptyFields: "Por favor completa todos los campos.",
-      invalidEmail: "Email inválido.",
-      invalidNumber: "Número de celular inválido.",
-      sendError: "Hubo un error al enviar el mensaje.",
-      sentSuccess: "¡Enviado correctamente!",
-      sending: "Enviando...",
-    },
-  },
-  en: {
-    title: "Get in touch!",
-    placeholders: {
-      name: "Name",
-      email: "Email",
-      number: "Phone number (optional)",
-      message: "Write your message (optional)",
-    },
-    warnings: {
-      emptyFields: "Please fill in all required fields.",
-      invalidEmail: "Invalid email.",
-      invalidNumber: "Invalid phone number.",
-      sendError: "There was an error sending the message.",
-      sentSuccess: "Sent successfully!",
-      sending: "Sending...",
-    },
-  },
-};
-
 const Contact = () => {
-  const { mode, language } = useAppContext();
+  const { mode, lang } = useAppContext();
 
-  const lang = language || "es";
-
-  const t = texts[lang];
+  const text = contactTextContent(lang);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -59,58 +21,40 @@ const Contact = () => {
 
   const formRef = useRef();
 
-  const validateEmail = (email) => {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
-  };
-
-  const validatePhoneNumber = (number) => {
-    const regex = /^\d{10,15}$/;
-    return regex.test(number);
-  };
+  const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const validatePhoneNumber = (number) => /^\d{10,15}$/.test(number);
 
   const completeEmail = async (name, email, number) => {
-    const res = fetch(import.meta.env.VITE_API_URL, {
+    const res = await fetch(import.meta.env.VITE_API_URL, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        number: number,
-        messages: message ? message : "",
-      }),
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, number, messages: message || "" }),
     });
     const resJson = await res.json();
     if (resJson.status !== 200) console.log("Error al enviar el correo");
     else console.log("Correo enviado");
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
     setWarning("");
     setSent(false);
     setSending(false);
 
-    if (!name || !email) {
-      setWarning(t.warnings.emptyFields);
-    } else if (!validateEmail(email)) {
-      setWarning(t.warnings.invalidEmail);
-    } else if (number && !validatePhoneNumber(number)) {
-      setWarning(t.warnings.invalidNumber);
-    } else {
+    if (!name || !email) setWarning(text.warnings.emptyFields);
+    else if (!validateEmail(email)) setWarning(text.warnings.invalidEmail);
+    else if (number && !validatePhoneNumber(number))
+      setWarning(text.warnings.invalidNumber);
+    else {
       const serviceID = "service_1889";
       const templateID = "template_1234";
-      completeEmail(name, email, number ? number : "");
+      completeEmail(name, email, number || "");
 
       setSending(true);
 
       emailjs
         .sendForm(serviceID, templateID, formRef.current)
-        .then((res) => {
-          console.log(res);
+        .then(() => {
           setWarning("");
           setSent(true);
           setSending(false);
@@ -121,7 +65,7 @@ const Contact = () => {
         })
         .catch((err) => {
           console.error("Error!", err.message);
-          setWarning(t.warnings.sendError);
+          setWarning(text.warnings.sendError);
           setSending(false);
         });
     }
@@ -135,13 +79,13 @@ const Contact = () => {
       }`}
     >
       <h2
-        id="Contact"
         className={`text-md underline font-poppins font-light flex justify-center my-4 ${
           mode ? "text-[#ffffffc2]" : "text-[#000000c2]"
         }`}
       >
-        {t.title}
+        {text.title}
       </h2>
+
       <form
         ref={formRef}
         onSubmit={handleSubmit}
@@ -149,17 +93,18 @@ const Contact = () => {
       >
         <input
           type="text"
-          placeholder={t.placeholders.name}
+          placeholder={text.placeholders.name}
           name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className={`  ${
+          className={`${
             mode ? "bg-[#131313]" : "bg-gray-200"
           } w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm`}
         />
+
         <input
           type="text"
-          placeholder={t.placeholders.email}
+          placeholder={text.placeholders.email}
           name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -167,9 +112,10 @@ const Contact = () => {
             mode ? "bg-[#131313]" : "bg-gray-200"
           } border-5 w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm`}
         />
+
         <input
           type="text"
-          placeholder={t.placeholders.number}
+          placeholder={text.placeholders.number}
           name="number"
           value={number}
           onChange={(e) => setNumber(e.target.value)}
@@ -177,10 +123,10 @@ const Contact = () => {
             mode ? "bg-[#131313]" : "bg-gray-200"
           } border-5 w-[90%] h-[8vw] xl:h-[2vw] rounded-lg p-1 mb-4 focus:outline-none px-4 font-poppins font-normal placeholder:text-sm`}
         />
+
         <textarea
-          placeholder={t.placeholders.message}
+          placeholder={text.placeholders.message}
           name="message"
-          id="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           cols="30"
@@ -188,13 +134,13 @@ const Contact = () => {
           className={`${
             mode ? "bg-[#131313]" : "bg-gray-200"
           } w-[90%] h-[20vw] xl:h-[6vw] rounded-lg p-1 focus:outline-none px-4 font-poppins font-normal resize-none placeholder:text-sm`}
-        ></textarea>
+        />
 
         <div className="flex flex-col items-center">
           <div className="flex text-sm m-4 font-poppins font-semibold">
             {warning && <div>{warning}</div>}
-            {sent && <div>{t.warnings.sentSuccess}</div>}
-            {sending && <div>{t.warnings.sending}</div>}
+            {sent && <div>{text.warnings.sentSuccess}</div>}
+            {sending && <div>{text.warnings.sending}</div>}
           </div>
 
           <div className="pt-4">

@@ -1,18 +1,7 @@
 import { useAppContext } from "../store/AppContext";
 
-const texts = {
-  es: {
-    send: "Enviar",
-  },
-  en: {
-    send: "Send",
-  },
-};
-
 const Button = () => {
-  const { mode, language } = useAppContext();
-  const lang = language || "es";
-  const t = texts[lang];
+  const { mode, lang } = useAppContext();
 
   return (
     <button
@@ -24,7 +13,7 @@ const Button = () => {
             : "bg-[#1B5931] text-white hover:bg-[#247043]"
         }`}
     >
-      {t.send}
+      {lang ? "Enviar" : "Send"}
     </button>
   );
 };

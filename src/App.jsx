@@ -8,6 +8,7 @@ import Footer from "./sections/Footer.jsx";
 import Main from "./sections/Main.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import { Routes, Route } from "react-router-dom";
+import CardGaza from "./pages/CardGaza.jsx";
 import CardDetail1 from "./pages/CardDetail1.jsx";
 import CardDetail2 from "./pages/CardDetail2.jsx";
 import CardDetail3 from "./pages/CardDetail3.jsx";
@@ -51,6 +52,7 @@ function App() {
             </>
           }
         />
+        <Route path="/cards/gaza" element={<CardGaza />} />
         <Route path="/cards/detail1" element={<CardDetail1 />} />
         <Route path="/cards/detail2" element={<CardDetail2 />} />
         <Route path="/cards/detail3" element={<CardDetail3 />} />
