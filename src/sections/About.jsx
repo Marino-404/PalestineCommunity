@@ -57,7 +57,6 @@ const About = () => {
 
       {activeSection === "about" && (
         <div className="xl:w-[40%] w-[96%] m-auto h-auto font-poppins flex flex-col items-center py-32 animate-fade-down animate-duration-[800ms] animate-delay-0 animate-ease-in-out">
-          {/* Mission Section */}
           <div className="flex flex-row items-center text-start justify-start mb-4">
             <div className="text-xl mr-1">
               <CiCircleChevDown />
@@ -83,7 +82,6 @@ const About = () => {
             </div>
           ))}
 
-          {/* Who We Are Section */}
           <div className="flex flex-row items-center text-start justify-start mb-4">
             <div className="text-xl mr-1">
               <CiCircleChevDown />

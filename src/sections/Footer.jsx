@@ -37,7 +37,7 @@ const Footer = () => {
       <div
         className={`${
           mode ? "text-custom-white" : "text-custom-black"
-        } w-[96%] xl:w-[40%] h-auto flex flex-col text-center gap-2 xl:flex-row xl:justify-between xl:gap-auto`}
+        } w-[96%] xl:w-[50%] h-auto flex flex-col text-center gap-2 xl:flex-row xl:justify-between xl:gap-auto`}
       >
         <h1 className="font-poppins font-light text-xs">
           {lang
