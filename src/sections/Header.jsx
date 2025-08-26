@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
-import { useAppContext } from "../AppContext";
-
+import { useAppContext } from "../store/AppContext";
 import {
   AiOutlineMenu,
   AiOutlineClose,
   AiFillMoon,
   AiFillSun,
 } from "react-icons/ai";
+import { HiLanguage } from "react-icons/hi2";
 import ButtonFixedContact from "../components/ButtonFixedContact";
+import { headerTextContent } from "../utils/text-content";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -16,8 +17,7 @@ const Header = () => {
     document.body.style.overflow = showMenu ? "hidden" : "auto";
   }, [showMenu]);
 
-  const { mode, toggleMode, changeSection, language, toggleLanguage } =
-    useAppContext();
+  const { mode, toggleMode, changeSection, lang, changeLang } = useAppContext();
 
   useEffect(() => {
     const html = document.querySelector("html");
@@ -38,23 +38,6 @@ const Header = () => {
     changeSection(section);
     setShowMenu(false);
   };
-
-  const translations = {
-    es: {
-      connect: "Conectar",
-      about: "Sobre Nosotros",
-      projects: "Proyectos",
-      community: "Contacto",
-    },
-    en: {
-      connect: "Connect",
-      about: "About Us",
-      projects: "Projects",
-      community: "Contact",
-    },
-  };
-
-  const t = translations[language] || translations["es"];
 
   return (
     <>
@@ -82,33 +65,37 @@ const Header = () => {
             href="#Connect"
             onClick={() => handleMenuItemClick("connect")}
           >
-            <span className={LinkTextStyle}>{t.connect}</span>
+            <span className={LinkTextStyle}>
+              {headerTextContent(lang).connect}
+            </span>
           </a>
-
           <a
             className={HeaderStyle}
             href="#About"
             onClick={() => handleMenuItemClick("about")}
           >
-            <span className={LinkTextStyle}>{t.about}</span>
+            <span className={LinkTextStyle}>
+              {headerTextContent(lang).about}
+            </span>
           </a>
-
           <a
             className={HeaderStyle}
             href="#Projects"
             onClick={() => handleMenuItemClick("projects")}
           >
-            <span className={LinkTextStyle}>{t.projects}</span>
+            <span className={LinkTextStyle}>
+              {headerTextContent(lang).projects}
+            </span>
           </a>
-
           <a
             className={HeaderStyle}
             href="#Community"
             onClick={() => handleMenuItemClick("community")}
           >
-            <span className={LinkTextStyle}>{t.community}</span>
+            <span className={LinkTextStyle}>
+              {headerTextContent(lang).contact}
+            </span>
           </a>
-
           <div
             className={`flex ${
               showMenu ? "flex-col gap-2 pt-8" : "xl:flex-row gap-2"
@@ -119,7 +106,7 @@ const Header = () => {
                 e.stopPropagation();
                 toggleMode();
               }}
-              className="w-[24px] h-[24px] xl:w-[18px] xl:h-[18px] flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110"
+              className="w-[24px] h-[24px] xl:w-[23px] xl:h-[23px] flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110"
             >
               {mode ? (
                 <AiFillSun className="w-full h-full transition-all duration-300 ease-in-out opacity-100 scale-100" />
@@ -128,15 +115,16 @@ const Header = () => {
               )}
             </button>
 
-            <button
+            <span
               onClick={(e) => {
                 e.stopPropagation();
-                toggleLanguage(language === "es" ? "en" : "es");
+                changeLang(!lang);
               }}
-              className="text-base font-semibold hover:text-[#1B5931] transition"
+              className="text-base font-semibold hover:text-[#1B5931] transition hover:cursor-pointer m-2"
             >
-              {language === "es" ? "en" : "es"}
-            </button>
+              {" "}
+              <HiLanguage className="w-6 h-6" />
+            </span>
           </div>
         </nav>
 

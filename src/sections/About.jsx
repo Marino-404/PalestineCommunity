@@ -1,5 +1,4 @@
-import React from "react";
-import { useAppContext } from "../AppContext.jsx";
+import { useAppContext } from "../store/AppContext.jsx";
 import Contact from "../components/Contact.jsx";
 import DivLineAbout from "../components/DivLineAbout.jsx";
 import { BsArrowRightShort } from "react-icons/bs";
@@ -155,7 +154,7 @@ const About = () => {
       } z-50`}
     >
       <div
-        className={` w-[94%] xl:w-[55%] h-auto flex flex-row items-center justify-center xl:gap-24 gap-8 z-10`}
+        className={` w-[94%] xl:w-[55%] h-auto flex flex-row items-center justify-center xl:gap-24 gap-8 z-10 `}
       >
         <button
           id="About"

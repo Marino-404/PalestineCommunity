@@ -9,14 +9,9 @@ export const AppProvider = ({ children }) => {
 
   const [activeSection, setActiveSection] = useState("about");
 
-  const [language, setLanguage] = useState(() => {
-    return localStorage.getItem("language") || "es";
+  const [lang, setLang] = useState(() => {
+    return localStorage.getItem("lang") === "true";
   });
-
-  const toggleLanguage = (lang) => {
-    setLanguage(lang);
-    localStorage.setItem("language", lang);
-  };
 
   const toggleMode = () => {
     setMode((prev) => {
@@ -30,15 +25,14 @@ export const AppProvider = ({ children }) => {
     setActiveSection(section);
   };
 
+  const changeLang = (newLang) => {
+    setLang(newLang);
+    localStorage.setItem("lang", newLang);
+  };
+
   useEffect(() => {
     document.body.className = mode ? "dark" : "light";
   }, [mode]);
-
-  useEffect(() => {
-    language === "es"
-      ? document.documentElement.setAttribute("lang", "es")
-      : document.documentElement.setAttribute("lang", "en");
-  }, [language]);
 
   return (
     <AppContext.Provider
@@ -47,8 +41,8 @@ export const AppProvider = ({ children }) => {
         toggleMode,
         activeSection,
         changeSection,
-        language,
-        toggleLanguage,
+        lang,
+        changeLang,
       }}
     >
       {children}

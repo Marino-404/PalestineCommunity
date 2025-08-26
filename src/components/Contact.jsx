@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { useAppContext } from "../AppContext";
+import { useAppContext } from "../store/AppContext";
 import Button from "./Button";
 import emailjs from "@emailjs/browser";
 

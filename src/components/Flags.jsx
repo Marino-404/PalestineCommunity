@@ -1,4 +1,3 @@
-import React from "react";
 import arg from "/images/flags/arg.png";
 
 const Flags = () => {

@@ -1,5 +1,4 @@
-import React from "react";
-import { useAppContext } from "../AppContext";
+import { useAppContext } from "../store/AppContext.jsx";
 import Back from "../components/Back";
 import Footer1 from "../sections/Footer1";
 import DivLinePages from "../components/DivLinePages";

@@ -1,4 +1,4 @@
-import { useAppContext } from "../AppContext";
+import { useAppContext } from "../store/AppContext";
 
 const PhotoSections = ({ img }) => {
   const { mode } = useAppContext();

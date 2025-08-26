@@ -1,5 +1,4 @@
-import { useAppContext } from "../AppContext";
-
+import { useAppContext } from "../store/AppContext";
 const texts = {
   es: {
     reserved: "© 2025 - Todos los derechos reservados.",

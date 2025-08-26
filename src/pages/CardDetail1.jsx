@@ -1,4 +1,4 @@
-import { useAppContext } from "../AppContext.jsx";
+import { useAppContext } from "../store/AppContext.jsx";
 import Back from "../components/Back";
 import MoviePhoto from "../components/MoviePhoto";
 import DivLinePages from "../components/DivLinePages.jsx";

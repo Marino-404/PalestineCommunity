@@ -1,4 +1,4 @@
-import { useAppContext } from "../AppContext";
+import { useAppContext } from "../store/AppContext";
 import Logo from "../components/Logo.jsx";
 import AnimatedLines from "../components/AnimatedLines.jsx";
 

@@ -1,5 +1,4 @@
-import React from "react";
-import { useAppContext } from "../AppContext";
+import { useAppContext } from "../store/AppContext";
 
 const PhotoInstagram = ({ img }) => {
   const { mode } = useAppContext();

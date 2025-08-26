@@ -1,5 +1,4 @@
-import React from "react";
-import { useAppContext } from "../AppContext";
+import { useAppContext } from "../store/AppContext";
 import { PiFilmSlateBold } from "react-icons/pi";
 import { GiFilmProjector } from "react-icons/gi";
 import { TbToolsKitchen2 } from "react-icons/tb";

@@ -1,5 +1,4 @@
-import { useAppContext } from "../AppContext";
-
+import { useAppContext } from "../store/AppContext";
 function DivLine() {
   const { mode } = useAppContext();
 

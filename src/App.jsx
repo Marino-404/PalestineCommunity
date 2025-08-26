@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useAppContext } from "./AppContext";
+import { useAppContext } from "./store/AppContext.jsx";
 import Cards from "./sections/Cards.jsx";
 import Header from "./sections/Header.jsx";
 import Hero from "./sections/Hero.jsx";

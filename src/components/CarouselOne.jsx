@@ -1,5 +1,4 @@
-import React from "react";
-import { useAppContext } from "../AppContext";
+import { useAppContext } from "../store/AppContext";
 import img1 from "/src/images/carrusel/chanel/2.jpg";
 import img2 from "/src/images/carrusel/spotify/1.jpg";
 import img3 from "/src/images/carrusel/pelicula/2.jpg";
