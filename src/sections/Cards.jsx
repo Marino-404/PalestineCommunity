@@ -135,7 +135,7 @@ const Cards = () => {
         to="/cards/gaza"
         className={`w-[96%] xl:w-[55%] xl:h-[8vw] h-[24vw] flex justify-center items-center relative card-gaza  backdrop-blur-md mt-12`}
       >
-        <h1 className="absolute text-2xl xl:text-3xl font-bold text-custom-white">
+        <h1 className="absolute text-2xl xl:text-3xl font-light text-custom-white">
           Gaza {cardTextContent(lang).featured}
         </h1>
       </Link>
@@ -150,7 +150,7 @@ const Cards = () => {
             to={card.path}
             className={`w-[47%] md:w-1/4 xl:w-1/4 xl:h-[6vw] h-[21vw] flex justify-center items-center relative ${card.className} rounded-md backdrop-blur-md bg-opacity-80`}
           >
-            <h1 className="absolute text-sm xl:text-xl font-bold text-custom-white">
+            <h1 className="absolute text-sm xl:text-xl font-light text-custom-white">
               {card.title}
             </h1>
             <span className="xl:hover:scale-125 transition-transform duration-300 xl:py-2 xl:px-24">
