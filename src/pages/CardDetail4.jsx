@@ -5,6 +5,7 @@ import DivLinePages from "../components/DivLinePages";
 import SectionPhoto from "../components/SectionPhoto";
 import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
 import { FaSpotify } from "react-icons/fa";
+import { spotifyTextContent } from "../utils/text-content.js";
 
 import img1 from "/src/images/spotify/1.png";
 import img2 from "/src/images/spotify/2.png";
@@ -16,7 +17,7 @@ import img7 from "/src/images/spotify/7.png";
 import img8 from "/src/images/spotify/8.png";
 
 const CardDetail4 = () => {
-  const { mode } = useAppContext();
+  const { mode, lang } = useAppContext();
 
   return (
     <>
@@ -36,8 +37,12 @@ const CardDetail4 = () => {
             <SectionPhoto img={img7} />
           </section>
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>ELYANNA</h1>
-            <span className={DescriptionStyle}>- 7.3M Oyentes mensuales.</span>
+            <h1 className={TitleStyle}>
+              {spotifyTextContent(lang).Spotify1.title}
+            </h1>
+            <span className={DescriptionStyle}>
+              {spotifyTextContent(lang).Spotify1.description}
+            </span>
             <a
               href="https://open.spotify.com/intl-es/artist/0jIWKlfmD4Ew7HeVVrq03g"
               target="_blank"
@@ -56,9 +61,11 @@ const CardDetail4 = () => {
             <SectionPhoto img={img2} />
           </section>
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>MOHAMMED ASSAF</h1>
+            <h1 className={TitleStyle}>
+              {spotifyTextContent(lang).Spotify2.title}
+            </h1>
             <span className={DescriptionStyle}>
-              - 131.803 Oyentes mensuales.
+              {spotifyTextContent(lang).Spotify2.description}
             </span>
             <a
               href="https://open.spotify.com/artist/0IjIdnhlsKfAfOl5ph5TsE?si=C7fVhF_vQgqWdOZVluNTTQ"
@@ -78,9 +85,11 @@ const CardDetail4 = () => {
             <SectionPhoto img={img8} />
           </section>
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>TRIO JUBRAN</h1>
+            <h1 className={TitleStyle}>
+              {spotifyTextContent(lang).Spotify3.title}
+            </h1>
             <span className={DescriptionStyle}>
-              - 137.400 Oyentes mensuales.
+              {spotifyTextContent(lang).Spotify3.description}
             </span>
             <a
               href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO2Si3L2"
@@ -100,9 +109,11 @@ const CardDetail4 = () => {
             <SectionPhoto img={img1} />
           </section>
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>ROLA AZAR</h1>
+            <h1 className={TitleStyle}>
+              {spotifyTextContent(lang).Spotify4.title}
+            </h1>
             <span className={DescriptionStyle}>
-              - 93.238 Oyentes mensuales.
+              {spotifyTextContent(lang).Spotify4.description}
             </span>
             <a
               href="https://open.spotify.com/artist/17WvUHY56BGNm6i6uTqyj1?si=KDZlkivOQxi-k6GPXmAtQA"
@@ -122,9 +133,11 @@ const CardDetail4 = () => {
             <SectionPhoto img={img3} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>DAM</h1>
+            <h1 className={TitleStyle}>
+              {spotifyTextContent(lang).Spotify5.title}
+            </h1>
             <span className={DescriptionStyle}>
-              - 33.782 Oyentes mensuales.
+              {spotifyTextContent(lang).Spotify5.description}
             </span>
             <a
               href="https://open.spotify.com/artist/1ATrNccUrhiYSQ3B08VQrz?si=ZlqMOt-bS2-p5fGZePsV-w"
@@ -144,9 +157,11 @@ const CardDetail4 = () => {
             <SectionPhoto img={img4} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>AMAL MURKUS</h1>
+            <h1 className={TitleStyle}>
+              {spotifyTextContent(lang).Spotify6.title}
+            </h1>
             <span className={DescriptionStyle}>
-              - 52.535 Oyentes mensuales.
+              {spotifyTextContent(lang).Spotify6.description}
             </span>
             <a
               href="https://open.spotify.com/artist/35Or8bOOKNt9UJKHcySKdP?si=9xX5RLKpR6Kib3TgN3RYgQ"
@@ -166,8 +181,12 @@ const CardDetail4 = () => {
             <SectionPhoto img={img5} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>YACOUB SHAHEEN</h1>
-            <span className={DescriptionStyle}>- 4.741 Oyentes mensuales.</span>
+            <h1 className={TitleStyle}>
+              {spotifyTextContent(lang).Spotify7.title}
+            </h1>
+            <span className={DescriptionStyle}>
+              {spotifyTextContent(lang).Spotify7.description}
+            </span>
             <a
               href="https://open.spotify.com/playlist/3vV7dd0tQdhUXRhst9Y4H2?si=9i555wutQ7Kc4NDa1z24Ug&pi=u-0xUNXZPrRP-j"
               target="_blank"
@@ -186,9 +205,11 @@ const CardDetail4 = () => {
             <SectionPhoto img={img6} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>HAYA ZAATRY</h1>
+            <h1 className={TitleStyle}>
+              {spotifyTextContent(lang).Spotify8.title}
+            </h1>
             <span className={DescriptionStyle}>
-              - 11.800 Oyentes mensuales.
+              {spotifyTextContent(lang).Spotify8.description}
             </span>
             <a
               href="https://open.spotify.com/artist/7BbiOEvJs6qrSDp54s1EUB?si=gX-GU6XsR7Kk0oidck9rcA"

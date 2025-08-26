@@ -7,6 +7,7 @@ import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
 import { FaYoutube } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { BiWorld } from "react-icons/bi";
+import { artTextContent } from "../utils/text-content.js";
 
 import img1 from "/src/images/art/1.png";
 import img2 from "/src/images/art/2.png";
@@ -18,7 +19,7 @@ import img7 from "/src/images/art/7.png";
 import img8 from "/src/images/art/8.webp";
 
 const CardDetail6 = () => {
-  const { mode } = useAppContext();
+  const { mode, lang } = useAppContext();
 
   return (
     <>
@@ -38,17 +39,11 @@ const CardDetail6 = () => {
             <SectionPhoto img={img8} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>Rafeef Ziadah</h1>
+            <h1 className={TitleStyle}>
+              {artTextContent(lang).RAFEEF_ZIADAH.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Periodista, poeta y activista de los Derechos Humanos nacida en el
-              Líbano, pero de ascendencia palestina. Saltó a la fama con el
-              poema “Nosotros enseñamos vida señor”, durante la operación Plomo
-              Fundido en diciembre de 2008 y enero de 2009.
-              <br />
-              <br />
-              Sus poemas y escritos tratan del sufrimiento del pueblo palestino,
-              el derecho al retorno de los refugiados y descendientes y de la
-              hipocresía del sionismo.
+              {artTextContent(lang).RAFEEF_ZIADAH.description}
             </span>
             <div className="flex gap-4">
               <a
@@ -86,9 +81,11 @@ const CardDetail6 = () => {
             <SectionPhoto img={img1} />
           </section>
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>MAHMOUD DARWISH</h1>
+            <h1 className={TitleStyle}>
+              {artTextContent(lang).MAHMOUD_DARWISH.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Poeta Nacional Palestino y símbolo de la cultura palestina.
+              {artTextContent(lang).MAHMOUD_DARWISH.description}
             </span>
             <a
               href="http://www.poesiaarabe.com/mahmud%20darwish.htm"
@@ -108,12 +105,11 @@ const CardDetail6 = () => {
             <SectionPhoto img={img2} />
           </section>
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>SLIMAN MANZOUR</h1>
+            <h1 className={TitleStyle}>
+              {artTextContent(lang).SLIMAN_MANZOUR.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Es el artista palestino más conocido, fue clave en el desarrollo
-              de la educación artística palestina, como cofundador y director
-              del Centro de Arte al-Wasiti de Jerusalén Este, y miembro fundador
-              de la Academia Internacional de Arte Palestina de Ramala.
+              {artTextContent(lang).SLIMAN_MANZOUR.description}
             </span>
             <a
               href="https://www.instagram.com/sliman.mansour/"
@@ -133,12 +129,11 @@ const CardDetail6 = () => {
             <SectionPhoto img={img3} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>RAWAN ANANI</h1>
+            <h1 className={TitleStyle}>
+              {artTextContent(lang).RAWAN_ANANI.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Rawan Anani nacida en Jerusalén en 1978, en sus pinturas, la
-              herencia palestina siempre está presente a través de los vestidos
-              folclóricos palestinos, la caligrafía, el paisaje palestino o
-              incluso las casas antiguas palestinas.
+              {artTextContent(lang).RAWAN_ANANI.description}
             </span>
             <a
               href="https://www.instagram.com/rawan_anani_artgallery/"
@@ -158,12 +153,11 @@ const CardDetail6 = () => {
             <SectionPhoto img={img4} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>RANA SAMARA</h1>
+            <h1 className={TitleStyle}>
+              {artTextContent(lang).RANA_SAMARA.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Rana Samara es una pintora palestina, nacida en Jerusalen. Su
-              trabajo explora las expectativas y los tabúes de la sociedad con
-              respecto a la sexualidad y los roles de género de las mujeres
-              palestinas.
+              {artTextContent(lang).RANA_SAMARA.description}
             </span>
             <a
               href="https://www.instagram.com/rana.samara85/A"
@@ -183,10 +177,11 @@ const CardDetail6 = () => {
             <SectionPhoto img={img5} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>MALAK MATTAR</h1>
+            <h1 className={TitleStyle}>
+              {artTextContent(lang).MALAK_MATTAR.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Malak Mattar es una artista gazatí cuya obra refleja las distintas
-              emociones humanas ligadas a la guerra.
+              {artTextContent(lang).MALAK_MATTAR.description}
             </span>
             <a
               href="https://www.instagram.com/malakmattarart/?hl=es"
@@ -206,16 +201,11 @@ const CardDetail6 = () => {
             <SectionPhoto img={img6} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>HEL FUNOUN</h1>
+            <h1 className={TitleStyle}>
+              {artTextContent(lang).HEL_FUNOUN.title}
+            </h1>
             <span className={DescriptionStyle}>
-              El-Funoun es una organización independiente y sin fines de lucro,
-              coronada como la más prominente compañía de danza palestina del
-              país, con más de mil presentaciones locales e internacionales.
-              El-Funoun ha buscado expresar el espíritu del folclore árabe y
-              palestino así como de la cultura contemporánea a través de
-              originales combinaciones de música y danza tradicional. El-Funoun
-              es la entidad cultural que ha jugado el rol más significativo en
-              revivir y reactivar la danza folclórica palestina.
+              {artTextContent(lang).HEL_FUNOUN.description}
             </span>
             <a
               href="https://www.instagram.com/elfunoun_troupe/?hl=es"
@@ -235,15 +225,9 @@ const CardDetail6 = () => {
             <SectionPhoto img={img7} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>TATREEZ</h1>
+            <h1 className={TitleStyle}>{artTextContent(lang).TATREEZ.title}</h1>
             <span className={DescriptionStyle}>
-              Tatreez es una forma de arte del bordado tradicional palestino con
-              siglos de antigüedad. Tatreez significa bordado en árabe,
-              simboliza la eterna resistencia palestina, impulsa oportunidades
-              económicas para las mujeres palestinas y presenta historias de su
-              tierra natal.Cada pueblo y ciudad de Palestina tiene diseños
-              específicos de su región.Detrás de los textiles hay historia,
-              identidad y hogar.
+              {artTextContent(lang).HEL_FUNOUN.description}
             </span>
             <div className="flex gap-4">
               <a

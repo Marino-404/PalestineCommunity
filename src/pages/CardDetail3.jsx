@@ -7,6 +7,7 @@ import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
 import { FaYoutube, FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { BiWorld } from "react-icons/bi";
+import { cocinaTextContent } from "../utils/text-content.js";
 
 import img1 from "/src/images/comida/comida1.png";
 import img2 from "/src/images/comida/comida2.png";
@@ -14,7 +15,7 @@ import img3 from "/src/images/comida/comida3.png";
 import img4 from "/src/images/comida/comida4.png";
 
 const CardDetail3 = () => {
-  const { mode } = useAppContext();
+  const { mode, lang } = useAppContext();
 
   return (
     <>
@@ -34,17 +35,11 @@ const CardDetail3 = () => {
             <SectionPhoto img={img1} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>JOUDIE KALLA - PALESTINE ON A PLATE</h1>
+            <h1 className={TitleStyle}>
+              {cocinaTextContent(lang).Cocina1.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Joudie Kalla es una talentosa cocinera, nacida en Londres, de
-              padres de origen palestino. Su familia tiene sus raíces en
-              Nazaret, Ramallah, Jaffa, Lydda, Safed y Belén. Su amor por la
-              cocina comenzó desde muy joven, influenciada por las tradiciones
-              culinarias de su familia. A lo largo de los años, ha dedicado su
-              vida a preservar y compartir las ricas costumbres gastronómicas de
-              Palestina, ha escrito dos libros, el primer libro de cocina,
-              "Palestine on a Plate"y el segundo libro de cocina " Baladi: A
-              Celebration of Food from Land and Sea.
+              {cocinaTextContent(lang).Cocina1.description}
             </span>
             <div className="flex gap-4">
               <a
@@ -82,14 +77,11 @@ const CardDetail3 = () => {
             <SectionPhoto img={img2} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>HAMADA SHAQOURA</h1>
+            <h1 className={TitleStyle}>
+              {cocinaTextContent(lang).Cocina2.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Un 'influencer' gastronómico palestino le pone “amor y
-              resistencia” a sus platos para alimentar a los desplazados en
-              Gaza. Hamada Shaqoura emplea ahora las redes sociales para mostrar
-              al mundo el hambre que padecen los gazatíes y la dificultad para
-              alimentarse con los escasos bienes básicos y ayuda humanitaria que
-              Israel permite que llegue a la Franja.
+              {cocinaTextContent(lang).Cocina2.description}
             </span>
             <div className="flex gap-4">
               <a
@@ -119,12 +111,11 @@ const CardDetail3 = () => {
             <SectionPhoto img={img3} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>MARK WIENS</h1>
+            <h1 className={TitleStyle}>
+              {cocinaTextContent(lang).Cocina3.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Mark Wiens es un joven Youtuber estadoundense, apasionado viajero
-              y amante de la gastronomía, que ha conquistado el corazón de miles
-              de seguidores en su canal de YouTube, uno de sus destinos más
-              memorables ha sido Palestina.
+              {cocinaTextContent(lang).Cocina3.description}
             </span>
             <a
               href="https://www.youtube.com/watch?v=FLmNLrog6dQ"
@@ -144,14 +135,11 @@ const CardDetail3 = () => {
             <SectionPhoto img={img4} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>LUKE MARTIN</h1>
+            <h1 className={TitleStyle}>
+              {cocinaTextContent(lang).Cocina4.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Luke Martin es un influencer que ha conquistado el mundo digital
-              con su canal de YouTube. Desde que comenzó su aventura, ha
-              recorrido continentes, capturando la esencia de cada país a través
-              de sus sabores. En este video viaja Palestina y nos recuerda que
-              la comida es más que solo un plato; es una forma de conectar con
-              las personas y las culturas que nos rodean.
+              {cocinaTextContent(lang).Cocina4.description}
             </span>
             <a
               href="https://www.youtube.com/watch?v=fSuN9xPKUMw"

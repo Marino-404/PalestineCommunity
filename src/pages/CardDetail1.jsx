@@ -13,6 +13,7 @@ import { FaStarHalfAlt } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
 import { FaPlayCircle } from "react-icons/fa";
+import { peliculasTextContent } from "../utils/text-content.js";
 
 export const SectionStyle =
   "flex flex-col xl:flex-row justify-center items-center xl:justify-center xl:items-center md:items-center md:justify-center";
@@ -22,7 +23,7 @@ export const DescriptionStyle = "font-poppins font-normal text-md py-4 px-6";
 export const Stars = "flex flex-row text-xl pb-4";
 
 const CardDetail1 = () => {
-  const { mode } = useAppContext();
+  const { mode, lang } = useAppContext();
 
   return (
     <>
@@ -42,19 +43,11 @@ const CardDetail1 = () => {
             <MoviePhoto img={img5} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>NO OTHER LAND</h1>
+            <h1 className={TitleStyle}>
+              {peliculasTextContent(lang).Pelicula1.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Basel Adra, activista palestino que lucha contra el desplazamiento
-              forzado de su comunidad en Cisjordania. A través de su cámara,
-              documenta la destrucción de su tierra natal a manos del ejército
-              israelí, que derrumba casas y expulsa a los residentes para
-              instalar una zona de tiro militar. En medio de este conflicto,
-              Basel entabla una inesperada amistad con Yuval, un periodista
-              israelí judío que apoya su causa.
-              <br />
-              <br />
-              En Argentina, podés encontrarla en streaming en tres plataformas:
-              Prime Video, Filmin y Movistar+.
+              {peliculasTextContent(lang).Pelicula1.description}
             </span>
             <div className={Stars}>
               <FaStar className="text-[#D4AF37]" />
@@ -81,20 +74,11 @@ const CardDetail1 = () => {
             <MoviePhoto img={img6} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>FARHA</h1>
+            <h1 className={TitleStyle}>
+              {peliculasTextContent(lang).Pelicula2.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Farha, una niña de catorce años que vive con su padre en un pueblo
-              palestino. Amante de los libros, decide irse a vivir a la ciudad
-              para estudiar, pero sus planes se ven interrumpidos por la Nakba,
-              el conflicto político que derivo en la creación del estado de
-              Israel y que hizo que más de 800 mil palestinos abandonen sus
-              hogares.
-              <br />
-              <br />
-              Al intentar ver la película desde Argentina, Netflix muestra un
-              anuncio en la pantalla: "este título no está disponible en su
-              país". Sin embargo, se puede acceder a ella cambiando el idioma de
-              la cuenta a inglés.
+              {peliculasTextContent(lang).Pelicula2.description}
             </span>
             <div className={Stars}>
               <FaStar className="text-[#D4AF37]" />
@@ -121,16 +105,11 @@ const CardDetail1 = () => {
             <MoviePhoto img={img2} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>A 200 Metros</h1>
+            <h1 className={TitleStyle}>
+              {peliculasTextContent(lang).Pelicula3.title}
+            </h1>
             <span className={DescriptionStyle}>
-              <p className="font-semibold mb-2">
-                Censurada por Netflix recientemente.
-              </p>
-              Mustafa y su esposa Salwa provienen de dos aldeas palestinas que
-              están a solo 200 metros de distancia, pero separadas por el muro.
-              Su situación de vida inusual está comenzando a afectar su
-              matrimonio feliz, pero la pareja hace lo que puede para que
-              funcione.
+              {peliculasTextContent(lang).Pelicula3.description}
             </span>
             <div className={Stars}>
               <FaStar className="text-[#D4AF37]" />
@@ -157,11 +136,11 @@ const CardDetail1 = () => {
             <MoviePhoto img={img4} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>EL IDOLO</h1>
+            <h1 className={TitleStyle}>
+              {peliculasTextContent(lang).Pelicula4.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Película sobre el popular cantante palestino Mohammad Assaf, desde
-              su niñez a su etapa adulta, y su vida en Gaza hasta su triunfo en
-              el concurso de talentos 'Arab Idol'.
+              {peliculasTextContent(lang).Pelicula4.description}
             </span>
             <div className={Stars}>
               <FaStar className="text-[#D4AF37]" />
@@ -188,11 +167,11 @@ const CardDetail1 = () => {
             <MoviePhoto img={img3} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>Nacido en GAZA</h1>
+            <h1 className={TitleStyle}>
+              {peliculasTextContent(lang).Pelicula5.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Rodada durante la última ofensiva israelí que asoló la Franja de
-              Gaza, 2014. Nacido en Gaza sigue a diez niños que nos cuentan cómo
-              es su día a día bajo las bombas y el embargo.
+              {peliculasTextContent(lang).Pelicula5.description}
             </span>
             <div className={Stars}>
               <FaStar className="text-[#D4AF37]" />
@@ -219,16 +198,11 @@ const CardDetail1 = () => {
             <MoviePhoto img={img1} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>La sal de este mar</h1>
+            <h1 className={TitleStyle}>
+              {peliculasTextContent(lang).Pelicula6.title}
+            </h1>
             <span className={DescriptionStyle}>
-              <p className="font-semibold mb-2">
-                Censurada por Netflix recientemente.
-              </p>
-              Soraya nació y se educó en Brooklyn, pero ha decidido regresar a
-              Palestina, país del que su familia tuvo que exiliarse en 1948. Por
-              su parte Emad, nacido en los territorios palestinos, ha conocido
-              toda su vida la ocupación y la realidad palestina, y sueña con
-              obtener un visado para ir a estudiar a Canadá y marcharse de allí.
+              {peliculasTextContent(lang).Pelicula6.description}
             </span>
             <div className={Stars}>
               <FaStar className="text-[#D4AF37]" />

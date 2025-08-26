@@ -3,6 +3,7 @@ import Back from "../components/Back";
 import MoviePhoto from "../components/MoviePhoto";
 import DivLinePages from "../components/DivLinePages";
 import Footer1 from "../sections/Footer1";
+import { seriesTextContent } from "../utils/text-content.js";
 import {
   SectionStyle,
   TitleStyle,
@@ -24,7 +25,7 @@ import img7 from "/src/images/series/serie7.png";
 import img8 from "/src/images/series/serie8.webp";
 
 const CardDetail2 = () => {
-  const { mode } = useAppContext();
+  const { mode, lang } = useAppContext();
   return (
     <>
       <div>
@@ -43,13 +44,11 @@ const CardDetail2 = () => {
             <MoviePhoto img={img8} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>MO</h1>
+            <h1 className={TitleStyle}>
+              {seriesTextContent(lang).Serie1.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Mo Najjar, palestino que vive en Houston y lleva años intentando
-              conseguir la ciudadanía estadounidense mientras trabaja en empleos
-              informales y enfrenta múltiples obstáculos. La segunda temporada
-              incluye un viaje a México, una visita a Palestina y referencias
-              directas a la Nakba y la identidad cultural.
+              {seriesTextContent(lang).Serie1.description}
             </span>
             <div className={Stars}>
               <FaStar className="text-[#D4AF37]" />
@@ -76,11 +75,11 @@ const CardDetail2 = () => {
             <MoviePhoto img={img2} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>East Side</h1>
+            <h1 className={TitleStyle}>
+              {seriesTextContent(lang).Serie2.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Una serie basada en hechos reales que denuncia la ocupación de
-              Jerusalén Este, de mayoría árabe, por parte de poderosos grupos
-              israelíes.
+              {seriesTextContent(lang).Serie2.description}
             </span>
             <div className={Stars}>
               <FaStar className="text-[#D4AF37]" />
@@ -107,10 +106,11 @@ const CardDetail2 = () => {
             <MoviePhoto img={img3} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>Gaza Mon Amour</h1>
+            <h1 className={TitleStyle}>
+              {seriesTextContent(lang).Serie3.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Narra un delicado romance entre dos ancianos en medio de la
-              frontera del horror. Gaza, hoy.
+              {seriesTextContent(lang).Serie3.description}
             </span>
             <div className={Stars}>
               <FaStar className="text-[#D4AF37]" />
@@ -137,11 +137,11 @@ const CardDetail2 = () => {
             <MoviePhoto img={img4} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>Lo que Walaa quiere</h1>
+            <h1 className={TitleStyle}>
+              {seriesTextContent(lang).Serie4.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Walaa, una chica adolescente criada en un campo de refugiados, que
-              rompe todas las reglas al decidir convertirse en una de las pocas
-              mujeres policías de las fuerzas de seguridad palestinas.
+              {seriesTextContent(lang).Serie4.description}
             </span>
             <div className={Stars}>
               <FaStar className="text-[#D4AF37]" />
@@ -168,12 +168,11 @@ const CardDetail2 = () => {
             <MoviePhoto img={img5} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>El color de los Olivos</h1>
+            <h1 className={TitleStyle}>
+              {seriesTextContent(lang).Serie5.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Diversos personajes muestran la vulneración de derechos humanos
-              que sufre diariamente la población palestina en la Franja de Gaza
-              y la situación de bloqueo y posguerra en la que trata de
-              sobrevivir.
+              {seriesTextContent(lang).Serie5.description}
             </span>
             <div className={Stars}>
               <FaStar className="text-[#D4AF37]" />
@@ -200,11 +199,11 @@ const CardDetail2 = () => {
             <MoviePhoto img={img6} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>Inch Allah</h1>
+            <h1 className={TitleStyle}>
+              {seriesTextContent(lang).Serie6.title}
+            </h1>
             <span className={DescriptionStyle}>
-              La familia Amer vive rodeada por el muro en Cisjordania, puertas
-              electrificadas, candados y la presencia constante de soldados. Se
-              revelan sus luchas constantes y los pequeños detalles de su vida.
+              {seriesTextContent(lang).Serie6.description}
             </span>
             <div className={Stars}>
               <FaStar className="text-[#D4AF37]" />
@@ -231,13 +230,11 @@ const CardDetail2 = () => {
             <MoviePhoto img={img7} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>GAZA</h1>
+            <h1 className={TitleStyle}>
+              {seriesTextContent(lang).Serie7.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Chloe es una joven tocóloga que se ocupa de mujeres embarazadas
-              bajo la supervisión de Michael, un médico francés, en un
-              ambulatorio improvisado en un campo de refugiados de Cisjordania.
-              Debe enfrentarse a diario a los controles y al conflicto que
-              afectan a la vida de las personas.
+              {seriesTextContent(lang).Serie7.description}
             </span>
             <div className={Stars}>
               <FaStar className="text-[#D4AF37]" />
@@ -264,11 +261,11 @@ const CardDetail2 = () => {
             <MoviePhoto img={img1} />
           </section>
           <div className="flex flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>Fauda</h1>
+            <h1 className={TitleStyle}>
+              {seriesTextContent(lang).Serie8.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Un veterano agente israelí vuelve a la caza en busca de un
-              luchador palestino que creía muerto, poniendo en marcha una serie
-              de eventos caóticos.
+              {seriesTextContent(lang).Serie8.description}
             </span>
             <div className={Stars}>
               <FaStar className="text-[#D4AF37]" />

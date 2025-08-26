@@ -219,3 +219,413 @@ export const contactTextContent = (lang = true) => {
     };
   }
 };
+
+export const peliculasTextContent = (lang = true) => {
+  if (lang) {
+    return {
+      Pelicula1: {
+        title: "NO OTHER LAND",
+        description:
+          "Basel Adra, activista palestino que lucha contra el desplazamiento forzado de su comunidad en Cisjordania. A través de su cámara, documenta la destrucción de su tierra natal a manos del ejército israelí. En Argentina, podés encontrarla en streaming en Prime Video, Filmin y Movistar+.",
+      },
+      Pelicula2: {
+        title: "FARHA",
+        description:
+          "Farha, una niña de catorce años que vive con su padre en un pueblo palestino. Sus planes de estudiar en la ciudad se ven interrumpidos por la Nakba. Desde Argentina, Netflix muestra que este título no está disponible, pero se puede acceder cambiando el idioma de la cuenta a inglés.",
+      },
+      Pelicula3: {
+        title: "A 200 Metros",
+        description:
+          "Mustafa y su esposa Salwa provienen de dos aldeas palestinas separadas por el muro. La situación de vida afecta su matrimonio, pero hacen lo posible para que funcione. Censurada recientemente por Netflix.",
+      },
+      Pelicula4: {
+        title: "EL IDOLO",
+        description:
+          "Película sobre el cantante palestino Mohammad Assaf, desde su niñez hasta su etapa adulta, y su vida en Gaza hasta su triunfo en 'Arab Idol'.",
+      },
+      Pelicula5: {
+        title: "Nacido en GAZA",
+        description:
+          "Rodada durante la última ofensiva israelí en Gaza (2014). Sigue a diez niños que muestran su día a día bajo las bombas y el embargo.",
+      },
+      Pelicula6: {
+        title: "La sal de este mar",
+        description:
+          "Soraya nació y se educó en Brooklyn, pero regresa a Palestina, país del que su familia tuvo que exiliarse en 1948. Su hermano Emad ha conocido toda su vida la ocupación y sueña con obtener un visado para estudiar en Canadá.",
+      },
+    };
+  } else {
+    return {
+      Pelicula1: {
+        title: "NO OTHER LAND",
+        description:
+          "Basel Adra, a Palestinian activist, fights against the forced displacement of his community in the West Bank. Through his camera, he documents the destruction of his homeland. In Argentina, you can stream it on Prime Video, Filmin, and Movistar+.",
+      },
+      Pelicula2: {
+        title: "FARHA",
+        description:
+          "Farha, a fourteen-year-old girl living with her father in a Palestinian village, has her plans to study in the city interrupted by the Nakba. From Argentina, Netflix shows the title is not available, but it can be accessed by changing the account language to English.",
+      },
+      Pelicula3: {
+        title: "A 200 Metros",
+        description:
+          "Mustafa and his wife Salwa come from two Palestinian villages separated by the wall. Their unusual living situation affects their marriage, but they do their best to make it work. Recently censored by Netflix.",
+      },
+      Pelicula4: {
+        title: "EL IDOLO",
+        description:
+          "Film about Palestinian singer Mohammad Assaf, from childhood to adulthood, and his life in Gaza until his triumph in 'Arab Idol'.",
+      },
+      Pelicula5: {
+        title: "Born in GAZA",
+        description:
+          "Filmed during the last Israeli offensive in Gaza (2014). Follows ten children showing their daily lives under bombs and blockade.",
+      },
+      Pelicula6: {
+        title: "Salt of this Sea",
+        description:
+          "Soraya was born and raised in Brooklyn but returns to Palestine, from where her family was exiled in 1948. Her brother Emad has known the occupation all his life and dreams of getting a visa to study in Canada.",
+      },
+    };
+  }
+};
+
+export const seriesTextContent = (lang = true) => {
+  if (lang) {
+    return {
+      Serie1: {
+        title: "MO",
+        description:
+          "Mo Najjar, palestino que vive en Houston y lleva años intentando conseguir la ciudadanía estadounidense mientras trabaja en empleos informales y enfrenta múltiples obstáculos. La segunda temporada incluye un viaje a México, una visita a Palestina y referencias directas a la Nakba y la identidad cultural.",
+      },
+      Serie2: {
+        title: "East Side",
+        description:
+          "Una serie basada en hechos reales que denuncia la ocupación de Jerusalén Este, de mayoría árabe, por parte de poderosos grupos israelíes.",
+      },
+      Serie3: {
+        title: "Gaza Mon Amour",
+        description:
+          "Narra un delicado romance entre dos ancianos en medio de la frontera del horror. Gaza, hoy.",
+      },
+      Serie4: {
+        title: "Lo que Walaa quiere",
+        description:
+          "Walaa, una chica adolescente criada en un campo de refugiados, rompe todas las reglas al decidir convertirse en una de las pocas mujeres policías de las fuerzas de seguridad palestinas.",
+      },
+      Serie5: {
+        title: "El color de los Olivos",
+        description:
+          "Diversos personajes muestran la vulneración de derechos humanos que sufre diariamente la población palestina en la Franja de Gaza y la situación de bloqueo y posguerra en la que trata de sobrevivir.",
+      },
+      Serie6: {
+        title: "Inch Allah",
+        description:
+          "La familia Amer vive rodeada por el muro en Cisjordania, puertas electrificadas, candados y la presencia constante de soldados. Se revelan sus luchas constantes y los pequeños detalles de su vida.",
+      },
+      Serie7: {
+        title: "GAZA",
+        description:
+          "Chloe es una joven tocóloga que se ocupa de mujeres embarazadas bajo la supervisión de Michael, un médico francés, en un ambulatorio improvisado en un campo de refugiados de Cisjordania. Debe enfrentarse a diario a los controles y al conflicto que afectan a la vida de las personas.",
+      },
+      Serie8: {
+        title: "Fauda",
+        description:
+          "Un veterano agente israelí vuelve a la caza en busca de un luchador palestino que creía muerto, poniendo en marcha una serie de eventos caóticos.",
+      },
+    };
+  } else {
+    return {
+      Serie1: {
+        title: "MO",
+        description:
+          "Mo Najjar, a Palestinian living in Houston, has struggled for years to obtain US citizenship while working informal jobs and facing multiple obstacles. The second season includes a trip to Mexico, a visit to Palestine, and direct references to the Nakba and cultural identity.",
+      },
+      Serie2: {
+        title: "East Side",
+        description:
+          "A series based on real events that denounces the occupation of East Jerusalem, predominantly Arab, by powerful Israeli groups.",
+      },
+      Serie3: {
+        title: "Gaza Mon Amour",
+        description:
+          "Narrates a delicate romance between two elderly people amid the horror border. Gaza, today.",
+      },
+      Serie4: {
+        title: "What Walaa Wants",
+        description:
+          "Walaa, a teenage girl raised in a refugee camp, breaks all the rules by deciding to become one of the few female police officers in the Palestinian security forces.",
+      },
+      Serie5: {
+        title: "The Color of Olives",
+        description:
+          "Various characters show the daily human rights violations suffered by the Palestinian population in the Gaza Strip and the post-war blockade conditions they try to survive.",
+      },
+      Serie6: {
+        title: "Inch Allah",
+        description:
+          "The Amer family lives surrounded by the wall in the West Bank, electrified doors, padlocks, and the constant presence of soldiers. Their constant struggles and the small details of their lives are revealed.",
+      },
+      Serie7: {
+        title: "GAZA",
+        description:
+          "Chloe is a young midwife who cares for pregnant women under the supervision of Michael, a French doctor, in a makeshift clinic in a West Bank refugee camp. She faces daily controls and the conflict affecting people's lives.",
+      },
+      Serie8: {
+        title: "Fauda",
+        description:
+          "A veteran Israeli agent resumes hunting a Palestinian fighter he believed dead, setting off a series of chaotic events.",
+      },
+    };
+  }
+};
+
+export const cocinaTextContent = (lang = true) => {
+  if (lang) {
+    return {
+      Cocina1: {
+        title: "JOUDIE KALLA - PALESTINE ON A PLATE",
+        description:
+          "Joudie Kalla es una talentosa cocinera, nacida en Londres, de padres de origen palestino. Su familia tiene sus raíces en Nazaret, Ramallah, Jaffa, Lydda, Safed y Belén. Su amor por la cocina comenzó desde muy joven, influenciada por las tradiciones culinarias de su familia. A lo largo de los años, ha dedicado su vida a preservar y compartir las ricas costumbres gastronómicas de Palestina, ha escrito dos libros: 'Palestine on a Plate' y 'Baladi: A Celebration of Food from Land and Sea'.",
+      },
+      Cocina2: {
+        title: "HAMADA SHAQOURA",
+        description:
+          "Un 'influencer' gastronómico palestino le pone “amor y resistencia” a sus platos para alimentar a los desplazados en Gaza. Hamada Shaqoura emplea ahora las redes sociales para mostrar al mundo el hambre que padecen los gazatíes y la dificultad para alimentarse con los escasos bienes básicos y ayuda humanitaria que Israel permite que llegue a la Franja.",
+      },
+      Cocina3: {
+        title: "MARK WIENS",
+        description:
+          "Mark Wiens es un joven Youtuber estadounidense, apasionado viajero y amante de la gastronomía, que ha conquistado el corazón de miles de seguidores en su canal de YouTube. Uno de sus destinos más memorables ha sido Palestina.",
+      },
+      Cocina4: {
+        title: "LUKE MARTIN",
+        description:
+          "Luke Martin es un influencer que ha conquistado el mundo digital con su canal de YouTube. Desde que comenzó su aventura, ha recorrido continentes, capturando la esencia de cada país a través de sus sabores. En este video viaja a Palestina y nos recuerda que la comida es más que solo un plato; es una forma de conectar con las personas y las culturas que nos rodean.",
+      },
+    };
+  } else {
+    return {
+      Cocina1: {
+        title: "JOUDIE KALLA - PALESTINE ON A PLATE",
+        description:
+          "Joudie Kalla is a talented chef, born in London to Palestinian parents. Her family has roots in Nazareth, Ramallah, Jaffa, Lydda, Safed, and Bethlehem. Her love for cooking began at a young age, influenced by her family's culinary traditions. Over the years, she has dedicated her life to preserving and sharing the rich culinary heritage of Palestine, writing two cookbooks: 'Palestine on a Plate' and 'Baladi: A Celebration of Food from Land and Sea'.",
+      },
+      Cocina2: {
+        title: "HAMADA SHAQOURA",
+        description:
+          "A Palestinian culinary influencer who adds 'love and resistance' to his dishes to feed displaced people in Gaza. Hamada Shaqoura now uses social media to show the world the hunger Gazans face and the difficulty of accessing basic goods and humanitarian aid permitted by Israel to reach the Strip.",
+      },
+      Cocina3: {
+        title: "MARK WIENS",
+        description:
+          "Mark Wiens is a young American YouTuber, passionate traveler and food lover, who has won the hearts of thousands of followers on his YouTube channel. One of his most memorable destinations has been Palestine.",
+      },
+      Cocina4: {
+        title: "LUKE MARTIN",
+        description:
+          "Luke Martin is an influencer who has conquered the digital world with his YouTube channel. Since beginning his adventure, he has traveled continents, capturing the essence of each country through its flavors. In this video he travels to Palestine, reminding us that food is more than a plate; it’s a way to connect with people and the cultures around us.",
+      },
+    };
+  }
+};
+
+export const spotifyTextContent = (lang = true) => {
+  if (lang) {
+    return {
+      Spotify1: { title: "ELYANNA", description: "- 7.3M Oyentes mensuales." },
+      Spotify2: {
+        title: "MOHAMMED ASSAF",
+        description: "- 131.803 Oyentes mensuales.",
+      },
+      Spotify3: {
+        title: "TRIO JUBRAN",
+        description: "- 137.400 Oyentes mensuales.",
+      },
+      Spotify4: {
+        title: "ROLA AZAR",
+        description: "- 93.238 Oyentes mensuales.",
+      },
+      Spotify5: { title: "DAM", description: "- 33.782 Oyentes mensuales." },
+      Spotify6: {
+        title: "AMAL MURKUS",
+        description: "- 52.535 Oyentes mensuales.",
+      },
+      Spotify7: {
+        title: "YACOUB SHAHEEN",
+        description: "- 4.741 Oyentes mensuales.",
+      },
+      Spotify8: {
+        title: "HAYA ZAATRY",
+        description: "- 11.800 Oyentes mensuales.",
+      },
+    };
+  } else {
+    return {
+      Spotify1: { title: "ELYANNA", description: "- 7.3M Monthly listeners." },
+      Spotify2: {
+        title: "MOHAMMED ASSAF",
+        description: "- 131,803 Monthly listeners.",
+      },
+      Spotify3: {
+        title: "TRIO JUBRAN",
+        description: "- 137,400 Monthly listeners.",
+      },
+      Spotify4: {
+        title: "ROLA AZAR",
+        description: "- 93,238 Monthly listeners.",
+      },
+      Spotify5: { title: "DAM", description: "- 33,782 Monthly listeners." },
+      Spotify6: {
+        title: "AMAL MURKUS",
+        description: "- 52,535 Monthly listeners.",
+      },
+      Spotify7: {
+        title: "YACOUB SHAHEEN",
+        description: "- 4,741 Monthly listeners.",
+      },
+      Spotify8: {
+        title: "HAYA ZAATRY",
+        description: "- 11,800 Monthly listeners.",
+      },
+    };
+  }
+};
+
+export const instagramTextContent = (lang = true) => {
+  if (lang) {
+    return {
+      SALMA: {
+        title: "SALMA",
+        description: "Creadora de contenido palestino desde Gaza.",
+      },
+      MOTAZ_AZIZA: { title: "MOTAZ AZIZA", description: "Fotógrafo." },
+      BISAN_OWDA: {
+        title: "BISAN OWDA",
+        description: "Cineasta, viajera y soñadora.",
+      },
+      HOSSAM_SHBAT: { title: "HOSSAM SHBAT", description: "Periodista." },
+      WISSAM_NASSAR: { title: "WISSAM NASSAR", description: "Fotógrafo." },
+      NOOH_AL_SHAGHNOBI: {
+        title: "NOOH AL-SHAGHNOBI",
+        description: "Fotógrafo.",
+      },
+      SALEH_ALJAFARAWI: {
+        title: "SALEH ALJAFARAWI",
+        description: "Fotógrafo.",
+      },
+    };
+  } else {
+    return {
+      SALMA: {
+        title: "SALMA",
+        description: "Palestinian content creator from Gaza.",
+      },
+      MOTAZ_AZIZA: { title: "MOTAZ AZIZA", description: "Photographer." },
+      BISAN_OWDA: {
+        title: "BISAN OWDA",
+        description: "Filmmaker, traveler and dreamer.",
+      },
+      HOSSAM_SHBAT: { title: "HOSSAM SHBAT", description: "Journalist." },
+      WISSAM_NASSAR: { title: "WISSAM NASSAR", description: "Photographer." },
+      NOOH_AL_SHAGHNOBI: {
+        title: "NOOH AL-SHAGHNOBI",
+        description: "Photographer.",
+      },
+      SALEH_ALJAFARAWI: {
+        title: "SALEH ALJAFARAWI",
+        description: "Photographer.",
+      },
+    };
+  }
+};
+
+export const artTextContent = (lang = true) => {
+  if (lang) {
+    return {
+      RAFEEF_ZIADAH: {
+        title: "Rafeef Ziadah",
+        description:
+          "Periodista, poeta y activista de los Derechos Humanos nacida en el Líbano, pero de ascendencia palestina. Saltó a la fama con el poema “Nosotros enseñamos vida señor”, durante la operación Plomo Fundido en 2008-2009. Sus poemas y escritos tratan del sufrimiento del pueblo palestino, el derecho al retorno de los refugiados y descendientes y de la hipocresía del sionismo.",
+      },
+      MAHMOUD_DARWISH: {
+        title: "MAHMOUD DARWISH",
+        description:
+          "Poeta Nacional Palestino y símbolo de la cultura palestina.",
+      },
+      SLIMAN_MANZOUR: {
+        title: "SLIMAN MANZOUR",
+        description:
+          "Artista palestino clave en el desarrollo de la educación artística palestina, cofundador y director del Centro de Arte al-Wasiti de Jerusalén Este, y miembro fundador de la Academia Internacional de Arte Palestina de Ramala.",
+      },
+      RAWAN_ANANI: {
+        title: "RAWAN ANANI",
+        description:
+          "Nacida en Jerusalén en 1978, sus pinturas reflejan la herencia palestina mediante vestidos folclóricos, caligrafía, paisajes y casas antiguas.",
+      },
+      RANA_SAMARA: {
+        title: "RANA SAMARA",
+        description:
+          "Pintora palestina de Jerusalén. Su trabajo explora las expectativas y tabúes de la sociedad respecto a la sexualidad y roles de género de las mujeres palestinas.",
+      },
+      MALAK_MATTAR: {
+        title: "MALAK MATTAR",
+        description:
+          "Artista gazatí cuya obra refleja las distintas emociones humanas ligadas a la guerra.",
+      },
+      HEL_FUNOUN: {
+        title: "HEL FUNOUN",
+        description:
+          "Organización independiente de danza palestina, combinando música y danza tradicional, reviviendo y reactivando la danza folclórica palestina.",
+      },
+      TATREEZ: {
+        title: "TATREEZ",
+        description:
+          "Forma de arte del bordado tradicional palestino. Simboliza la resistencia, oportunidades económicas para mujeres palestinas y transmite historias de su tierra natal.",
+      },
+    };
+  } else {
+    return {
+      RAFEEF_ZIADAH: {
+        title: "Rafeef Ziadah",
+        description:
+          "Journalist, poet, and human rights activist born in Lebanon of Palestinian descent. Rose to fame with the poem 'We Teach Life, Sir' during Operation Cast Lead in 2008-2009. Her writings deal with the suffering of the Palestinian people, the right of return for refugees and descendants, and the hypocrisy of Zionism.",
+      },
+      MAHMOUD_DARWISH: {
+        title: "MAHMOUD DARWISH",
+        description:
+          "Palestinian national poet and symbol of Palestinian culture.",
+      },
+      SLIMAN_MANZOUR: {
+        title: "SLIMAN MANZOUR",
+        description:
+          "Key Palestinian artist in developing Palestinian art education, cofounder and director of al-Wasiti Art Center in East Jerusalem, and founding member of the International Academy of Palestinian Art in Ramallah.",
+      },
+      RAWAN_ANANI: {
+        title: "RAWAN ANANI",
+        description:
+          "Born in Jerusalem in 1978, her paintings reflect Palestinian heritage through folk costumes, calligraphy, landscapes, and old Palestinian houses.",
+      },
+      RANA_SAMARA: {
+        title: "RANA SAMARA",
+        description:
+          "Palestinian painter from Jerusalem. Her work explores societal expectations and taboos regarding sexuality and gender roles of Palestinian women.",
+      },
+      MALAK_MATTAR: {
+        title: "MALAK MATTAR",
+        description:
+          "Gazan artist whose work reflects the various human emotions linked to war.",
+      },
+      HEL_FUNOUN: {
+        title: "HEL FUNOUN",
+        description:
+          "Independent Palestinian dance organization combining music and traditional dance, reviving and reactivating Palestinian folk dance.",
+      },
+      TATREEZ: {
+        title: "TATREEZ",
+        description:
+          "Traditional Palestinian embroidery art. Symbolizes resistance, economic opportunities for Palestinian women, and tells stories of their homeland.",
+      },
+    };
+  }
+};

@@ -6,6 +6,7 @@ import InstagramPhoto from "../components/InstagramPhoto";
 import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
 import { AiFillInstagram, AiFillTikTok } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
+import { instagramTextContent } from "../utils/text-content.js";
 
 import img1L from "/src/images/instagram/l1.png";
 import img2L from "/src/images/instagram/l2.png";
@@ -22,6 +23,7 @@ import img4B from "/src/images/instagram/4b.png";
 import img5B from "/src/images/instagram/5b.png";
 import img6B from "/src/images/instagram/6b.png";
 import img7B from "/src/images/instagram/7b.png";
+import { ins } from "framer-motion/client";
 
 const images = {
   SALMA: { light: img1L, dark: img1B },
@@ -34,7 +36,7 @@ const images = {
 };
 
 const CardDetail5 = () => {
-  const { mode } = useAppContext();
+  const { mode, lang } = useAppContext();
 
   const salmaImg = mode ? images.SALMA.dark : images.SALMA.light;
   const motazImg = mode ? images.MOTAZ_AZIZA.dark : images.MOTAZ_AZIZA.light;
@@ -68,9 +70,11 @@ const CardDetail5 = () => {
             <InstagramPhoto img={salmaImg} />
           </section>
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>SALMA</h1>
+            <h1 className={TitleStyle}>
+              {instagramTextContent(lang).SALMA.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Creadora de contenido palestino desde Gaza.
+              {instagramTextContent(lang).SALMA.description}
             </span>
             <div className="flex">
               <a
@@ -100,8 +104,12 @@ const CardDetail5 = () => {
             <InstagramPhoto img={motazImg} />
           </section>
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>MOTAZ AZIZA</h1>
-            <span className={DescriptionStyle}>Fotógrafo.</span>
+            <h1 className={TitleStyle}>
+              {instagramTextContent(lang).MOTAZ_AZIZA.title}
+            </h1>
+            <span className={DescriptionStyle}>
+              {instagramTextContent(lang).MOTAZ_AZIZA.description}
+            </span>
             <a
               href="https://www.instagram.com/motaz_azaiza?igsh=aDFvZDg0Y2p4cmY0"
               target="_blank"
@@ -120,9 +128,11 @@ const CardDetail5 = () => {
             <InstagramPhoto img={bisanImg} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>BISAN OWDA</h1>
+            <h1 className={TitleStyle}>
+              {instagramTextContent(lang).BISAN_OWDA.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Cineasta, viajera y soñadora.
+              {instagramTextContent(lang).BISAN_OWDA.description}
             </span>
             <a
               href="https://www.instagram.com/wizard_bisan1?igsh=MTFtczFlYjJvZzlsbA=="
@@ -142,8 +152,12 @@ const CardDetail5 = () => {
             <InstagramPhoto img={hossamImg} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>HOSSAM SHBAT</h1>
-            <span className={DescriptionStyle}>Periodista.</span>
+            <h1 className={TitleStyle}>
+              {instagramTextContent(lang).HOSSAM_SHBAT.title}
+            </h1>
+            <span className={DescriptionStyle}>
+              {instagramTextContent(lang).HOSSAM_SHBAT.description}
+            </span>
             <a
               href="https://www.instagram.com/hossam_shbat?igsh=MWs1aW56MmpoZXA1dQ=="
               target="_blank"
@@ -162,8 +176,12 @@ const CardDetail5 = () => {
             <InstagramPhoto img={wissamImg} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>WISSAM NASSAR</h1>
-            <span className={DescriptionStyle}>Fotógrafo.</span>
+            <h1 className={TitleStyle}>
+              {instagramTextContent(lang).WISSAM_NASSAR.title}
+            </h1>
+            <span className={DescriptionStyle}>
+              {instagramTextContent(lang).WISSAM_NASSAR.description}
+            </span>
             <a
               href="https://www.facebook.com/wissamnassargaza/?locale=es_LA"
               target="_blank"
@@ -182,8 +200,12 @@ const CardDetail5 = () => {
             <InstagramPhoto img={noohImg} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>NOOH AL-SHAGHNOBI</h1>
-            <span className={DescriptionStyle}>Fotógrafo.</span>
+            <h1 className={TitleStyle}>
+              {instagramTextContent(lang).NOOH_AL_SHAGHNOBI.title}
+            </h1>
+            <span className={DescriptionStyle}>
+              {instagramTextContent(lang).NOOH_AL_SHAGHNOBI.description}
+            </span>
             <a
               href="https://www.instagram.com/nooh.xp?igsh=MW9kbTYwYnpnaGZ4Yw=="
               target="_blank"
@@ -202,11 +224,13 @@ const CardDetail5 = () => {
             <InstagramPhoto img={salehImg} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>SALEH ALJAFARAWI</h1>
-            <span className={DescriptionStyle}>Fotógrafo.</span>
-            <p className="font-semibold mb-2">
-              Si no funciona es probable que haya sido censurado.
-            </p>
+            <h1 className={TitleStyle}>
+              {instagramTextContent(lang).SALEH_ALJAFARAWI.title}
+            </h1>
+            <span className={DescriptionStyle}>
+              {instagramTextContent(lang).SALEH_ALJAFARAWI.description}
+            </span>
+
             <a
               href="https://www.instagram.com/saleh_aljafarawi?igsh=MWphdjI0dnF0aGkw"
               target="_blank"
@@ -215,6 +239,11 @@ const CardDetail5 = () => {
             >
               <AiFillInstagram />
             </a>
+            <p className="font-semibold text-xs ">
+              {lang
+                ? "Si no funciona es probable que haya sido censurado."
+                : "If it doesn't work, it's likely that you've been censored."}
+            </p>
           </div>
         </div>
 
