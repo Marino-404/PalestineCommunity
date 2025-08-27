@@ -45,7 +45,9 @@ const Footer = () => {
             : "© 2025 - All rights reserved."}
         </h1>
         <h1 className="font-poppins font-light text-xs">
-          Centro Palestino de Rosario
+          {lang
+            ? "Centro Palestino de Rosario"
+            : "Palestinian Center of Rosario"}
         </h1>
         <h1 className="font-poppins font-light text-xs">
           {lang ? "Diseñado y desarrollado por" : "Designed and developed by"}{" "}

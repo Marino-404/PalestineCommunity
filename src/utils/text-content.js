@@ -23,7 +23,7 @@ export const cardTextContent = (lang = true) => {
       Peliculas: "Películas",
       Series: "Series",
       Cocina: "Cocina",
-      Spotify: "Spotify",
+      Spotify: "Música",
       Instagram: "Instagram",
       Arte: "Arte",
       Celebridades: "Celebridades",
@@ -39,7 +39,7 @@ export const cardTextContent = (lang = true) => {
       Peliculas: "Movies",
       Series: "TV Shows",
       Cocina: "Cooking",
-      Spotify: "Spotify",
+      Spotify: "Music",
       Instagram: "Instagram",
       Arte: "Art",
       Celebridades: "Celebrities",
@@ -625,6 +625,58 @@ export const artTextContent = (lang = true) => {
         title: "TATREEZ",
         description:
           "Traditional Palestinian embroidery art. Symbolizes resistance, economic opportunities for Palestinian women, and tells stories of their homeland.",
+      },
+    };
+  }
+};
+
+export const celebridadesTextContent = (lang = true) => {
+  if (lang) {
+    return {
+      bono: {
+        title: "BONO – U2",
+        description:
+          "U2 ha cambiado la letra de una de sus canciones más icónicas, Pride (In the Name of Love), para recordar a las víctimas que han muerto en los primeros días del conflicto entre Israel y Gaza.",
+      },
+      bella: {
+        title: "BELLA HADID",
+        description: "Modelo estadounidense de origen palestino.",
+      },
+      julia: {
+        title: "JULIA BOUTROS",
+        description: "Cantante libanesa.",
+      },
+      roger: {
+        title: "ROGER WATERS",
+        description: "Compositor y músico británico.",
+      },
+      residente: {
+        title: "RESIDENTE",
+        description: "Rapero y compositor puertorriqueño.",
+      },
+    };
+  } else {
+    return {
+      bono: {
+        title: "BONO – U2",
+        description:
+          "U2 changed the lyrics of one of their most iconic songs, Pride (In the Name of Love), to remember the victims who died in the first days of the conflict between Israel and Gaza.",
+      },
+      bella: {
+        title: "BELLA HADID",
+        description: "American model of Palestinian descent.",
+      },
+      julia: {
+        title: "JULIA BOUTROS",
+        description: "Lebanese singer.",
+      },
+      roger: {
+        title: "ROGER WATERS",
+        description: "British composer and musician.",
+      },
+      residente: {
+        title: "RESIDENTE",
+        description: "Puerto Rican rapper and songwriter.",
       },
     };
   }

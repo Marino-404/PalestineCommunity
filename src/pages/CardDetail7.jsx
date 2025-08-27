@@ -6,6 +6,7 @@ import SectionPhoto from "../components/SectionPhoto";
 import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
 import { FaYoutube } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
+import { celebridadesTextContent } from "../utils/text-content.js";
 
 import img1 from "/src/images/celebridades/1.png";
 import img2 from "/src/images/celebridades/2.png";
@@ -14,12 +15,12 @@ import img4 from "/src/images/celebridades/4.png";
 import img5 from "/src/images/celebridades/5.webp";
 
 const CardDetail7 = () => {
-  const { mode } = useAppContext();
+  const { mode, lang } = useAppContext();
 
   return (
     <>
       <div>
-        <Back SectionName={"Celebridades"} />
+        <Back SectionName={lang ? "Celebridades" : "Celebrities"} />
       </div>
 
       <div
@@ -34,11 +35,11 @@ const CardDetail7 = () => {
             <SectionPhoto img={img5} />
           </section>
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>BONO – U2</h1>
+            <h1 className={TitleStyle}>
+              {celebridadesTextContent(lang).bono.title}
+            </h1>
             <span className={DescriptionStyle}>
-              U2 ha cambiado la letra de una de sus canciones más icónicas,
-              Pride (In the Name of Love), para recordar a las víctimas que han
-              muerto en los primeros días del conflicto entre Israel y Gaza.
+              {celebridadesTextContent(lang).bono.description}
             </span>
             <a
               href="https://www.youtube.com/watch?v=FV2u0BxNxc8"
@@ -58,9 +59,11 @@ const CardDetail7 = () => {
             <SectionPhoto img={img1} />
           </section>
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>BELLA HADID</h1>
+            <h1 className={TitleStyle}>
+              {celebridadesTextContent(lang).bella.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Modelo estadounidense de origen palestino.
+              {celebridadesTextContent(lang).bella.description}
             </span>
             <a
               href="https://www.instagram.com/bellahadid?igsh=MTk3N2I3a3RqNHVyeA=="
@@ -80,8 +83,12 @@ const CardDetail7 = () => {
             <SectionPhoto img={img2} />
           </section>
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>JULIA BOUTROS</h1>
-            <span className={DescriptionStyle}>Cantante Libanesa.</span>
+            <h1 className={TitleStyle}>
+              {celebridadesTextContent(lang).julia.title}
+            </h1>
+            <span className={DescriptionStyle}>
+              {celebridadesTextContent(lang).julia.description}
+            </span>
             <a
               href="https://youtu.be/834tyxBxksU?si=Ov48VDxX7sCFrHkz"
               target="_blank"
@@ -100,13 +107,15 @@ const CardDetail7 = () => {
             <SectionPhoto img={img3} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>ROGER WATERS</h1>
+            <h1 className={TitleStyle}>
+              {celebridadesTextContent(lang).roger.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Compositor y músico británico.
+              {celebridadesTextContent(lang).roger.description}
             </span>
             <div className="flex flex-col items-center gap-2">
               <p className="font-poppins">
-                Canción para Palestina:{" "}
+                {lang ? "Canción para Palestina:" : "Song for Palestine:"}{" "}
                 <span className="font-bold">WE SHALL OVERCOME</span>
               </p>
               <a
@@ -128,11 +137,15 @@ const CardDetail7 = () => {
             <SectionPhoto img={img4} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>RESIDENTE</h1>
+            <h1 className={TitleStyle}>
+              {celebridadesTextContent(lang).residente.title}
+            </h1>
             <span className={DescriptionStyle}>
-              Rapero y compositor puertorriqueño.
+              {celebridadesTextContent(lang).residente.description}
             </span>
-            <span className="font-poppins pb-4">Canciones para Palestina:</span>
+            <span className="font-poppins pb-4">
+              {lang ? "Canciones para Palestina:" : "Songs for Palestine:"}
+            </span>
 
             <div className="flex flex-col xl:flex-row text-center items-center md:gap-6 gap-4">
               <div className="w-full md:w-auto  flex flex-col items-center text-center gap-1">

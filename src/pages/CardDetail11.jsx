@@ -8,12 +8,12 @@ import DivLineCards from "../components/DivLineCards";
 import { TitleStyle, DescriptionStyle } from "./CardDetail1";
 
 const CardDetail11 = () => {
-  const { mode } = useAppContext();
+  const { mode, lang } = useAppContext();
 
   return (
     <>
       <div>
-        <Back SectionName={"Turismo"} />
+        <Back SectionName={lang ? "Turismo" : "Tourism"} />
       </div>
 
       <div
@@ -24,16 +24,18 @@ const CardDetail11 = () => {
         <DivLinePages />
 
         <div className="flex w-full flex-col text-center justify-center items-center mx-auto">
-          <h1 className={TitleStyle}>Turismo en Palestina</h1>
+          <h1 className={TitleStyle}>
+            {lang ? "Turismo en Palestina" : "Tourism in Palestine"}
+          </h1>
           <DivLineCards />
         </div>
 
         <div className="flex w-full flex-col text-center justify-center items-center mx-auto">
           <span className={DescriptionStyle}>
-            Explora las calles de Belén, Palestina, en este recorrido a pie en
-            4K, capturando la vida cotidiana, los negocios locales y los
-            momentos auténticos desde una perspectiva única. Sin comentarios:
-            solo imágenes y sonidos reales.
+            {" "}
+            {lang
+              ? "Explora las calles de Belén, Palestina, en este recorrido a pie en 4K, capturando la vida cotidiana, los negocios locales y los momentos auténticos desde una perspectiva única. Sin comentarios: solo imágenes y sonidos reales."
+              : "Explore the streets of Bethlehem, Palestine, in this 4K walking tour, capturing everyday life, local businesses, and authentic moments from a unique perspective. No commentary: just real images and sounds."}
           </span>
         </div>
 

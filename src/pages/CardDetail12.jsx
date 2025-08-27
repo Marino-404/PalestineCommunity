@@ -18,12 +18,12 @@ const TitleStyle = "font-poppins font-semibold text-md text-gradient";
 const UbicationStyle = "flex font-poppins font-semibold text-2xl gap-2";
 
 const CardDetail12 = () => {
-  const { mode } = useAppContext();
+  const { mode, lang } = useAppContext();
 
   return (
     <>
       <div>
-        <Back SectionName={"Instituciones"} />
+        <Back SectionName={lang ? "Instituciones" : "Institutions"} />
       </div>
 
       <div
@@ -35,7 +35,9 @@ const CardDetail12 = () => {
 
         <div className="xl:h-[18vw] flex xl:flex-row flex-col">
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>CENTRO PALESTINO</h1>
+            <h1 className={TitleStyle}>
+              {lang ? "CENTRO PALESTINO" : "PALESTINIAN CENTER"}
+            </h1>
             <span className={UbicationStyle}>ROSARIO</span>
             <img src={arg} alt="arg" className={imgStyle} />
             <div className="flex gap-4">
@@ -55,7 +57,9 @@ const CardDetail12 = () => {
 
         <div className="xl:h-[18vw] flex xl:flex-row flex-col">
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>EMBAJADA DE PALESTINA</h1>
+            <h1 className={TitleStyle}>
+              {lang ? "EMBAJADA DE PALESTINA" : "PALESTINIAN EMBASSY"}
+            </h1>
             <span className={UbicationStyle}>ARGENTINA</span>
             <img src={arg} alt="arg" className={imgStyle} />
             <div className="flex gap-4">
@@ -83,7 +87,9 @@ const CardDetail12 = () => {
 
         <div className="xl:h-[18vw] flex xl:flex-row flex-col">
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>EMBAJADA DE PALESTINA</h1>
+            <h1 className={TitleStyle}>
+              {lang ? "EMBAJADA DE PALESTINA" : "PALESTINIAN EMBASSY"}
+            </h1>
             <span className={UbicationStyle}>PERU</span>
             <img src={peru} alt="peru" className={imgStyle} />
             <a
@@ -101,7 +107,9 @@ const CardDetail12 = () => {
 
         <div className="xl:h-[18vw] flex xl:flex-row flex-col">
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>EMBAJADA DE PALESTINA</h1>
+            <h1 className={TitleStyle}>
+              {lang ? "EMBAJADA DE PALESTINA" : "PALESTINIAN EMBASSY"}
+            </h1>
             <span className={UbicationStyle}>CHILE</span>
             <img src={chile} alt="Chile" className={imgStyle} />
             <a
@@ -119,7 +127,9 @@ const CardDetail12 = () => {
 
         <div className="xl:h-[18vw] flex xl:flex-row flex-col">
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>EMBAJADA DE PALESTINA</h1>
+            <h1 className={TitleStyle}>
+              {lang ? "EMBAJADA DE PALESTINA" : "PALESTINIAN EMBASSY"}
+            </h1>
             <span className={UbicationStyle}>URUGUAY</span>
             <img src={uruguay} alt="Uruguay" className={imgStyle} />
             <a
@@ -137,7 +147,9 @@ const CardDetail12 = () => {
 
         <div className="xl:h-[18vw] flex xl:flex-row flex-col">
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>EMBAJADA DE PALESTINA</h1>
+            <h1 className={TitleStyle}>
+              {lang ? "EMBAJADA DE PALESTINA" : "PALESTINIAN EMBASSY"}
+            </h1>
             <span className={UbicationStyle}>NICARAGUA</span>
             <img src={nicaragua} alt="Nicaragua" className={imgStyle} />
             <a
@@ -155,7 +167,9 @@ const CardDetail12 = () => {
 
         <div className="xl:h-[18vw] flex xl:flex-row flex-col">
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>EMBAJADA DE PALESTINA</h1>
+            <h1 className={TitleStyle}>
+              {lang ? "EMBAJADA DE PALESTINA" : "PALESTINIAN EMBASSY"}
+            </h1>
             <span className={UbicationStyle}>COLOMBIA</span>
             <img src={colombia} alt="Colombia" className={imgStyle} />
             <a
@@ -173,7 +187,9 @@ const CardDetail12 = () => {
 
         <div className="xl:h-[18vw] flex xl:flex-row flex-col">
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>EMBAJADA DE PALESTINA</h1>
+            <h1 className={TitleStyle}>
+              {lang ? "EMBAJADA DE PALESTINA" : "PALESTINIAN EMBASSY"}
+            </h1>
             <span className={UbicationStyle}>ESPAÑA</span>
             <img src={españa} alt="Espana" className={imgStyle} />
             <a

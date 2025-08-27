@@ -3,7 +3,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { useAppContext } from "../store/AppContext";
 
 const Back = ({ SectionName }) => {
-  const { mode } = useAppContext();
+  const { mode, lang } = useAppContext();
 
   return (
     <div
@@ -13,7 +13,7 @@ const Back = ({ SectionName }) => {
     >
       <Link className="flex items-center" to={"/"}>
         <IoIosArrowBack />
-        <span>Inicio</span>
+        <span>{lang ? "Inicio" : "Home"}</span>
         <span className="px-1">|</span>
       </Link>
       <span className="underline">{SectionName}</span>

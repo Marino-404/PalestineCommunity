@@ -13,12 +13,12 @@ import img4 from "/src/images/ong/4.png";
 import img5 from "/src/images/ong/5.png";
 
 const CardDetail10 = () => {
-  const { mode } = useAppContext();
+  const { mode, lang } = useAppContext();
 
   return (
     <>
       <div>
-        <Back SectionName={"ONG"} />
+        <Back SectionName={lang ? "ONG" : "NGO"} />
       </div>
 
       <div

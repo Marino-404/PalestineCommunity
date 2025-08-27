@@ -28,7 +28,7 @@ const CardDetail1 = () => {
   return (
     <>
       <div>
-        <Back SectionName={"Peliculas"} />
+        <Back SectionName={lang ? "Peliculas" : "Movies"} />
       </div>
 
       <div
