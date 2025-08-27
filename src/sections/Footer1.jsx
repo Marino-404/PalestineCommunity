@@ -8,17 +8,17 @@ const Footer1 = () => {
       <div
         className={` ${
           mode ? "text-custom-white" : "text-custom-black"
-        } w-[96%] xl:w-[50%] h-auto flex flex-col text-center gap-2 xl:flex-row xl:justify-between xl:gap-auto `}
+        } w-[96%] xl:w-[50%] h-auto flex flex-col text-center gap-2 xl:flex-row text-center justify-center`}
       >
         <h1 className="font-poppins font-light text-xs">
           {lang
-            ? "© 2025 - Todos los derechos reservados."
-            : "© 2025 - All rights reserved."}
+            ? "© 2025 - Todos los derechos reservados"
+            : "© 2025 - All rights reserved"}
         </h1>
         <h1 className="font-poppins font-light text-xs">
           {lang
-            ? "Centro Palestino de Rosario"
-            : "Palestinian Center of Rosario"}
+            ? "| Centro Palestino de Rosario |"
+            : "| Palestinian Center of Rosario |"}
         </h1>
         <h1 className="font-poppins font-light text-xs">
           {lang ? "Diseñado y desarrollado por" : "Designed and developed by"}{" "}

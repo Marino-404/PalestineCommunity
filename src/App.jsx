@@ -52,19 +52,19 @@ function App() {
             </>
           }
         />
-        <Route path="/cards/gaza" element={<CardGaza />} />
-        <Route path="/cards/detail1" element={<CardDetail1 />} />
-        <Route path="/cards/detail2" element={<CardDetail2 />} />
-        <Route path="/cards/detail3" element={<CardDetail3 />} />
-        <Route path="/cards/detail4" element={<CardDetail4 />} />
-        <Route path="/cards/detail5" element={<CardDetail5 />} />
-        <Route path="/cards/detail6" element={<CardDetail6 />} />
-        <Route path="/cards/detail7" element={<CardDetail7 />} />
-        <Route path="/cards/detail8" element={<CardDetail8 />} />
-        <Route path="/cards/detail9" element={<CardDetail9 />} />
-        <Route path="/cards/detail10" element={<CardDetail10 />} />
-        <Route path="/cards/detail11" element={<CardDetail11 />} />
-        <Route path="/cards/detail12" element={<CardDetail12 />} />
+        <Route path="/Gaza" element={<CardGaza />} />
+        <Route path="/Movies" element={<CardDetail1 />} />
+        <Route path="/TVShows" element={<CardDetail2 />} />
+        <Route path="/Cooking" element={<CardDetail3 />} />
+        <Route path="/Music" element={<CardDetail4 />} />
+        <Route path="/Instagram" element={<CardDetail5 />} />
+        <Route path="/Art" element={<CardDetail6 />} />
+        <Route path="/Celebrities" element={<CardDetail7 />} />
+        <Route path="/Podcast" element={<CardDetail8 />} />
+        <Route path="/Media" element={<CardDetail9 />} />
+        <Route path="/NGO" element={<CardDetail10 />} />
+        <Route path="/Tourism" element={<CardDetail11 />} />
+        <Route path="/Institutions" element={<CardDetail12 />} />
       </Routes>
     </div>
   );

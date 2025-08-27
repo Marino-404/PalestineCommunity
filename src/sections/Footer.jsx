@@ -1,17 +1,21 @@
 import { useAppContext } from "../store/AppContext";
+
 const texts = {
   es: {
-    reserved: "© 2025 - Todos los derechos reservados.",
+    reserved: "© 2025 - Todos los derechos reservados",
+    center: "| Centro Palestino de Rosario |",
     designedBy: "Diseñado y desarrollado por",
   },
   en: {
-    reserved: "© 2025 - All rights reserved.",
+    reserved: "© 2025 - All rights reserved",
+    center: "| Palestinian Center of Rosario |",
     designedBy: "Designed and developed by",
   },
 };
 
 const Footer = () => {
   const { mode, lang } = useAppContext();
+  const t = lang ? texts.es : texts.en;
 
   return (
     <footer className="w-full h-auto overflow-hidden flex flex-col items-center justify-center font-poppins py-6">
@@ -37,20 +41,12 @@ const Footer = () => {
       <div
         className={`${
           mode ? "text-custom-white" : "text-custom-black"
-        } w-[96%] xl:w-[50%] h-auto flex flex-col text-center gap-2 xl:flex-row xl:justify-between xl:gap-auto`}
+        } w-[96%] xl:w-[50%] h-auto flex flex-col gap-2 xl:flex-row text-center justify-center`}
       >
+        <h1 className="font-poppins font-light text-xs">{t.reserved}</h1>
+        <h1 className="font-poppins font-light text-xs">{t.center}</h1>
         <h1 className="font-poppins font-light text-xs">
-          {lang
-            ? "© 2025 - Todos los derechos reservados."
-            : "© 2025 - All rights reserved."}
-        </h1>
-        <h1 className="font-poppins font-light text-xs">
-          {lang
-            ? "Centro Palestino de Rosario"
-            : "Palestinian Center of Rosario"}
-        </h1>
-        <h1 className="font-poppins font-light text-xs">
-          {lang ? "Diseñado y desarrollado por" : "Designed and developed by"}{" "}
+          {t.designedBy}{" "}
           <a
             className="text-[#1B5931] hover:text-[#154826] hover:underline transition-colors duration-300 font-bold"
             target="_blank"

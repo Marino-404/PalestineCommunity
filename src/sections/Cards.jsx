@@ -44,73 +44,73 @@ const Cards = () => {
       id: "Peliculas",
       title: cardTextContent(lang).Peliculas,
       className: "card-1",
-      path: "/cards/detail1",
+      path: "/Movies",
     },
     {
       id: "Series",
       title: cardTextContent(lang).Series,
       className: "card-2",
-      path: "/cards/detail2",
+      path: "/TVShows",
     },
     {
       id: "Cocina",
       title: cardTextContent(lang).Cocina,
       className: "card-3",
-      path: "/cards/detail3",
+      path: "/Cooking",
     },
     {
       id: "Spotify",
       title: cardTextContent(lang).Spotify,
       className: "card-4",
-      path: "/cards/detail4",
+      path: "/Music",
     },
     {
       id: "Instagram",
       title: cardTextContent(lang).Instagram,
       className: "card-5",
-      path: "/cards/detail5",
+      path: "/Instagram",
     },
     {
       id: "Arte",
       title: cardTextContent(lang).Arte,
       className: "card-6",
-      path: "/cards/detail6",
+      path: "/Art",
     },
     {
       id: "Celebridades",
       title: cardTextContent(lang).Celebridades,
       className: "card-7",
-      path: "/cards/detail7",
+      path: "/Celebrities",
     },
     {
       id: "Podcast",
       title: cardTextContent(lang).Podcast,
       className: "card-8",
-      path: "/cards/detail8",
+      path: "/Podcast",
     },
     {
       id: "Media",
       title: cardTextContent(lang).Media,
       className: "card-9",
-      path: "/cards/detail9",
+      path: "/Media",
     },
     {
       id: "ONG",
       title: cardTextContent(lang).ONG,
       className: "card-10",
-      path: "/cards/detail10",
+      path: "/NGO",
     },
     {
       id: "Turismo",
       title: cardTextContent(lang).Turismo,
       className: "card-11",
-      path: "/cards/detail11",
+      path: "/Tourism",
     },
     {
       id: "Instituciones",
       title: cardTextContent(lang).Instituciones,
       className: "card-12",
-      path: "/cards/detail12",
+      path: "/Institutions",
     },
   ];
 
@@ -132,7 +132,7 @@ const Cards = () => {
 
       {/* Card Gaza */}
       <Link
-        to="/cards/gaza"
+        to="/Gaza"
         className={`w-[96%] xl:w-[55%] xl:h-[8vw] h-[24vw] flex justify-center items-center relative card-gaza  backdrop-blur-md mt-12`}
       >
         <h1 className="absolute text-2xl xl:text-3xl font-light text-custom-white">
