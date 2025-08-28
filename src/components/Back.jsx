@@ -18,10 +18,7 @@ const Back = ({ SectionName }) => {
         <span className="px-2">|</span>
       </Link>
 
-      <ShareButton
-        title="Mirá esta sección increíble 🚀"
-        SectionName={SectionName}
-      />
+      <ShareButton SectionName={SectionName} />
     </div>
   );
 };
