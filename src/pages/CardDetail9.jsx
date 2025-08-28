@@ -3,9 +3,8 @@ import Back from "../components/Back";
 import DivLinePages from "../components/DivLinePages";
 import DivLineCards from "../components/DivLineCards";
 import Footer1 from "../sections/Footer1";
-import { AiFillInstagram, AiFillTikTok } from "react-icons/ai";
-import { FaYoutube } from "react-icons/fa";
-import { BiWorld } from "react-icons/bi";
+import { AiFillTikTok } from "react-icons/ai";
+import { FaYoutube, FaInstagram, FaDesktop } from "react-icons/fa6";
 import SectionPhoto from "../components/SectionPhoto";
 import { SectionStyle, TitleStyle } from "./CardDetail1";
 
@@ -123,7 +122,7 @@ const CardDetail9 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -142,7 +141,7 @@ const CardDetail9 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -161,7 +160,7 @@ const CardDetail9 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -259,7 +258,7 @@ const CardDetail9 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <BiWorld />
+              <FaDesktop />
             </a>
           </div>
         </div>
@@ -278,7 +277,7 @@ const CardDetail9 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <BiWorld />
+              <FaDesktop />
             </a>
           </div>
         </div>
@@ -297,7 +296,7 @@ const CardDetail9 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <BiWorld />
+              <FaDesktop />
             </a>
           </div>
         </div>
@@ -316,7 +315,7 @@ const CardDetail9 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <BiWorld />
+              <FaDesktop />
             </a>
           </div>
         </div>

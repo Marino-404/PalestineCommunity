@@ -1,3 +1,5 @@
+import { title } from "framer-motion/client";
+
 export const headerTextContent = (lang = true) => {
   if (lang) {
     return {
@@ -677,6 +679,46 @@ export const celebridadesTextContent = (lang = true) => {
       residente: {
         title: "RESIDENTE",
         description: "Puerto Rican rapper and songwriter.",
+      },
+    };
+  }
+};
+
+export const gazaTextContent = (lang = true) => {
+  if (lang) {
+    return {
+      almudena: {
+        title: "ALMUDENA ARIZA",
+        description:
+          "Periodista española, corresponsal de TVE con décadas de experiencia en zonas de conflicto. Denuncia el “shadow ban” que afectan contenidos sobre Gaza en redes sociales, y explica por qué escribe “G*aza” para evitar censura algorítmica.",
+      },
+      huda: {
+        title: "HUDA EMAD HEGAZI",
+        description:
+          "La voz en español desde Gaza-  Corresponsal de La W Radio (Colombia) Su cobertura diaria lleva a la audiencia hispanohablante una mirada directa desde el terreno del conflicto.",
+      },
+      mikel: {
+        title: "MIKEL AYESTARAN",
+        description:
+          "Periodista y corresponsal basado en Jerusalén, con amplia experiencia en Oriente Medio - Ganador del Premio Ortega y Gasset 2025 por Menú de Gaza, un proyecto de fotoperiodismo que narra la vida cotidiana y el hambre en la Franja mediante fotos de platos y notas de voz.",
+      },
+    };
+  } else {
+    return {
+      almudena: {
+        title: "ALMUDENA ARIZA",
+        description:
+          "Spanish journalist, TVE correspondent with decades of experience in conflict zones. Denounces the 'shadow ban' affecting content about Gaza on social media, and explains why she writes 'G*aza' to avoid algorithmic censorship.",
+      },
+      huda: {
+        title: "HUDA EMAD HEGAZI",
+        description:
+          "The Spanish Voice from Gaza- Correspondent of La W Radio (Colombia) Its daily coverage brings the Spanish-speaking audience a direct look from the terrain of the conflict.",
+      },
+      mikel: {
+        title: "MIKEL AYESTARAN",
+        description:
+          "Journalist and correspondent based in Jerusalem, with extensive experience in the Middle East - Winner of the Ortega y Gasset Award 2025 for Menu de Gaza, a photojournalism project that narrates daily life and hunger in the Strip through photos of dishes and voice notes.",
       },
     };
   }

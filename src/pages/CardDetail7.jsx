@@ -4,8 +4,7 @@ import Back from "../components/Back";
 import DivLinePages from "../components/DivLinePages";
 import SectionPhoto from "../components/SectionPhoto";
 import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
-import { FaYoutube } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+import { FaYoutube, FaInstagram } from "react-icons/fa6";
 import { celebridadesTextContent } from "../utils/text-content.js";
 
 import img1 from "/src/images/celebridades/1.png";
@@ -71,7 +70,7 @@ const CardDetail7 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>

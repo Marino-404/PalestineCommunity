@@ -4,8 +4,8 @@ import Back from "../components/Back";
 import DivLinePages from "../components/DivLinePages";
 import InstagramPhoto from "../components/InstagramPhoto";
 import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
-import { AiFillInstagram, AiFillTikTok } from "react-icons/ai";
-import { FaFacebook } from "react-icons/fa";
+import { AiFillTikTok } from "react-icons/ai";
+import { FaSquareFacebook, FaInstagram } from "react-icons/fa6";
 import { instagramTextContent } from "../utils/text-content.js";
 
 import img1L from "/src/images/instagram/l1.png";
@@ -23,7 +23,6 @@ import img4B from "/src/images/instagram/4b.png";
 import img5B from "/src/images/instagram/5b.png";
 import img6B from "/src/images/instagram/6b.png";
 import img7B from "/src/images/instagram/7b.png";
-import ShareButton from "../components/ShareButton.jsx";
 
 const images = {
   SALMA: { light: img1L, dark: img1B },
@@ -83,7 +82,7 @@ const CardDetail5 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <AiFillInstagram />
+                <FaInstagram />
               </a>
               <a
                 href="https://www.tiktok.com/@salma.shawa?_t=8pl8wmCJP8A&_r=1"
@@ -116,7 +115,7 @@ const CardDetail5 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -140,7 +139,7 @@ const CardDetail5 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -164,7 +163,7 @@ const CardDetail5 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -188,7 +187,7 @@ const CardDetail5 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <FaFacebook />
+              <FaSquareFacebook />
             </a>
           </div>
         </div>
@@ -212,7 +211,7 @@ const CardDetail5 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -237,7 +236,7 @@ const CardDetail5 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
             <p className="font-semibold text-xs ">
               {lang

@@ -32,7 +32,7 @@ const CardDetail1 = () => {
       </div>
 
       <div
-        className={`w-[98%] xl:w-[60%] xl:mx-auto md:mx-auto flex flex-col ${
+        className={`w-[98%] xl:w-[50%] xl:mx-auto md:mx-auto flex flex-col ${
           mode ? "text-custom-white" : "text-custom-black"
         } z-50`}
       >

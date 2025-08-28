@@ -4,9 +4,13 @@ import Footer1 from "../sections/Footer1";
 import DivLinePages from "../components/DivLinePages";
 import SectionPhoto from "../components/SectionPhoto";
 import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
-import { BiWorld } from "react-icons/bi";
+import {
+  FaYoutube,
+  FaSquareFacebook,
+  FaInstagram,
+  FaDesktop,
+} from "react-icons/fa6";
+
 import { cocinaTextContent } from "../utils/text-content.js";
 
 import img1 from "/src/images/comida/comida1.png";
@@ -48,7 +52,7 @@ const CardDetail3 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <AiFillInstagram />
+                <FaInstagram />
               </a>
               <a
                 href="https://www.youtube.com/@palestineonaplate8553"
@@ -64,7 +68,7 @@ const CardDetail3 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <BiWorld />
+                <FaDesktop />
               </a>
             </div>
           </div>
@@ -90,7 +94,7 @@ const CardDetail3 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <AiFillInstagram />
+                <FaInstagram />
               </a>
               <a
                 href="https://www.facebook.com/share/jGxNevTXZUk9p3vj/?mibextid=qi2Omg"
@@ -98,7 +102,7 @@ const CardDetail3 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <FaFacebook />
+                <FaSquareFacebook />
               </a>
             </div>
           </div>

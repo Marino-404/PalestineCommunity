@@ -4,11 +4,8 @@ import Back from "../components/Back";
 import DivLinePages from "../components/DivLinePages";
 import SectionPhoto from "../components/SectionPhoto";
 import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
-import { FaYoutube } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
-import { BiWorld } from "react-icons/bi";
 import { artTextContent } from "../utils/text-content.js";
-
+import { FaYoutube, FaInstagram, FaDesktop } from "react-icons/fa6";
 import img1 from "/src/images/art/1.png";
 import img2 from "/src/images/art/2.png";
 import img3 from "/src/images/art/3.png";
@@ -52,7 +49,7 @@ const CardDetail6 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <AiFillInstagram />
+                <FaInstagram />
               </a>
               <a
                 href="https://www.youtube.com/watch?v=neYO0kJ-6XQ"
@@ -68,7 +65,7 @@ const CardDetail6 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <BiWorld />
+                <FaDesktop />
               </a>
             </div>
           </div>
@@ -93,7 +90,7 @@ const CardDetail6 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <BiWorld />
+              <FaDesktop />
             </a>
           </div>
         </div>
@@ -117,7 +114,7 @@ const CardDetail6 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -141,7 +138,7 @@ const CardDetail6 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -165,7 +162,7 @@ const CardDetail6 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -189,7 +186,7 @@ const CardDetail6 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -213,7 +210,7 @@ const CardDetail6 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -236,7 +233,7 @@ const CardDetail6 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <AiFillInstagram />
+                <FaInstagram />
               </a>
               <a
                 href="https://www.youtube.com/watch?v=QC15tZuAkYI"
@@ -252,7 +249,7 @@ const CardDetail6 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <BiWorld />
+                <FaDesktop />
               </a>
             </div>
           </div>

@@ -2,8 +2,7 @@ import { useAppContext } from "../store/AppContext.jsx";
 import Back from "../components/Back";
 import DivLinePages from "../components/DivLinePages";
 import Footer1 from "../sections/Footer1";
-import { AiFillInstagram } from "react-icons/ai";
-import { FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaYoutube } from "react-icons/fa6";
 
 import arg from "../images/flags/arg.png";
 import peru from "../images/flags/peru.png";
@@ -47,7 +46,7 @@ const CardDetail12 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <AiFillInstagram />
+                <FaInstagram />
               </a>
             </div>
           </div>
@@ -69,7 +68,7 @@ const CardDetail12 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <AiFillInstagram />
+                <FaInstagram />
               </a>
               <a
                 href="https://youtube.com/@embajadapalestina6040?si=3ejZUF73KdrHOEON"
@@ -98,7 +97,7 @@ const CardDetail12 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -118,7 +117,7 @@ const CardDetail12 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -138,7 +137,7 @@ const CardDetail12 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -158,7 +157,7 @@ const CardDetail12 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -178,7 +177,7 @@ const CardDetail12 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>
@@ -198,7 +197,7 @@ const CardDetail12 = () => {
               rel="noopener noreferrer"
               className="text-5xl"
             >
-              <AiFillInstagram />
+              <FaInstagram />
             </a>
           </div>
         </div>

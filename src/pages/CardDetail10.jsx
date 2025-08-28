@@ -4,7 +4,7 @@ import DivLinePages from "../components/DivLinePages";
 import Footer1 from "../sections/Footer";
 import SectionPhoto from "../components/SectionPhoto";
 import { TitleStyle, SectionStyle } from "./CardDetail1";
-import { BiWorld } from "react-icons/bi";
+import { FaDesktop } from "react-icons/fa6";
 
 import img1 from "/src/images/ong/1.png";
 import img2 from "/src/images/ong/2.png";
@@ -41,7 +41,7 @@ const CardDetail10 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <BiWorld />
+                <FaDesktop />
               </a>
             </div>
           </div>
@@ -62,7 +62,7 @@ const CardDetail10 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <BiWorld />
+                <FaDesktop />
               </a>
             </div>
           </div>
@@ -83,7 +83,7 @@ const CardDetail10 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <BiWorld />
+                <FaDesktop />
               </a>
             </div>
           </div>
@@ -104,7 +104,7 @@ const CardDetail10 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <BiWorld />
+                <FaDesktop />
               </a>
             </div>
           </div>
@@ -125,7 +125,7 @@ const CardDetail10 = () => {
                 rel="noopener noreferrer"
                 className="text-5xl"
               >
-                <BiWorld />
+                <FaDesktop />
               </a>
             </div>
           </div>
