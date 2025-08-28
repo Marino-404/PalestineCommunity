@@ -106,12 +106,12 @@ const Header = () => {
                 e.stopPropagation();
                 toggleMode();
               }}
-              className="w-[24px] h-[24px] xl:w-[23px] xl:h-[23px] flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110"
+              className="w-[24px] h-[24px] xl:w-[23px] xl:h-[23px] flex items-center justify-center"
             >
               {mode ? (
-                <AiFillSun className="w-full h-full transition-all duration-300 ease-in-out opacity-100 scale-100" />
+                <AiFillSun className="w-full h-full transition-transform duration-300 hover:rotate-180" />
               ) : (
-                <AiFillMoon className="w-full h-full transition-all duration-300 ease-in-out opacity-100 scale-100" />
+                <AiFillMoon className="w-full h-full transition-transform duration-300 hover:rotate-180" />
               )}
             </button>
 
