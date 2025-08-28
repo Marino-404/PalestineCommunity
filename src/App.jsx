@@ -61,7 +61,7 @@ function App() {
         <Route path="/Art" element={<CardDetail6 />} />
         <Route path="/Celebrities" element={<CardDetail7 />} />
         <Route path="/Podcast" element={<CardDetail8 />} />
-        <Route path="/Media" element={<CardDetail9 />} />
+        <Route path="/Podcast" element={<CardDetail9 />} />
         <Route path="/NGO" element={<CardDetail10 />} />
         <Route path="/Tourism" element={<CardDetail11 />} />
         <Route path="/Institutions" element={<CardDetail12 />} />

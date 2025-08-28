@@ -4,7 +4,7 @@ import DivLinePages from "../components/DivLinePages.jsx";
 import Footer1 from "../sections/Footer1.jsx";
 
 const CardGaza = () => {
-  const { mode } = useAppContext();
+  const { mode, lang } = useAppContext();
 
   return (
     <>
@@ -20,7 +20,7 @@ const CardGaza = () => {
         <DivLinePages />
 
         <div className="w-full h-[50vh] flex text-center justify-center items-center">
-          Proximamente...
+          {lang ? "Proximamente..." : "Coming Soon..."}
         </div>
       </div>
 

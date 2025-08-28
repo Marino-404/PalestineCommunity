@@ -21,7 +21,7 @@ const Connect = () => {
         mode ? "bg-[#00000097]" : "bg-[#ffffff97]"
       }`}
     >
-      <Link to={"/cards/detail7"}>
+      <Link to={"/Celebrities"}>
         <BsFillPeopleFill
           className={`text-3xl xl:text-6xl text-[#247043] ${
             mode ? "opacity-30" : "opacity-40"
@@ -29,7 +29,7 @@ const Connect = () => {
         />
       </Link>
 
-      <Link to={"/cards/detail8"}>
+      <Link to={"/Podcast"}>
         <FaPodcast
           className={`text-3xl xl:text-6xl text-[#247043] ${
             mode ? "opacity-30" : "opacity-40"
@@ -37,7 +37,7 @@ const Connect = () => {
         />
       </Link>
 
-      <Link to={"/cards/detail9"}>
+      <Link to={"/Podcast"}>
         <IoPlayCircleSharp
           className={`text-3xl xl:text-6xl text-[#247043] ${
             mode ? "opacity-30" : "opacity-40"
@@ -45,7 +45,7 @@ const Connect = () => {
         />
       </Link>
 
-      <Link to={"/cards/detail10"}>
+      <Link to={"/NGO"}>
         <RiOrganizationChart
           className={`text-3xl xl:text-6xl text-[#247043] ${
             mode ? "opacity-30" : "opacity-40"
@@ -53,7 +53,7 @@ const Connect = () => {
         />
       </Link>
 
-      <Link to={"/cards/detail11"}>
+      <Link to={"/Tourism"}>
         <MdOutlineTravelExplore
           className={`text-3xl xl:text-6xl text-[#247043] ${
             mode ? "opacity-30" : "opacity-40"
@@ -61,7 +61,7 @@ const Connect = () => {
         />
       </Link>
 
-      <Link to={"/cards/detail12"}>
+      <Link to={"/Institutions"}>
         <BiSolidInstitution
           className={`text-3xl xl:text-6xl text-[#247043] ${
             mode ? "opacity-30" : "opacity-40"
@@ -69,7 +69,7 @@ const Connect = () => {
         />
       </Link>
 
-      <Link to={"/cards/detail1"}>
+      <Link to={"/Movies"}>
         <PiFilmSlateBold
           className={`text-3xl xl:text-6xl text-[#247043] ${
             mode ? "opacity-30" : "opacity-40"
@@ -77,7 +77,7 @@ const Connect = () => {
         />
       </Link>
 
-      <Link to={"/cards/detail2"}>
+      <Link to={"/TVShows"}>
         <GiFilmProjector
           className={`text-3xl xl:text-6xl text-[#247043] ${
             mode ? "opacity-30" : "opacity-40"
@@ -85,7 +85,7 @@ const Connect = () => {
         />
       </Link>
 
-      <Link to={"/cards/detail3"}>
+      <Link to={"/Cooking"}>
         <TbToolsKitchen2
           className={`text-3xl xl:text-6xl text-[#247043] ${
             mode ? "opacity-30" : "opacity-40"
@@ -93,7 +93,7 @@ const Connect = () => {
         />
       </Link>
 
-      <Link to={"/cards/detail4"}>
+      <Link to={"/Music"}>
         <FaSpotify
           className={`text-3xl xl:text-6xl text-[#247043] ${
             mode ? "opacity-30" : "opacity-40"
@@ -101,7 +101,7 @@ const Connect = () => {
         />
       </Link>
 
-      <Link to={"/cards/detail5"}>
+      <Link to={"/Instagram"}>
         <AiFillInstagram
           className={`text-3xl xl:text-6xl text-[#247043] ${
             mode ? "opacity-30" : "opacity-40"
@@ -109,7 +109,7 @@ const Connect = () => {
         />
       </Link>
 
-      <Link to={"/cards/detail6"}>
+      <Link to={"/Art"}>
         <FaPaintbrush
           className={`text-3xl xl:text-6xl text-[#247043] ${
             mode ? "opacity-30" : "opacity-40"

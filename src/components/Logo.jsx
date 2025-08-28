@@ -1,4 +1,4 @@
-import heroImg from "/src/images/Logo.png";
+import heroImg from "/src/images/Logo1.png";
 
 function Logo() {
   return (
@@ -6,7 +6,7 @@ function Logo() {
       <img
         src={heroImg}
         alt="logo"
-        className="xl:w-[250px] xl:h-[260px] h-[210px] z-10 items-center justify-center"
+        className="xl:w-[260px] xl:h-[270px] h-[230px] z-10 items-center justify-center"
       />
     </div>
   );
