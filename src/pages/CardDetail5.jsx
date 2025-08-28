@@ -23,7 +23,7 @@ import img4B from "/src/images/instagram/4b.png";
 import img5B from "/src/images/instagram/5b.png";
 import img6B from "/src/images/instagram/6b.png";
 import img7B from "/src/images/instagram/7b.png";
-import { ins } from "framer-motion/client";
+import ShareButton from "../components/ShareButton.jsx";
 
 const images = {
   SALMA: { light: img1L, dark: img1B },
@@ -54,7 +54,7 @@ const CardDetail5 = () => {
 
   return (
     <>
-      <div>
+      <div className="flex">
         <Back SectionName={"Instagram"} />
       </div>
 

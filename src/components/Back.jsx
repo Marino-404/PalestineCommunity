@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 import { useAppContext } from "../store/AppContext";
+import ShareButton from "./ShareButton";
 
 const Back = ({ SectionName }) => {
   const { mode, lang } = useAppContext();
@@ -14,9 +15,13 @@ const Back = ({ SectionName }) => {
       <Link className="flex items-center" to={"/"}>
         <IoIosArrowBack />
         <span>{lang ? "Inicio" : "Home"}</span>
-        <span className="px-1">|</span>
+        <span className="px-2">|</span>
       </Link>
-      <span className="underline">{SectionName}</span>
+
+      <ShareButton
+        title="Mirá esta sección increíble 🚀"
+        SectionName={SectionName}
+      />
     </div>
   );
 };
