@@ -3,6 +3,7 @@ import Back from "../components/Back";
 import DivLinePages from "../components/DivLinePages.jsx";
 import Footer1 from "../sections/Footer1.jsx";
 import SectionPhoto from "../components/SectionPhoto.jsx";
+import CarouselGaza from "../components/CarouselGaza.jsx";
 
 import img1 from "/src/images/gaza/almuariza.jpg";
 import img2 from "/src/images/gaza/huda.jpg";
@@ -21,10 +22,14 @@ const CardGaza = () => {
       </div>
 
       <div
-        className={`w-[98%] xl:w-[60%] xl:mx-auto md:mx-auto flex flex-col ${
+        className={`w-[98%] xl:w-[60%] mx-auto md:mx-auto flex flex-col ${
           mode ? "text-custom-white" : "text-custom-black"
         } z-50`}
       >
+        <DivLinePages />
+
+        <CarouselGaza />
+
         <DivLinePages />
 
         <div className="xl:h-auto flex xl:flex-row flex-col">

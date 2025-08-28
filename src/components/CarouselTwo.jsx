@@ -1,4 +1,3 @@
-import { useAppContext } from "../store/AppContext";
 import img1 from "/src/images/carrusel/chanel/3.jpg";
 import img2 from "/src/images/carrusel/spotify/2.jpg";
 import img3 from "/src/images/carrusel/pelicula/1.jpg";
@@ -76,8 +75,6 @@ const images = [
 ];
 
 const CarouselTwo = () => {
-  const { mode } = useAppContext();
-
   return (
     <div className="w-full xl:w-[68%] h-[34vw] xl:h-[11vw] md:w-[68%] md:h-[11vw] flex items-center justify-center overflow-hidden  mx-auto">
       <div
