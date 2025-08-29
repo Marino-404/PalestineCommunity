@@ -1,24 +1,29 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import img1 from "/src/images/gaza/shorts/short1.jpg";
+import img2 from "/src/images/gaza/shorts/short2.jpg";
+
+import img3 from "/src/images/gaza/shorts/short3.jpg";
+import img4 from "/src/images/gaza/shorts/short4.jpg";
 
 const images = [
   {
-    src: "/src/images/gaza/shorts/short1.jpg",
+    src: img1,
     alt: "Short 1",
     link: "https://www.youtube.com/shorts/KUnGjjcYRdI",
   },
   {
-    src: "/src/images/gaza/shorts/short2.jpg",
+    src: img2,
     alt: "Short 2",
     link: "https://www.youtube.com/shorts/3-XTDXKmNnI",
   },
   {
-    src: "/src/images/gaza/shorts/short3.jpg",
+    src: img3,
     alt: "Short 3",
     link: "https://www.youtube.com/shorts/f_kZ4UCkM6c",
   },
   {
-    src: "/src/images/gaza/shorts/short4.jpg",
+    src: img4,
     alt: "Short 4",
     link: "https://www.youtube.com/shorts/0JP-13BDnYw",
   },
