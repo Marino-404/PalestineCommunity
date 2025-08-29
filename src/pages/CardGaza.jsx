@@ -28,7 +28,12 @@ const CardGaza = () => {
       >
         <DivLinePages />
 
-        <CarouselGaza />
+        <div className="flex w-full flex-col text-center justify-center items-center gap-4">
+          <h1 className="font-poppins font-bold text-xl md:text-2xl px-6 md:px-0 text-gradient uppercase">
+            Shorts
+          </h1>
+          <CarouselGaza />
+        </div>
 
         <DivLinePages />
 

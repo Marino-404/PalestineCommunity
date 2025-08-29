@@ -135,7 +135,7 @@ const Cards = () => {
         to="/Gaza"
         className={`w-[96%] xl:w-[55%] xl:h-[8vw] h-[24vw] flex justify-center items-center relative card-gaza  backdrop-blur-md mt-12`}
       >
-        <h1 className="absolute text-2xl xl:text-3xl font-light text-custom-white">
+        <h1 className="absolute text-3xl xl:text-5xl font-semibold text-custom-white">
           Gaza {cardTextContent(lang).featured}
         </h1>
       </Link>
