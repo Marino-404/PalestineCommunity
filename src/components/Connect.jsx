@@ -37,7 +37,7 @@ const Connect = () => {
         />
       </Link>
 
-      <Link to={"/Podcast"}>
+      <Link to={"/Media"}>
         <IoPlayCircleSharp
           className={`text-3xl xl:text-6xl text-[#247043] ${
             mode ? "opacity-30" : "opacity-40"

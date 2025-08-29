@@ -1,4 +1,4 @@
-import { IoShareOutline } from "react-icons/io5";
+import { Share2 } from "lucide-react";
 import { useAppContext } from "../store/AppContext";
 
 const ShareButton = ({ SectionName }) => {
@@ -41,7 +41,7 @@ const ShareButton = ({ SectionName }) => {
         } rounded-full px-3 py-1 flex flex-row text-center items-center gap-1`}
       >
         <span className={`text-sm`}>{SectionName}</span>
-        <IoShareOutline />
+        <Share2 size={16} />
       </div>
     </button>
   );

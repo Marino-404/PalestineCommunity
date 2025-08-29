@@ -4,8 +4,9 @@ import Back from "../components/Back";
 import DivLinePages from "../components/DivLinePages";
 import InstagramPhoto from "../components/InstagramPhoto";
 import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
-import { AiFillTikTok } from "react-icons/ai";
-import { FaSquareFacebook, FaInstagram } from "react-icons/fa6";
+import InstagramIcon from "../components/icons/InstagramIcon.jsx";
+import TikTokIcon from "../components/icons/TikTokIcon.jsx";
+import FacebookIcon from "../components/icons/FacebookIcon.jsx";
 import { instagramTextContent } from "../utils/text-content.js";
 
 import img1L from "/src/images/instagram/l1.png";
@@ -23,6 +24,7 @@ import img4B from "/src/images/instagram/4b.png";
 import img5B from "/src/images/instagram/5b.png";
 import img6B from "/src/images/instagram/6b.png";
 import img7B from "/src/images/instagram/7b.png";
+import ShareIcon from "../components/icons/ShareIcons.jsx";
 
 const images = {
   SALMA: { light: img1L, dark: img1B },
@@ -71,26 +73,25 @@ const CardDetail5 = () => {
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {instagramTextContent(lang).SALMA.title}
+              <ShareIcon url="https://www.instagram.com/salma.shawa_/" />
             </h1>
             <span className={DescriptionStyle}>
               {instagramTextContent(lang).SALMA.description}
             </span>
-            <div className="flex">
+            <div className="flex gap-4">
               <a
                 href="https://www.instagram.com/salma.shawa_/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-5xl"
               >
-                <FaInstagram />
+                <InstagramIcon />
               </a>
               <a
                 href="https://www.tiktok.com/@salma.shawa?_t=8pl8wmCJP8A&_r=1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-5xl"
               >
-                <AiFillTikTok />
+                <TikTokIcon />
               </a>
             </div>
           </div>
@@ -105,6 +106,7 @@ const CardDetail5 = () => {
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {instagramTextContent(lang).MOTAZ_AZIZA.title}
+              <ShareIcon url="https://www.instagram.com/motaz_azaiza?igsh=aDFvZDg0Y2p4cmY0" />
             </h1>
             <span className={DescriptionStyle}>
               {instagramTextContent(lang).MOTAZ_AZIZA.description}
@@ -113,9 +115,8 @@ const CardDetail5 = () => {
               href="https://www.instagram.com/motaz_azaiza?igsh=aDFvZDg0Y2p4cmY0"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaInstagram />
+              <InstagramIcon />
             </a>
           </div>
         </div>
@@ -129,6 +130,7 @@ const CardDetail5 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {instagramTextContent(lang).BISAN_OWDA.title}
+              <ShareIcon url="https://www.instagram.com/wizard_bisan1?igsh=MTFtczFlYjJvZzlsbA==" />
             </h1>
             <span className={DescriptionStyle}>
               {instagramTextContent(lang).BISAN_OWDA.description}
@@ -137,9 +139,8 @@ const CardDetail5 = () => {
               href="https://www.instagram.com/wizard_bisan1?igsh=MTFtczFlYjJvZzlsbA=="
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaInstagram />
+              <InstagramIcon />
             </a>
           </div>
         </div>
@@ -153,6 +154,7 @@ const CardDetail5 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {instagramTextContent(lang).HOSSAM_SHBAT.title}
+              <ShareIcon url="https://www.instagram.com/hossam_shbat?igsh=MWs1aW56MmpoZXA1dQ==" />
             </h1>
             <span className={DescriptionStyle}>
               {instagramTextContent(lang).HOSSAM_SHBAT.description}
@@ -161,9 +163,8 @@ const CardDetail5 = () => {
               href="https://www.instagram.com/hossam_shbat?igsh=MWs1aW56MmpoZXA1dQ=="
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaInstagram />
+              <InstagramIcon />
             </a>
           </div>
         </div>
@@ -177,6 +178,7 @@ const CardDetail5 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {instagramTextContent(lang).WISSAM_NASSAR.title}
+              <ShareIcon url="https://www.facebook.com/wissamnassargaza/?locale=es_LA" />
             </h1>
             <span className={DescriptionStyle}>
               {instagramTextContent(lang).WISSAM_NASSAR.description}
@@ -185,9 +187,8 @@ const CardDetail5 = () => {
               href="https://www.facebook.com/wissamnassargaza/?locale=es_LA"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaSquareFacebook />
+              <FacebookIcon />
             </a>
           </div>
         </div>
@@ -201,6 +202,7 @@ const CardDetail5 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {instagramTextContent(lang).NOOH_AL_SHAGHNOBI.title}
+              <ShareIcon url="https://www.instagram.com/nooh.xp?igsh=MW9kbTYwYnpnaGZ4Yw==" />
             </h1>
             <span className={DescriptionStyle}>
               {instagramTextContent(lang).NOOH_AL_SHAGHNOBI.description}
@@ -209,9 +211,8 @@ const CardDetail5 = () => {
               href="https://www.instagram.com/nooh.xp?igsh=MW9kbTYwYnpnaGZ4Yw=="
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaInstagram />
+              <InstagramIcon />
             </a>
           </div>
         </div>
@@ -225,6 +226,7 @@ const CardDetail5 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {instagramTextContent(lang).SALEH_ALJAFARAWI.title}
+              <ShareIcon url="https://www.instagram.com/saleh_aljafarawi?igsh=MWphdjI0dnF0aGkw" />
             </h1>
             <span className={DescriptionStyle}>
               {instagramTextContent(lang).SALEH_ALJAFARAWI.description}
@@ -234,9 +236,8 @@ const CardDetail5 = () => {
               href="https://www.instagram.com/saleh_aljafarawi?igsh=MWphdjI0dnF0aGkw"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaInstagram />
+              <InstagramIcon />
             </a>
             <p className="font-semibold text-xs ">
               {lang

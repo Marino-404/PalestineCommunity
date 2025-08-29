@@ -4,7 +4,7 @@ import Back from "../components/Back";
 import DivLinePages from "../components/DivLinePages";
 import SectionPhoto from "../components/SectionPhoto";
 import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
-import { FaSpotify } from "react-icons/fa";
+import SpotifyIcon from "../components/icons/SpotifyIcon.jsx";
 import { spotifyTextContent } from "../utils/text-content.js";
 
 import img1 from "/src/images/spotify/1.png";
@@ -15,6 +15,7 @@ import img5 from "/src/images/spotify/5.png";
 import img6 from "/src/images/spotify/6.png";
 import img7 from "/src/images/spotify/7.png";
 import img8 from "/src/images/spotify/8.png";
+import ShareIcon from "../components/icons/ShareIcons.jsx";
 
 const CardDetail4 = () => {
   const { mode, lang } = useAppContext();
@@ -39,6 +40,7 @@ const CardDetail4 = () => {
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {spotifyTextContent(lang).Spotify1.title}
+              <ShareIcon url="https://open.spotify.com/intl-es/artist/0jIWKlfmD4Ew7HeVVrq03g" />
             </h1>
             <span className={DescriptionStyle}>
               {spotifyTextContent(lang).Spotify1.description}
@@ -47,9 +49,8 @@ const CardDetail4 = () => {
               href="https://open.spotify.com/intl-es/artist/0jIWKlfmD4Ew7HeVVrq03g"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaSpotify />
+              <SpotifyIcon />
             </a>
           </div>
         </div>
@@ -63,6 +64,7 @@ const CardDetail4 = () => {
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {spotifyTextContent(lang).Spotify2.title}
+              <ShareIcon url="https://open.spotify.com/artist/0IjIdnhlsKfAfOl5ph5TsE?si=C7fVhF_vQgqWdOZVluNTTQ" />
             </h1>
             <span className={DescriptionStyle}>
               {spotifyTextContent(lang).Spotify2.description}
@@ -71,9 +73,8 @@ const CardDetail4 = () => {
               href="https://open.spotify.com/artist/0IjIdnhlsKfAfOl5ph5TsE?si=C7fVhF_vQgqWdOZVluNTTQ"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaSpotify />
+              <SpotifyIcon />
             </a>
           </div>
         </div>
@@ -87,6 +88,7 @@ const CardDetail4 = () => {
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {spotifyTextContent(lang).Spotify3.title}
+              <ShareIcon url="https://open.spotify.com/playlist/37i9dQZF1DZ06evO2Si3L2" />
             </h1>
             <span className={DescriptionStyle}>
               {spotifyTextContent(lang).Spotify3.description}
@@ -95,9 +97,8 @@ const CardDetail4 = () => {
               href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO2Si3L2"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaSpotify />
+              <SpotifyIcon />
             </a>
           </div>
         </div>
@@ -111,6 +112,7 @@ const CardDetail4 = () => {
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {spotifyTextContent(lang).Spotify4.title}
+              <ShareIcon url="https://open.spotify.com/artist/17WvUHY56BGNm6i6uTqyj1?si=KDZlkivOQxi-k6GPXmAtQA" />
             </h1>
             <span className={DescriptionStyle}>
               {spotifyTextContent(lang).Spotify4.description}
@@ -119,9 +121,8 @@ const CardDetail4 = () => {
               href="https://open.spotify.com/artist/17WvUHY56BGNm6i6uTqyj1?si=KDZlkivOQxi-k6GPXmAtQA"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaSpotify />
+              <SpotifyIcon />
             </a>
           </div>
         </div>
@@ -135,6 +136,7 @@ const CardDetail4 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {spotifyTextContent(lang).Spotify5.title}
+              <ShareIcon url="https://open.spotify.com/artist/1ATrNccUrhiYSQ3B08VQrz?si=ZlqMOt-bS2-p5fGZePsV-w" />
             </h1>
             <span className={DescriptionStyle}>
               {spotifyTextContent(lang).Spotify5.description}
@@ -143,9 +145,8 @@ const CardDetail4 = () => {
               href="https://open.spotify.com/artist/1ATrNccUrhiYSQ3B08VQrz?si=ZlqMOt-bS2-p5fGZePsV-w"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaSpotify />
+              <SpotifyIcon />
             </a>
           </div>
         </div>
@@ -159,6 +160,7 @@ const CardDetail4 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {spotifyTextContent(lang).Spotify6.title}
+              <ShareIcon url="https://open.spotify.com/artist/35Or8bOOKNt9UJKHcySKdP?si=9xX5RLKpR6Kib3TgN3RYgQ" />
             </h1>
             <span className={DescriptionStyle}>
               {spotifyTextContent(lang).Spotify6.description}
@@ -167,9 +169,8 @@ const CardDetail4 = () => {
               href="https://open.spotify.com/artist/35Or8bOOKNt9UJKHcySKdP?si=9xX5RLKpR6Kib3TgN3RYgQ"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaSpotify />
+              <SpotifyIcon />
             </a>
           </div>
         </div>
@@ -183,6 +184,7 @@ const CardDetail4 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {spotifyTextContent(lang).Spotify7.title}
+              <ShareIcon url="https://open.spotify.com/playlist/3vV7dd0tQdhUXRhst9Y4H2?si=9i555wutQ7Kc4NDa1z24Ug&pi=u-0xUNXZPrRP-j" />
             </h1>
             <span className={DescriptionStyle}>
               {spotifyTextContent(lang).Spotify7.description}
@@ -191,9 +193,8 @@ const CardDetail4 = () => {
               href="https://open.spotify.com/playlist/3vV7dd0tQdhUXRhst9Y4H2?si=9i555wutQ7Kc4NDa1z24Ug&pi=u-0xUNXZPrRP-j"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaSpotify />
+              <SpotifyIcon />
             </a>
           </div>
         </div>
@@ -207,6 +208,7 @@ const CardDetail4 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {spotifyTextContent(lang).Spotify8.title}
+              <ShareIcon url="https://open.spotify.com/artist/7BbiOEvJs6qrSDp54s1EUB?si=gX-GU6XsR7Kk0oidck9rcA" />
             </h1>
             <span className={DescriptionStyle}>
               {spotifyTextContent(lang).Spotify8.description}
@@ -215,9 +217,8 @@ const CardDetail4 = () => {
               href="https://open.spotify.com/artist/7BbiOEvJs6qrSDp54s1EUB?si=gX-GU6XsR7Kk0oidck9rcA"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaSpotify />
+              <SpotifyIcon />
             </a>
           </div>
         </div>

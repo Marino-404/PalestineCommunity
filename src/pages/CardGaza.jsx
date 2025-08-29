@@ -1,5 +1,5 @@
 import { useAppContext } from "../store/AppContext.jsx";
-import Back from "../components/Back";
+import Back from "../components/Back.jsx";
 import DivLinePages from "../components/DivLinePages.jsx";
 import Footer1 from "../sections/Footer1.jsx";
 import SectionPhoto from "../components/SectionPhoto.jsx";
@@ -9,8 +9,10 @@ import img1 from "/src/images/gaza/almuariza.jpg";
 import img2 from "/src/images/gaza/huda.jpg";
 import img3 from "/src/images/gaza/mikel.jpg";
 import { DescriptionStyle, SectionStyle, TitleStyle } from "./CardDetail1.jsx";
-import { FaInstagram, FaXTwitter, FaDesktop } from "react-icons/fa6";
 import { gazaTextContent } from "../utils/text-content.js";
+import InstagramIcon from "../components/icons/InstagramIcon.jsx";
+import TwitterIcon from "../components/icons/TwitterIcon.jsx";
+import EarthIcon from "../components/icons/EarthIcon.jsx";
 
 const CardGaza = () => {
   const { mode, lang } = useAppContext();
@@ -55,15 +57,14 @@ const CardGaza = () => {
                 rel="noopener noreferrer"
                 className="text-4xl"
               >
-                <FaDesktop />
+                <EarthIcon />
               </a>
               <a
                 href="https://www.instagram.com/almudena.ariza/?hl=es"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-4xl"
               >
-                <FaInstagram />
+                <InstagramIcon />
               </a>
               <a
                 href="https://x.com/almuariza"
@@ -71,7 +72,7 @@ const CardGaza = () => {
                 rel="noopener noreferrer"
                 className="text-4xl"
               >
-                <FaXTwitter />
+                <TwitterIcon />
               </a>
             </div>
           </div>
@@ -95,7 +96,7 @@ const CardGaza = () => {
                 rel="noopener noreferrer"
                 className="text-4xl"
               >
-                <FaDesktop />
+                <EarthIcon />
               </a>
               <a
                 href="https://www.instagram.com/hudaemad_98/"
@@ -103,7 +104,7 @@ const CardGaza = () => {
                 rel="noopener noreferrer"
                 className="text-4xl"
               >
-                <FaInstagram />
+                <InstagramIcon />
               </a>
             </div>
             <p className="font-semibold text-xs ">
@@ -132,7 +133,7 @@ const CardGaza = () => {
                 rel="noopener noreferrer"
                 className="text-4xl"
               >
-                <FaDesktop />
+                <EarthIcon />
               </a>
               <a
                 href="https://www.instagram.com/mikelayestaran/?hl=es"
@@ -140,7 +141,7 @@ const CardGaza = () => {
                 rel="noopener noreferrer"
                 className="text-4xl"
               >
-                <FaInstagram />
+                <InstagramIcon />
               </a>
             </div>
             <p className="font-semibold text-xs flex flex-col gap-1">

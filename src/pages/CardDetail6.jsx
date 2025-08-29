@@ -5,7 +5,6 @@ import DivLinePages from "../components/DivLinePages";
 import SectionPhoto from "../components/SectionPhoto";
 import { SectionStyle, TitleStyle, DescriptionStyle } from "./CardDetail1";
 import { artTextContent } from "../utils/text-content.js";
-import { FaYoutube, FaInstagram, FaDesktop } from "react-icons/fa6";
 import img1 from "/src/images/art/1.png";
 import img2 from "/src/images/art/2.png";
 import img3 from "/src/images/art/3.png";
@@ -14,6 +13,10 @@ import img5 from "/src/images/art/5.png";
 import img6 from "/src/images/art/6.png";
 import img7 from "/src/images/art/7.png";
 import img8 from "/src/images/art/8.webp";
+import InstagramIcon from "../components/icons/InstagramIcon.jsx";
+import EarthIcon from "../components/icons/EarthIcon.jsx";
+import YoutubeIcon from "../components/icons/YoutubeIcon.jsx";
+import ShareIcon from "../components/icons/ShareIcons.jsx";
 
 const CardDetail6 = () => {
   const { mode, lang } = useAppContext();
@@ -38,6 +41,7 @@ const CardDetail6 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {artTextContent(lang).RAFEEF_ZIADAH.title}
+              <ShareIcon url="https://www.instagram.com/rafeef.ziadah/" />
             </h1>
             <span className={DescriptionStyle}>
               {artTextContent(lang).RAFEEF_ZIADAH.description}
@@ -47,25 +51,22 @@ const CardDetail6 = () => {
                 href="https://www.instagram.com/rafeef.ziadah/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-5xl"
               >
-                <FaInstagram />
+                <InstagramIcon />
               </a>
               <a
                 href="https://www.youtube.com/watch?v=neYO0kJ-6XQ"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-5xl"
               >
-                <FaYoutube />
+                <YoutubeIcon />
               </a>
               <a
                 href="https://www.rafeefziadah.net/about/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-5xl"
               >
-                <FaDesktop />
+                <EarthIcon />
               </a>
             </div>
           </div>
@@ -80,6 +81,7 @@ const CardDetail6 = () => {
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {artTextContent(lang).MAHMOUD_DARWISH.title}
+              <ShareIcon url="http://www.poesiaarabe.com/mahmud%20darwish.htm" />
             </h1>
             <span className={DescriptionStyle}>
               {artTextContent(lang).MAHMOUD_DARWISH.description}
@@ -88,9 +90,8 @@ const CardDetail6 = () => {
               href="http://www.poesiaarabe.com/mahmud%20darwish.htm"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaDesktop />
+              <EarthIcon />
             </a>
           </div>
         </div>
@@ -104,6 +105,7 @@ const CardDetail6 = () => {
           <div className="flex flex-col w-full text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {artTextContent(lang).SLIMAN_MANZOUR.title}
+              <ShareIcon url="https://www.instagram.com/sliman.mansour/" />
             </h1>
             <span className={DescriptionStyle}>
               {artTextContent(lang).SLIMAN_MANZOUR.description}
@@ -112,9 +114,8 @@ const CardDetail6 = () => {
               href="https://www.instagram.com/sliman.mansour/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaInstagram />
+              <InstagramIcon />
             </a>
           </div>
         </div>
@@ -128,6 +129,7 @@ const CardDetail6 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {artTextContent(lang).RAWAN_ANANI.title}
+              <ShareIcon url="https://www.instagram.com/rawan_anani_artgallery/" />
             </h1>
             <span className={DescriptionStyle}>
               {artTextContent(lang).RAWAN_ANANI.description}
@@ -136,9 +138,8 @@ const CardDetail6 = () => {
               href="https://www.instagram.com/rawan_anani_artgallery/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaInstagram />
+              <InstagramIcon />
             </a>
           </div>
         </div>
@@ -152,6 +153,7 @@ const CardDetail6 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {artTextContent(lang).RANA_SAMARA.title}
+              <ShareIcon url="https://www.instagram.com/rana.samara85/A" />
             </h1>
             <span className={DescriptionStyle}>
               {artTextContent(lang).RANA_SAMARA.description}
@@ -160,9 +162,8 @@ const CardDetail6 = () => {
               href="https://www.instagram.com/rana.samara85/A"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaInstagram />
+              <InstagramIcon />
             </a>
           </div>
         </div>
@@ -176,6 +177,7 @@ const CardDetail6 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {artTextContent(lang).MALAK_MATTAR.title}
+              <ShareIcon url="https://www.instagram.com/malakmattarart/?hl=es" />
             </h1>
             <span className={DescriptionStyle}>
               {artTextContent(lang).MALAK_MATTAR.description}
@@ -184,9 +186,8 @@ const CardDetail6 = () => {
               href="https://www.instagram.com/malakmattarart/?hl=es"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaInstagram />
+              <InstagramIcon />
             </a>
           </div>
         </div>
@@ -200,6 +201,7 @@ const CardDetail6 = () => {
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
             <h1 className={TitleStyle}>
               {artTextContent(lang).HEL_FUNOUN.title}
+              <ShareIcon url="https://www.instagram.com/elfunoun_troupe/?hl=es" />
             </h1>
             <span className={DescriptionStyle}>
               {artTextContent(lang).HEL_FUNOUN.description}
@@ -208,9 +210,8 @@ const CardDetail6 = () => {
               href="https://www.instagram.com/elfunoun_troupe/?hl=es"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl"
             >
-              <FaInstagram />
+              <InstagramIcon />
             </a>
           </div>
         </div>
@@ -222,7 +223,10 @@ const CardDetail6 = () => {
             <SectionPhoto img={img7} />
           </section>
           <div className="flex w-full flex-col text-center justify-center items-center gap-2">
-            <h1 className={TitleStyle}>{artTextContent(lang).TATREEZ.title}</h1>
+            <h1 className={TitleStyle}>
+              {artTextContent(lang).TATREEZ.title}
+              <ShareIcon url="https://www.instagram.com/tatreeztraditions?utm_source=qr" />
+            </h1>
             <span className={DescriptionStyle}>
               {artTextContent(lang).HEL_FUNOUN.description}
             </span>
@@ -231,25 +235,22 @@ const CardDetail6 = () => {
                 href="https://www.instagram.com/tatreeztraditions?utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-5xl"
               >
-                <FaInstagram />
+                <InstagramIcon />
               </a>
               <a
                 href="https://www.youtube.com/watch?v=QC15tZuAkYI"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-5xl"
               >
-                <FaYoutube />
+                <YoutubeIcon />
               </a>
               <a
                 href="https://www.tatreeztraditions.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-5xl"
               >
-                <FaDesktop />
+                <EarthIcon />
               </a>
             </div>
           </div>
