@@ -11,7 +11,7 @@ const LanguageSwitch = ({ lang, toggleLang }) => {
         e.stopPropagation();
         toggleLang(isSpanish ? "En" : "Es");
       }}
-      className={`relative w-12 h-6 flex items-center justify-between p-2 rounded-full transition-colors duration-300 ${
+      className={`relative w-12 h-6 flex items-center justify-between p-2 rounded-full  ${
         mode ? "bg-gray-700" : "bg-gray-300"
       }`}
     >

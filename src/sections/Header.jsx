@@ -53,7 +53,7 @@ const Header = () => {
             mode ? "bg-[#000000e7]" : "bg-[#ffffffea]"
           } ${
             mode ? "xl:bg-[#000000cc]" : "xl:bg-[#ffffffef]"
-          } transition-all duration-500 xl:transition-none xl:static flex flex-col xl:flex-row items-center justify-center gap-10 xl:gap-28 z-50`}
+          } xl:transition-none xl:static flex flex-col xl:flex-row items-center justify-center gap-10 xl:gap-28 z-50`}
           onClick={() => {
             if (showMenu) {
               setShowMenu(false);
@@ -106,7 +106,7 @@ const Header = () => {
                 e.stopPropagation();
                 toggleMode();
               }}
-              className={`relative w-12 h-6 rounded-full transition-colors duration-300 ${
+              className={`relative w-12 h-6 rounded-full ${
                 mode ? "bg-gray-700" : "bg-gray-300"
               }`}
             >
