@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
+import { useAppContext } from "../store/AppContext.jsx";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import img1 from "../../images/gaza/shorts/short1.jpg";
-import img2 from "../../images/gaza/shorts/short2.jpg";
+import img1 from "../images/gaza/shorts/short1.jpg";
+import img2 from "../images/gaza/shorts/short2.jpg";
 
-import img3 from "../../images/gaza/shorts/short3.jpg";
-import img4 from "../../images/gaza/shorts/short4.jpg";
+import img3 from "../images/gaza/shorts/short3.jpg";
+import img4 from "../images/gaza/shorts/short4.jpg";
 
 const images = [
   {
@@ -30,6 +31,7 @@ const images = [
 ];
 
 const CarouselImages = () => {
+  const { mode } = useAppContext();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -62,7 +64,11 @@ const CarouselImages = () => {
       {/* Flecha izquierda */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 z-10 bg-black/50 text-white rounded-full p-2 hover:bg-black/70 transition"
+        className={`absolute left-2 z-10 ${
+          mode
+            ? "bg-gray-700 text-custom-white"
+            : "bg-gray-300 text-custom-black"
+        }  rounded-full p-2 transition`}
       >
         <ChevronLeft size={28} />
       </button>
@@ -97,7 +103,11 @@ const CarouselImages = () => {
       {/* Flecha derecha */}
       <button
         onClick={nextSlide}
-        className="absolute right-2 z-10 bg-black/50 text-white rounded-full p-2 hover:bg-black/70 transition"
+        className={`absolute right-2 z-10 ${
+          mode
+            ? "bg-gray-700 text-custom-white"
+            : "bg-gray-300 text-custom-black"
+        } rounded-full p-2 transition`}
       >
         <ChevronRight size={28} />
       </button>
