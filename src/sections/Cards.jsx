@@ -116,8 +116,8 @@ const Cards = () => {
 
   return (
     <section
-      className="w-full h-auto flex flex-col items-center justify-center text-custom-white px-2 z-10"
-      id="connect"
+      className="w-full h-auto flex flex-col items-center justify-center text-custom-white px-2 z-10 scroll-mt-[10vh]"
+      id="Connect"
     >
       <div className="flex items-center justify-center">
         <span

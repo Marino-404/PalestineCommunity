@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import img1 from "/src/images/gaza/shorts/short1.jpg";
-import img2 from "/src/images/gaza/shorts/short2.jpg";
+import img1 from "../../images/gaza/shorts/short1.jpg";
+import img2 from "../../images/gaza/shorts/short2.jpg";
 
-import img3 from "/src/images/gaza/shorts/short3.jpg";
-import img4 from "/src/images/gaza/shorts/short4.jpg";
+import img3 from "../../images/gaza/shorts/short3.jpg";
+import img4 from "../../images/gaza/shorts/short4.jpg";
 
 const images = [
   {
@@ -79,7 +79,7 @@ const CarouselImages = () => {
           >
             <div
               className="
-    w-full max-w-[300px] h-[400px] 
+    w-full max-w-[250px] h-[300px] 
     md:w-[280px] md:h-[450px]
     rounded-md shadow-lg overflow-hidden
   "
