@@ -3,7 +3,6 @@ import { useAppContext } from "../store/AppContext.jsx";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import img1 from "../images/gaza/shorts/short1.jpg";
 import img2 from "../images/gaza/shorts/short2.jpg";
-
 import img3 from "../images/gaza/shorts/short3.jpg";
 import img4 from "../images/gaza/shorts/short4.jpg";
 
@@ -35,19 +34,16 @@ const CarouselImages = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
+  // Detectar mobile
   useEffect(() => {
-    const checkScreen = () => setIsMobile(window.innerWidth < 768);
-    checkScreen();
-    window.addEventListener("resize", checkScreen);
-    return () => window.removeEventListener("resize", checkScreen);
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const prevSlide = () => {
-    setCurrentIndex((prev) =>
-      prev === 0
-        ? images.length - 1
-        : (prev - 1 + images.length) % images.length
-    );
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
   const nextSlide = () => {
@@ -60,40 +56,32 @@ const CarouselImages = () => {
     : [images[currentIndex], images[(currentIndex + 1) % images.length]];
 
   return (
-    <div className="relative flex justify-center items-center w-full">
+    <div className="relative w-full flex justify-center items-center">
       {/* Flecha izquierda */}
       <button
         onClick={prevSlide}
-        className={`absolute left-2 z-10 ${
-          mode
-            ? "bg-gray-700 text-custom-white"
-            : "bg-gray-300 text-custom-black"
-        }  rounded-full p-2 transition`}
+        className={`absolute left-2 z-10 rounded-full p-2 transition ${
+          mode ? "bg-gray-700 text-white" : "bg-gray-300 text-black"
+        } hover:opacity-90`}
       >
         <ChevronLeft size={28} />
       </button>
 
       {/* Contenedor de imágenes */}
-      <div className="flex gap-6 overflow-hidden">
+      <div className="flex gap-4 overflow-hidden">
         {visibleImages.map((img, idx) => (
           <a
             key={idx}
             href={img.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="block"
+            className="block shrink-0"
           >
-            <div
-              className="
-    w-full max-w-[250px] h-[300px] 
-    md:w-[280px] md:h-[450px]
-    rounded-md shadow-lg overflow-hidden
-  "
-            >
+            <div className="w-[200px] md:w-[280px] h-[350px] md:h-[450px] rounded-md shadow-lg overflow-hidden">
               <img
                 src={img.src}
                 alt={img.alt}
-                className="w-full h-full object-cover object-center hover:opacity-80 transition"
+                className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
               />
             </div>
           </a>
@@ -103,11 +91,9 @@ const CarouselImages = () => {
       {/* Flecha derecha */}
       <button
         onClick={nextSlide}
-        className={`absolute right-2 z-10 ${
-          mode
-            ? "bg-gray-700 text-custom-white"
-            : "bg-gray-300 text-custom-black"
-        } rounded-full p-2 transition`}
+        className={`absolute right-2 z-10 rounded-full p-2 transition ${
+          mode ? "bg-gray-700 text-white" : "bg-gray-300 text-black"
+        } hover:opacity-90`}
       >
         <ChevronRight size={28} />
       </button>
