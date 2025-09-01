@@ -9,6 +9,7 @@ import {
 import ButtonFixedContact from "../components/ButtonFixedContact";
 import { headerTextContent } from "../utils/text-content";
 import LanguageSwitch from "../components/icons/LanguajeIcon";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -28,11 +29,11 @@ const Header = () => {
     }
   }, [mode]);
 
-  const HeaderStyle =
-    "navbar min-w-[120px] flex items-center justify-center hover:text-[#1B5931] transition";
+  const HeaderStyle = "navbar min-w-[120px] flex items-center justify-center";
 
-  const LinkTextStyle =
-    "relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-current after:w-0 hover:after:w-full after:transition-all after:duration-300";
+  const LinkTextStyle = `relative after:absolute after:bottom-0 after:left-0 after:h-[0.5px] ${
+    mode ? "after:bg-custom-white" : "after:bg-custom-black"
+  } after:w-0 hover:after:w-full after:transition-all after:duration-300 font-light text-md`;
 
   const handleMenuItemClick = (section) => {
     changeSection(section);
@@ -42,7 +43,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`xl:fixed flex items-center justify-between w-full border-b border-[#D4AF37] h-[7vh] xl:h-[6vh] z-50 ${
+        className={`xl:fixed flex items-center justify-between w-full border-b border-[#D4AF37] h-[7vh] xl:h-[5vh] z-50 ${
           mode ? "text-custom-white" : "text-custom-black"
         } xl:animate-fade-down animate-duration-[1000ms]`}
       >
@@ -53,7 +54,7 @@ const Header = () => {
             mode ? "bg-[#000000e7]" : "bg-[#ffffffea]"
           } ${
             mode ? "xl:bg-[#000000cc]" : "xl:bg-[#ffffffef]"
-          } xl:transition-none xl:static flex flex-col xl:flex-row items-center justify-center gap-10 xl:gap-28 z-50`}
+          } transition-[top] duration-500 xl:transition-none xl:static flex flex-col xl:flex-row items-center justify-center gap-10 xl:gap-28 z-50`}
           onClick={() => {
             if (showMenu) {
               setShowMenu(false);
@@ -106,7 +107,7 @@ const Header = () => {
                 e.stopPropagation();
                 toggleMode();
               }}
-              className={`relative w-12 h-6 rounded-full ${
+              className={`relative w-12 h-6 rounded-full  ${
                 mode ? "bg-gray-700" : "bg-gray-300"
               }`}
             >
@@ -135,9 +136,33 @@ const Header = () => {
         <div className="xl:hidden flex m-auto justify-center">
           <button
             onClick={() => setShowMenu(!showMenu)}
-            className="text-2xl xl:hidden m-auto z-50"
+            className="text-2xl xl:hidden m-auto z-50 relative w-8 h-8"
           >
-            {showMenu ? <AiOutlineClose /> : <AiOutlineMenu />}
+            <AnimatePresence mode="wait">
+              {showMenu ? (
+                <motion.div
+                  key="close"
+                  initial={{ rotate: -90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: 90, opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="absolute inset-0 flex items-center justify-center"
+                >
+                  <AiOutlineClose />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="menu"
+                  initial={{ rotate: 90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: -90, opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="absolute inset-0 flex items-center justify-center"
+                >
+                  <AiOutlineMenu />
+                </motion.div>
+              )}
+            </AnimatePresence>
           </button>
         </div>
       </header>

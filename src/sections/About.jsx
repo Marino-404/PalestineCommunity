@@ -9,7 +9,7 @@ const About = () => {
   const { mode, activeSection, changeSection, lang } = useAppContext();
   const t = aboutTextContent(lang);
 
-  const buttonClasses = `xl:text-xl text-sm ${
+  const buttonClasses = `xl:text-md text-sm ${
     mode ? "text-custom-white" : "text-custom-black"
   } hover:text-gradient font-poppins font-normal flex justify-center w-1/3 xl:w-1/4 items-center`;
 
@@ -17,7 +17,7 @@ const About = () => {
     background: activeSection === section ? "#1b5931" : "",
     WebkitBackgroundClip: activeSection === section ? "text" : "",
     color: activeSection === section ? "transparent" : "",
-    fontWeight: activeSection === section ? "bold" : "normal",
+    fontWeight: activeSection === section ? "normal" : "normal",
   });
 
   return (
@@ -56,7 +56,7 @@ const About = () => {
       <DivLineAbout />
 
       {activeSection === "about" && (
-        <div className="xl:w-[40%] w-[96%] m-auto h-auto font-poppins flex flex-col items-center py-32 animate-fade-down animate-duration-[800ms] animate-delay-0 animate-ease-in-out">
+        <div className="xl:w-[40%] w-[96%] m-auto h-auto font-poppins flex flex-col items-center py-32 animate-fade-down animate-duration-[800ms] animate-delay-0 animate-ease-in-out ">
           <div className="flex flex-row items-center text-start justify-start mb-4">
             <div className="text-xl mr-1">
               <CiCircleChevDown />

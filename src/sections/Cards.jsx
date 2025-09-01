@@ -115,7 +115,10 @@ const Cards = () => {
   ];
 
   return (
-    <section className="w-full h-auto flex flex-col items-center justify-center text-custom-white px-2 z-10">
+    <section
+      className="w-full h-auto flex flex-col items-center justify-center text-custom-white px-2 z-10"
+      id="connect"
+    >
       <div className="flex items-center justify-center">
         <span
           className={` ${
@@ -140,10 +143,7 @@ const Cards = () => {
         </h1>
       </Link>
 
-      <div
-        id="Connect"
-        className="xl:w-[68%] w-full flex flex-wrap justify-center mb-12 pt-3 xl:pt-8 xl:gap-8 gap-3 z-10"
-      >
+      <div className="xl:w-[68%] w-full flex flex-wrap justify-center mb-12 pt-3 xl:pt-8 xl:gap-8 gap-3 z-10">
         {cardsData.map((card, id) => (
           <Link
             key={id}

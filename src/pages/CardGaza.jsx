@@ -13,6 +13,7 @@ import { gazaTextContent } from "../utils/text-content.js";
 import InstagramIcon from "../components/icons/InstagramIcon.jsx";
 import TwitterIcon from "../components/icons/TwitterIcon.jsx";
 import EarthIcon from "../components/icons/EarthIcon.jsx";
+import GazaVideo from "../components/GazaVideo.jsx";
 
 const CardGaza = () => {
   const { mode, lang } = useAppContext();
@@ -38,6 +39,8 @@ const CardGaza = () => {
         </div>
 
         <DivLinePages />
+
+        <GazaVideo />
 
         <div className="xl:h-auto flex xl:flex-row flex-col">
           <section className={SectionStyle}>

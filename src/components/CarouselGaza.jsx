@@ -64,7 +64,7 @@ const CarouselImages = () => {
         onClick={prevSlide}
         className="absolute left-2 z-10 bg-black/50 text-white rounded-full p-2 hover:bg-black/70 transition"
       >
-        <ChevronLeft size={32} />
+        <ChevronLeft size={28} />
       </button>
 
       {/* Contenedor de imágenes */}
@@ -79,7 +79,7 @@ const CarouselImages = () => {
           >
             <div
               className="
-    w-full max-w-[400px] h-[500px] 
+    w-full max-w-[300px] h-[400px] 
     md:w-[280px] md:h-[450px]
     rounded-md shadow-lg overflow-hidden
   "
@@ -99,7 +99,7 @@ const CarouselImages = () => {
         onClick={nextSlide}
         className="absolute right-2 z-10 bg-black/50 text-white rounded-full p-2 hover:bg-black/70 transition"
       >
-        <ChevronRight size={32} />
+        <ChevronRight size={28} />
       </button>
     </div>
   );
