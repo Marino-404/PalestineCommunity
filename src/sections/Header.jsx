@@ -6,9 +6,9 @@ import {
   AiFillMoon,
   AiFillSun,
 } from "react-icons/ai";
-import { HiLanguage } from "react-icons/hi2";
 import ButtonFixedContact from "../components/ButtonFixedContact";
 import { headerTextContent } from "../utils/text-content";
+import LanguageSwitch from "../components/icons/LanguajeIcon";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -106,25 +106,29 @@ const Header = () => {
                 e.stopPropagation();
                 toggleMode();
               }}
-              className="w-[24px] h-[24px] xl:w-[23px] xl:h-[23px] flex items-center justify-center"
+              className={`relative w-12 h-6 rounded-full transition-colors duration-300 ${
+                mode ? "bg-gray-700" : "bg-gray-300"
+              }`}
             >
-              {mode ? (
-                <AiFillSun className="w-full h-full transition-transform duration-300 hover:rotate-180" />
-              ) : (
-                <AiFillMoon className="w-full h-full transition-transform duration-300 hover:rotate-180" />
-              )}
+              <span
+                className={`absolute top-1 left-1 w-4 h-4 flex items-center justify-center rounded-full transition-transform duration-300 ${
+                  mode
+                    ? "translate-x-6 bg-gray-700"
+                    : "translate-x-0 bg-gray-300"
+                }`}
+              >
+                {mode ? (
+                  <AiFillSun className="w-full h-full" />
+                ) : (
+                  <AiFillMoon className="w-full h-full" />
+                )}
+              </span>
             </button>
 
-            <span
-              onClick={(e) => {
-                e.stopPropagation();
-                changeLang(!lang);
-              }}
-              className="text-base font-semibold hover:text-[#1B5931] transition hover:cursor-pointer m-2"
-            >
-              {" "}
-              <HiLanguage className="w-6 h-6" />
-            </span>
+            <LanguageSwitch
+              lang={lang ? "Es" : "En"}
+              toggleLang={(newLang) => changeLang(newLang === "Es")}
+            />
           </div>
         </nav>
 
